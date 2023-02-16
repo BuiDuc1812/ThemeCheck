@@ -1051,3 +1051,21 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
+
+// var url = '/products/'+ item.getAttribute('product-handle') +'.js';
+// fetch(url)
+// .then((resp)=>resp.json())
+// .then(function(data){
+//   console.log(data)
+//  })
+var modalItemId = document.getElementsByClassName("addToCard")
+
+for(var i = 0;i<modalItemId.length; i++){
+  console.log(modalItemId[i].getAttribute("product-id"))
+}
+
+var variant = document.getElementsByClassName("product-select")
+for(var i = 0;i<variant.length; i++){
+  variant[i].options[variant[i].options.selectedIndex].selected = true
+  console.log(variant[i]);
+}

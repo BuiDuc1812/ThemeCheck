@@ -331,6 +331,23 @@
           {%- endif -%}
         </div>
       </div>
+      <script>
+        console.log({{ card_product | json }})
+      </script>
+          <form action="#" class="addToCard" class="row" product-id="{{ card_product.id }}">
+            <select class="product-select" name="id">
+              {% for variant in card_product.variants %}
+                <option value="{{ variant.id }}"
+                  {% if variant == card_product.selected_or_first_available_variant %}selected="selected"{% endif %}
+                >
+                  {{ variant.title }}
+                </option>
+              {% endfor %}
+            </select>
+            <input type="hidden" name="id" id="modalItemId" value="{{ card_product.variants }}">
+            <input type="number" class="quantity" value="1" min="1">
+            <button type="submit">Add to cart</button>
+          </form>
     </div>
   </div>
 {%- else -%}
