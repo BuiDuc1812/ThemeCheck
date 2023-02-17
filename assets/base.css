@@ -2993,13 +2993,15 @@ details-disclosure > details {
     outline: transparent solid 1px;
   }
 }
-.addToCard input:focus{
-  border: none;
-}
+
 .addToCard button{
   border: none;
   background-color: black;
   color: white;
   width: 100%;
   padding: 12px 0;
+}
+.rowad{
+  float: left;
+  width: 50%;
 }

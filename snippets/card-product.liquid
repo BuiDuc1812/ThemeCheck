@@ -331,11 +331,8 @@
           {%- endif -%}
         </div>
       </div>
-      <script>
-        console.log({{ card_product | json }})
-      </script>
-          <form action="#" class="addToCard" class="row" product-id="{{ card_product.id }}">
-            <select class="product-select" name="id">
+          <form style="width: 100%;" action="#" class="addToCard" class="row" product-id="{{ card_product.id }}">
+            <select style="height:47px" class="product-select rowad" name="id">
               {% for variant in card_product.variants %}
                 <option value="{{ variant.id }}"
                   {% if variant == card_product.selected_or_first_available_variant %}selected="selected"{% endif %}
@@ -344,9 +341,55 @@
                 </option>
               {% endfor %}
             </select>
-            <input type="hidden" name="id" id="modalItemId" value="{{ card_product.variants }}">
-            <input type="number" class="quantity" value="1" min="1">
-            <button type="submit">Add to cart</button>
+            <input type="number" class="quantity rowad" value="1" min="1">
+            {% comment %}  {% endcomment %}
+            <div class="product-form__buttons">
+              
+          {%- liquid
+            assign check_against_inventory = true
+            if card_product.selected_or_first_available_variant.inventory_management != 'shopify' or  card_product.selected_or_first_available_variant.inventory_policy == 'continue'
+              assign check_against_inventory = false
+            endif
+            if card_product.selected_or_first_available_variant.quantity_rule.min > card_product.selected_or_first_available_variant.inventory_quantity and check_against_inventory
+              assign quantity_rule_soldout = true
+            endif
+          -%}
+          <script>
+                console.log({{ card_product.selected_or_first_available_variant.available | json }});
+            </script>
+          <button
+            id = "ProductSubmitButton-{{ section_id }}"
+            type="submit"
+            name="add"
+            class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+            {% if card_product.selected_or_first_available_variant.available == false or quantity_rule_soldout %}
+              disabled
+            {% endif %}
+          >
+            <span>
+              {%- if card_product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
+                asdasd
+              {%- else -%}
+                gfddgd
+              {%- endif -%}
+            </span>
+            <div class="loading-overlay__spinner hidden">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                class="spinner"
+                viewBox="0 0 66 66"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+              </svg>
+            </div>
+          </button>
+          {%- if block.settings.show_dynamic_checkout -%}
+            {{ form | payment_button }}
+          {%- endif -%}
+        </div>
+            {% comment %}  {% endcomment %}
           </form>
     </div>
   </div>

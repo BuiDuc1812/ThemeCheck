@@ -1052,12 +1052,6 @@ class ProductRecommendations extends HTMLElement {
 
 customElements.define('product-recommendations', ProductRecommendations);
 
-// var url = '/products/'+ item.getAttribute('product-handle') +'.js';
-// fetch(url)
-// .then((resp)=>resp.json())
-// .then(function(data){
-//   console.log(data)
-//  })
 var modalItemId = document.getElementsByClassName("addToCard")
 
 for(var i = 0;i<modalItemId.length; i++){
