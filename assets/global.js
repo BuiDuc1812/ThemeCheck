@@ -1052,14 +1052,21 @@ class ProductRecommendations extends HTMLElement {
 
 customElements.define('product-recommendations', ProductRecommendations);
 
-var modalItemId = document.getElementsByClassName("addToCard")
-
-for(var i = 0;i<modalItemId.length; i++){
-  console.log(modalItemId[i].getAttribute("product-id"))
+function checkInstock() {
+  var getSelectVariants = document.querySelectorAll(".product-select-variants")
+  getSelectVariants.forEach(variant => {
+    variant.addEventListener('change',()=>{
+      var inStock = variant.options[variant.selectedIndex].getAttribute("instock");
+      if ( inStock =="false" ){
+        variant.closest('.addToCard').querySelector('#ProductSubmitButton').classList.add('style');
+        variant.closest('.addToCard').querySelector('#ProductSubmitButton').setAttribute("disabled",true);
+        variant.closest('.addToCard').querySelector('#ProductSubmitButton').innerHTML="Soul out";
+      } else {
+        variant.closest('.addToCard').querySelector('#ProductSubmitButton').classList.remove('style');
+        variant.closest('.addToCard').querySelector('#ProductSubmitButton').innerHTML="Add to card";
+        variant.closest('.addToCard').querySelector('#ProductSubmitButton').removeAttribute("disabled");
+      }
+    })
+  });
 }
-
-var variant = document.getElementsByClassName("product-select")
-for(var i = 0;i<variant.length; i++){
-  variant[i].options[variant[i].options.selectedIndex].selected = true
-  console.log(variant[i]);
-}
+checkInstock();

@@ -826,10 +826,10 @@ summary::-webkit-details-marker {
 }
 
 *:focus-visible {
-  outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
+  /* outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   outline-offset: 0.3rem;
   box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
-    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3); */
 }
 
 /* Fallback - for browsers that don't support :focus-visible, a fallback is set for :focus */
@@ -2993,15 +2993,40 @@ details-disclosure > details {
     outline: transparent solid 1px;
   }
 }
-
-.addToCard button{
+.product-form__buttons button{
   border: none;
-  background-color: black;
-  color: white;
   width: 100%;
-  padding: 12px 0;
+  padding: 16px 0;
 }
 .rowad{
   float: left;
   width: 50%;
+}
+
+.showbtn{
+  display: block;
+}
+.hiddenbtn{
+  display: none;
+}
+.style{
+  background-color: #ccc !important;
+  color: black !important;
+  transition: all 0.2s ease-in-out;
+}
+#ProductSubmitButton{
+  margin-top: 8px;
+  text-transform: uppercase;
+  background-color: black;
+  color:white;
+  transition: all 0.2s ease-in-out;
+}
+#ProductSubmitButton:hover{
+  background-color: azure;
+  color: black;
+  box-shadow: 3px 3px black;
+}
+.style-soul{
+  background-color: #ccc !important;
+  color: black !important;
 }

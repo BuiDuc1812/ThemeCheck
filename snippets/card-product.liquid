@@ -133,10 +133,10 @@
               </span>
             {%- endif -%}
           </div>
-        </div>
-      </div>
-      <div class="card__content">
-        <div class="card__information">
+          </div>
+          </div>
+          <div class="card__content">
+          <div class="card__information">
           <h3
             class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
             {% if card_product.featured_media or settings.card_style == 'card' %}
@@ -198,8 +198,8 @@
 
             {% render 'price', product: card_product, price_class: '' %}
           </div>
-        </div>
-        {%- if show_quick_add -%}
+          </div>
+          {%- if show_quick_add -%}
           <div class="quick-add no-js-hidden">
             {%- liquid
               assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id
@@ -312,8 +312,8 @@
               </product-form>
             {%- endif -%}
           </div>
-        {%- endif -%}
-        <div class="card__badge {{ settings.badge_position }}">
+          {%- endif -%}
+          <div class="card__badge {{ settings.badge_position }}">
           {%- if card_product.available == false -%}
             <span
               id="Badge-{{ section_id }}-{{ card_product.id }}"
@@ -329,12 +329,13 @@
               {{- 'products.product.on_sale' | t -}}
             </span>
           {%- endif -%}
-        </div>
-      </div>
-          <form style="width: 100%;" action="#" class="addToCard" class="row" product-id="{{ card_product.id }}">
-            <select style="height:47px" class="product-select rowad" name="id">
+          </div>
+          </div>
+          
+          <form style="width: 100%;" action="#" class="addToCard row"  product-id="{{ card_product.id }}">
+            <select style="height:47px" id="product-select-{{ card_product.id }}" name="id" class="product-select-variants rowad">
               {% for variant in card_product.variants %}
-                <option value="{{ variant.id }}"
+                <option value="{{ variant.id }}" instock="{{ variant.available }}"
                   {% if variant == card_product.selected_or_first_available_variant %}selected="selected"{% endif %}
                 >
                   {{ variant.title }}
@@ -342,54 +343,40 @@
               {% endfor %}
             </select>
             <input type="number" class="quantity rowad" value="1" min="1">
-            {% comment %}  {% endcomment %}
-            <div class="product-form__buttons">
-              
-          {%- liquid
-            assign check_against_inventory = true
-            if card_product.selected_or_first_available_variant.inventory_management != 'shopify' or  card_product.selected_or_first_available_variant.inventory_policy == 'continue'
-              assign check_against_inventory = false
-            endif
-            if card_product.selected_or_first_available_variant.quantity_rule.min > card_product.selected_or_first_available_variant.inventory_quantity and check_against_inventory
-              assign quantity_rule_soldout = true
-            endif
-          -%}
-          <script>
-                console.log({{ card_product.selected_or_first_available_variant.available | json }});
-            </script>
+
+            <div class="product-form__buttons {{ card_product.id }}">  
+              {%- liquid
+              assign check_against_inventory = true
+              if card_product.selected_or_first_available_variant.inventory_management != 'shopify' or  card_product.selected_or_first_available_variant.inventory_policy == 'continue'
+                assign check_against_inventory = false
+              endif
+              if card_product.selected_or_first_available_variant.quantity_rule.min > card_product.selected_or_first_available_variant.inventory_quantity and check_against_inventory
+                assign quantity_rule_soldout = true
+              endif
+            -%}
+            
+         
+          {%- if product.selected_or_first_available_variant.available == true or quantity_rule_soldout -%}
           <button
-            id = "ProductSubmitButton-{{ section_id }}"
+            id = "ProductSubmitButton"
             type="submit"
             name="add"
-            class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
-            {% if card_product.selected_or_first_available_variant.available == false or quantity_rule_soldout %}
-              disabled
-            {% endif %}
+            disabled
+            class="style-soul"
+    
           >
-            <span>
-              {%- if card_product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
-                Soul out
-              {%- else -%}
-                Add to cart
-              {%- endif -%}
-            </span>
-            <div class="loading-overlay__spinner hidden">
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                class="spinner"
-                viewBox="0 0 66 66"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-              </svg>
-            </div>
+              Soul out
           </button>
-          {%- if block.settings.show_dynamic_checkout -%}
-            {{ form | payment_button }}
-          {%- endif -%}
-        </div>
-            {% comment %}  {% endcomment %}
+     {%- else -%}
+     <button
+     id = "ProductSubmitButton"
+     type="submit"
+     name="add"
+   >
+   Add to card
+   </button>
+    {%- endif -%}
+            </div>
           </form>
     </div>
   </div>
