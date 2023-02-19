@@ -1058,15 +1058,45 @@ function checkInstock() {
     variant.addEventListener('change',()=>{
       var inStock = variant.options[variant.selectedIndex].getAttribute("instock");
       if ( inStock =="false" ){
-        variant.closest('.addToCard').querySelector('#ProductSubmitButton').classList.add('style');
-        variant.closest('.addToCard').querySelector('#ProductSubmitButton').setAttribute("disabled",true);
-        variant.closest('.addToCard').querySelector('#ProductSubmitButton').innerHTML="Soul out";
+        variant.closest('#addToCard').querySelector('#ProductSubmitButton').classList.add('style');
+        variant.closest('#addToCard').querySelector('#ProductSubmitButton').setAttribute("disabled",true);
+        variant.closest('#addToCard').querySelector('#ProductSubmitButton').innerHTML="Soul out";
       } else {
-        variant.closest('.addToCard').querySelector('#ProductSubmitButton').classList.remove('style');
-        variant.closest('.addToCard').querySelector('#ProductSubmitButton').innerHTML="Add to card";
-        variant.closest('.addToCard').querySelector('#ProductSubmitButton').removeAttribute("disabled");
+        variant.closest('#addToCard').querySelector('#ProductSubmitButton').classList.remove('style');
+        variant.closest('#addToCard').querySelector('#ProductSubmitButton').innerHTML="Add to card";
+        variant.closest('#addToCard').querySelector('#ProductSubmitButton').removeAttribute("disabled");
       }
     })
   });
 }
 checkInstock();
+function addToCart(){
+  var modalAddToCardForm = document.querySelectorAll("#addToCard");
+  modalAddToCardForm.forEach(item=>{
+    var id =  item.getAttribute("product-id");
+    item.addEventListener('submit',(e)=>{
+      e.preventDefault();
+      let formData ={
+        'item':[
+        {
+          'id': id,
+          'quantity':2
+        } 
+        ]
+      }
+      fetch(`${routes.cart_add_url}`,{
+        method:'POST',
+        headers:{
+          'Content-Type':'application/json'
+        },
+        body:JSON.stringify(formData)
+      })
+      .then((resp)=>resp.json())
+      .catch((err)=>{
+        console.log('Erro:' + err);
+      })
+    });
+  })
+  
+}
+addToCart()

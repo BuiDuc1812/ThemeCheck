@@ -332,7 +332,7 @@
           </div>
           </div>
           
-          <form style="width: 100%;" action="#" class="addToCard row"  product-id="{{ card_product.id }}">
+          <form style="width: 100%;" action="#" id="addToCard" class="row"  product-id="{{ card_product.id }}">
             <select style="height:47px" id="product-select-{{ card_product.id }}" name="id" class="product-select-variants rowad">
               {% for variant in card_product.variants %}
                 <option value="{{ variant.id }}" instock="{{ variant.available }}"
