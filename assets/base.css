@@ -242,7 +242,7 @@ html.no-js .no-js-inline {
 html.no-js .no-js-hidden {
   display: none !important;
 }
-.page-width-new{
+.width-page{
   max-width: 1440px;
   height: 42px;
 }
