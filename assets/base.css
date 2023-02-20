@@ -245,6 +245,7 @@ html.no-js .no-js-hidden {
 .width-page{
   max-width: 1440px;
   height: 42px;
+  background-color: aqua;
 }
 .page-width {
   max-width: var(--page-width);
