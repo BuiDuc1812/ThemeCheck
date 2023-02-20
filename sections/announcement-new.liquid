@@ -1,39 +1,33 @@
 {% for block in section.blocks %}
-    {% case block.type %}
-        <div class="width-page">
-            {% when 'pickup' %}
-                <div class="pickup">
-                    {% comment %} <img src="{{ block.settings.img }}" alt="loi"> {% endcomment %}
-                    <p>{{ block.settings.pickup-text }}</p>
-                    <a href="{{ block.settings.link }}">{{ block.settings.text }}</a>
-                </div>
-        </div>  
-    {% endcase %}
+  {% case block.type %}
+    <div class="width-page">
+      {% when 'pickup' %}
+        <div class="pickup">
+        {% comment %} <img src="{{ block.settings.img }}" alt="loi"> {% endcomment %}
+        <p>{{ section.settings.pickup-text }}</p>
+        <a href="{{ block.settings.link }}">{{ block.settings.text }}</a>
+      </div>
+    </div>
+  {% endcase %}
 {% endfor %}
 
 {% schema %}
-    {
-        "name":"announcement-bar",
-        "max_blocks":1,
-        "blocks": [
-            {
-                "type": "pickup",
-                "name":"pickup",
-                "settings": [
-                    {
-                        "type":"text",
-                        "id":"pickup-text",
-                        "default":"In-store pickup",
-                        "label":"pick up text"
-                    }
-                ]
-            }
-        ],
-        "presets": [
-            {
-                "category" :"hero",
-                "name":"simple hero"
-            }
-        ]
-    }
+  {
+    "name": "announcement-bar",
+    "class": "announcement-new",
+    "settings": [
+      {
+        "type": "text",
+        "id": "pickup-text",
+        "default": "In-store pickup",
+        "label": "pick up text"
+      }
+    ],
+    "presets": [
+      {
+        "category": "hero",
+        "name": "simple hero"
+      }
+    ]
+  }
 {% endschema %}
