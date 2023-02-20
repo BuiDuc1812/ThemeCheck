@@ -344,10 +344,8 @@
             </select>
             <input type="number" class="quantity rowad" value="1" min="1">
             <div class="product-form__buttons {{ card_product.id }}">  
-      
               {%- if product.selected_or_first_available_variant.available == true or quantity_rule_soldout -%}
                 <button
-                  
                   type="submit"
                   name="add"
                   disabled
@@ -356,22 +354,21 @@
                     Soul out
                 </button>
               {%- else -%}
-              <button
-              class = "ProductSubmitButton"
-              type="submit"
-              name="add"
-              >
-              Add to card
-              </button>
-            {%- endif -%}
+                <button
+                  class = "ProductSubmitButton"
+                  type="submit"
+                  name="add"
+                >
+                  Add to card
+                </button>
+              {%- endif -%}
             </div>
           </form>
     </div>
   </div>
 {%- else -%}
   <div class="product-card-wrapper card-wrapper underline-links-hover">
-    <div
-      class="
+    <div class="
         card
         card--{{ settings.card_style }}
         card--text
