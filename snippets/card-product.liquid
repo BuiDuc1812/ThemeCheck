@@ -331,7 +331,7 @@
           {%- endif -%}
           </div>
           </div>
-          
+  
           <form style="width: 100%;" action="#" class="row addToCard"  product-id="{{ card_product.id }}">
             <select style="height:47px" name="id" class="product-select-variants rowad">
               {% for variant in card_product.variants %}
@@ -344,37 +344,26 @@
             </select>
             <input type="number" class="quantity rowad" value="1" min="1">
             <div class="product-form__buttons {{ card_product.id }}">  
-              {%- liquid
-              assign check_against_inventory = true
-              if card_product.selected_or_first_available_variant.inventory_management != 'shopify' or  card_product.selected_or_first_available_variant.inventory_policy == 'continue'
-                assign check_against_inventory = false
-              endif
-              if card_product.selected_or_first_available_variant.quantity_rule.min > card_product.selected_or_first_available_variant.inventory_quantity and check_against_inventory
-                assign quantity_rule_soldout = true
-              endif
-            -%}
-            
-         
-          {%- if product.selected_or_first_available_variant.available == true or quantity_rule_soldout -%}
-          <button
-            id = "ProductSubmitButton"
-            type="submit"
-            name="add"
-            disabled
-            class="style-soul"
-    
-          >
-              Soul out
-          </button>
-     {%- else -%}
-     <button
-     id = "ProductSubmitButton"
-     type="submit"
-     name="add"
-   >
-   Add to card
-   </button>
-    {%- endif -%}
+            {%- if product.selected_or_first_available_variant.available == true or quantity_rule_soldout -%}
+              <button
+                id = "ProductSubmitButton"
+                type="submit"
+                name="add"
+                disabled
+                class="style-soul"
+        
+              >
+                  Soul out
+              </button>
+            {%- else -%}
+              <button
+              id = "ProductSubmitButton"
+              type="submit"
+              name="add"
+              >
+              Add to card
+              </button>
+            {%- endif -%}
             </div>
           </form>
     </div>
