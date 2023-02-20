@@ -3033,7 +3033,11 @@ details-disclosure > details {
 
 /* new announcement */
 :root{
-  --color-navy: #7DAFCA
+  --color-navy: #7DAFCA;
+}
+@font-face {
+  font-family: Galano;
+  src: url(../font/galano.otf) format("opentype");
 }
 .announcement-new{
   background-color: var(--color-navy);
@@ -3044,12 +3048,15 @@ details-disclosure > details {
 .width-page{
   margin: 0 auto;
   max-width: 1440px;
-  display: flex;
   justify-content: space-around;
-  align-items: center;
   height: 100%;
 }
-.pickup{
+.width-page p,.width-page a{
+  color: white;
+  font-size: 14px;
+  font-family: Galano;
+}
+.pickup, .width-page{
   display: flex;
   align-items: center;
 }
