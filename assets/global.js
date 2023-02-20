@@ -1071,32 +1071,31 @@ function checkInstock() {
 }
 checkInstock();
 function addToCart(){
-  var modalAddToCardForm = document.querySelectorAll("#addToCard");
-  modalAddToCardForm.forEach(item=>{
-    item.addEventListener('submit',(e)=>{
-      e.preventDefault();
-        var valiable = item.querySelector("#product-select").value;
-        let formData ={
-          'item':[
-            {
-              'id': item.getAttribute("product-id"),
-              'quantity':document.querySelector("#modalItemQuantity").value,
-              'variant': valiable
-            } 
-          ]
-       }
-      fetch(`/cart/add.js`,{
-        method:'POST',
-        headers:{
-          'Content-Type':'application/json'
-        },
-        body:JSON.stringify(formData)
-      })
-      .then((resp)=>resp)
-      .catch((err)=>{
-        console.log('Erro:' + err);
-      }) 
-    });
-  }) 
+  var modalAddToCardForm = document.querySelectorAll(".addToCard");
+  if(modalAddToCardForm){ 
+    modalAddToCardForm.forEach(item=>{
+      item.addEventListener('submit',(e)=>{
+        e.preventDefault();
+         fetch(window.Shopify.routes.root + 'cart/add.js', {
+           method: 'POST',
+           headers: {
+             'Content-Type': 'application/json'
+           },
+           body: JSON.stringify({
+            'items': [{
+              'id': item.querySelector(".product-select-variants").value,
+              'quantity': item.querySelector(".quantity").value
+              }]
+           })
+         })
+         .then(response => {
+           return response.json();
+         })
+         .catch((error) => {
+           console.error('Error:', error);
+         });
+      });
+    })
+  }
 }
 addToCart()

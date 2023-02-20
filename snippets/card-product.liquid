@@ -332,8 +332,8 @@
           </div>
           </div>
           
-          <form style="width: 100%;" action="#" id="addToCard" class="row"  product-id="{{ card_product.id }}">
-            <select style="height:47px" id="product-select" name="id" class="product-select-variants rowad">
+          <form style="width: 100%;" action="#" class="row addToCard"  product-id="{{ card_product.id }}">
+            <select style="height:47px" name="id" class="product-select-variants rowad">
               {% for variant in card_product.variants %}
                 <option value="{{ variant.id }}" instock="{{ variant.available }}"
                   {% if variant == card_product.selected_or_first_available_variant %}selected="selected"{% endif %}
@@ -342,7 +342,7 @@
                 </option>
               {% endfor %}
             </select>
-            <input type="number" class="quantity rowad" id="modalItemQuantity" value="1" min="1">
+            <input type="number" class="quantity rowad" value="1" min="1">
             <div class="product-form__buttons {{ card_product.id }}">  
               {%- liquid
               assign check_against_inventory = true
