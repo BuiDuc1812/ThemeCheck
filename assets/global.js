@@ -1073,18 +1073,27 @@ checkInstock();
 function addToCart(){
   var modalAddToCardForm = document.querySelectorAll("#addToCard");
   modalAddToCardForm.forEach(item=>{
-    var id =  item.getAttribute("product-id");
+    // var valiable = item.querySelector("#product-select").value
+    // console.log(valiable)
+    //     valiable.addEventListener('change',()=>{
+    //       var idVariant = valiable.options[valiable.selectedIndex].value;
+    //       console.log(idVariant);
+    //     })
     item.addEventListener('submit',(e)=>{
       e.preventDefault();
+        var valiable = item.querySelector("#product-select").value;
+        console.log(valiable + item.getAttribute("product-id") + document.querySelector("#modalItemQuantity").value)
       let formData ={
         'item':[
         {
-          'id': id,
-          'quantity':2
+          'id': item.getAttribute("product-id"),
+          'quantity':document.querySelector("#modalItemQuantity").value,
+          'variant': valiable
         } 
         ]
       }
-      fetch(`${routes.cart_add_url}`,{
+      console.log(formData)
+      fetch('/cart/add.js',{
         method:'POST',
         headers:{
           'Content-Type':'application/json'
@@ -1096,7 +1105,6 @@ function addToCart(){
         console.log('Erro:' + err);
       })
     });
-  })
-  
+  }) 
 }
 addToCart()
