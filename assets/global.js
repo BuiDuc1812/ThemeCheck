@@ -1058,13 +1058,13 @@ function checkInstock() {
     variant.addEventListener('change',()=>{
       var inStock = variant.options[variant.selectedIndex].getAttribute("instock");
       if ( inStock =="false" ){
-        variant.closest('#addToCard').querySelector('#ProductSubmitButton').classList.add('style');
-        variant.closest('#addToCard').querySelector('#ProductSubmitButton').setAttribute("disabled",true);
-        variant.closest('#addToCard').querySelector('#ProductSubmitButton').innerHTML="Soul out";
+        variant.closest('.addToCard').querySelector('.ProductSubmitButton').classList.add('style');
+        variant.closest('.addToCard').querySelector('.ProductSubmitButton').setAttribute("disabled",true);
+        variant.closest('.addToCard').querySelector('.ProductSubmitButton').innerHTML="Soul out";
       } else {
-        variant.closest('#addToCard').querySelector('#ProductSubmitButton').classList.remove('style');
-        variant.closest('#addToCard').querySelector('#ProductSubmitButton').innerHTML="Add to card";
-        variant.closest('#addToCard').querySelector('#ProductSubmitButton').removeAttribute("disabled");
+        variant.closest('.addToCard').querySelector('.ProductSubmitButton').classList.remove('style');
+        variant.closest('.addToCard').querySelector('.ProductSubmitButton').innerHTML="Add to card";
+        variant.closest('.addToCard').querySelector('.ProductSubmitButton').removeAttribute("disabled");
       }
     })
   });

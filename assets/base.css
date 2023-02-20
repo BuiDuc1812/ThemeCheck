@@ -3014,14 +3014,14 @@ details-disclosure > details {
   color: black !important;
   transition: all 0.2s ease-in-out;
 }
-#ProductSubmitButton{
+.ProductSubmitButton{
   margin-top: 8px;
   text-transform: uppercase;
   background-color: black;
   color:white;
   transition: all 0.2s ease-in-out;
 }
-#ProductSubmitButton:hover{
+.ProductSubmitButton:hover{
   background-color: azure;
   color: black;
   box-shadow: 3px 3px black;

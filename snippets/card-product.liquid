@@ -331,7 +331,7 @@
           {%- endif -%}
           </div>
           </div>
-  
+          
           <form style="width: 100%;" action="#" class="row addToCard"  product-id="{{ card_product.id }}">
             <select style="height:47px" name="id" class="product-select-variants rowad">
               {% for variant in card_product.variants %}
@@ -344,20 +344,20 @@
             </select>
             <input type="number" class="quantity rowad" value="1" min="1">
             <div class="product-form__buttons {{ card_product.id }}">  
-            {%- if product.selected_or_first_available_variant.available == true or quantity_rule_soldout -%}
+      
+              {%- if product.selected_or_first_available_variant.available == true or quantity_rule_soldout -%}
+                <button
+                  
+                  type="submit"
+                  name="add"
+                  disabled
+                  class="style-soul ProductSubmitButton"
+                >
+                    Soul out
+                </button>
+              {%- else -%}
               <button
-                id = "ProductSubmitButton"
-                type="submit"
-                name="add"
-                disabled
-                class="style-soul"
-        
-              >
-                  Soul out
-              </button>
-            {%- else -%}
-              <button
-              id = "ProductSubmitButton"
+              class = "ProductSubmitButton"
               type="submit"
               name="add"
               >
