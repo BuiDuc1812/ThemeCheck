@@ -1,7 +1,21 @@
-<section style="width: 100%; height:42px;">
+<section class="announcement-new">
   <div class="width-page">
-    <p>{{ section.settings.pickup-text }}</p>
-    <a href="{{ section.settings.link }}">{{ section.settings.pickup-text }}</a>
+    <div class="pickup">
+      {% render 'icon-house' %}
+      <p>{{ section.settings.pickup-text }}</p>
+      <a href="{{ section.settings.link }}">{{ section.settings.text-button }}</a>
+    </div>
+    <div class="announcement-text">
+      <p>
+        Buy 1 get 1 50% off almost everything!
+      </p>
+    </div>
+    <div class="announcement-suport">
+        <p>
+            Customer Support
+        </p>
+    </div>
+
   </div>
 </section>
 {% schema %}
@@ -14,6 +28,11 @@
         "id": "pickup-text",
         "default": "In-store pickup",
         "label": "pick up text"
+      }, {
+        "type": "text",
+        "id": "text-button",
+        "default": "In-store pickup",
+        "label": "a button link"
       }, {
         "type": "url",
         "id": "link",
