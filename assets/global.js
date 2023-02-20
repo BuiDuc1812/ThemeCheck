@@ -1070,6 +1070,7 @@ function checkInstock() {
   });
 }
 checkInstock();
+
 function addToCart(){
   var modalAddToCardForm = document.querySelectorAll(".addToCard");
   if(modalAddToCardForm){ 
