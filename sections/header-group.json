@@ -17,7 +17,9 @@
       },
       "block_order": [
         "announcement-bar-0"
-      ]
+      ],
+      "settings": {
+      }
     },
     "header": {
       "type": "header",
@@ -33,10 +35,18 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "1d9aeef3-3901-473c-bb21-bf3bf477812b": {
+      "type": "announcement-new",
+      "settings": {
+        "pickup-text": "ádasdas",
+        "link": "shopify:\/\/collections\/all"
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "1d9aeef3-3901-473c-bb21-bf3bf477812b"
   ]
 }
