@@ -4,7 +4,7 @@
             {% when 'pickup' %}
                 <div class="pickup">
                     {% comment %} <img src="{{ block.settings.img }}" alt="loi"> {% endcomment %}
-                    <p>{{ block.settings.pickup-text  }}</p>
+                    <p>{{ block.settings.pickup-text }}</p>
                     <a href="{{ block.settings.link }}">{{ block.settings.text }}</a>
                 </div>
         </div>  
@@ -29,12 +29,11 @@
                 ]
             }
         ],
-        "default":{
-            "blocks":[
-                {
-                    "type":"pickup"
-                }
-            ]
-        }
+        "presets": [
+            {
+                "category" :"hero",
+                "name":"simple hero"
+            }
+        ]
     }
 {% endschema %}
