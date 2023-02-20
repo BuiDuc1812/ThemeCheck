@@ -3019,6 +3019,7 @@ details-disclosure > details {
   text-transform: uppercase;
   background-color: black;
   color:white;
+  box-shadow: 3px 3px #ccc;
   transition: all 0.2s ease-in-out;
 }
 .ProductSubmitButton:hover{
