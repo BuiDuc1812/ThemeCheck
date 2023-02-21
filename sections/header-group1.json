@@ -1,22 +1,27 @@
 {
-    "name":"megamenu",
-    "type":"header",
-    "sections":{
-        "topmenu":{
-            "type":"topmenu",
-            "settings":{
-                
-            }
-        },
-        "headermega":{
-            "type":"headermega",
-            "settings":{
-
-            }
-        }
+  "name": "megamenu",
+  "type": "header",
+  "sections": {
+    "topmenu": {
+      "type": "topmenu",
+      "settings": {
+        "text-pickup": "In-store pickup:",
+        "pickup-button": "Select store",
+        "pickup-link": "",
+        "text-announcement": "Buy 1 get 1 50% off almost everything!",
+        "link-announcement": "shopify:\/\/collections\/all",
+        "text-support": "Customer Support",
+        "link-support": "shopify:\/\/pages\/contact"
+      }
     },
-    "order": [
-        "topmenu",
-        "headermega"
-      ]
+    "headermega": {
+      "type": "headermega",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "topmenu",
+    "headermega"
+  ]
 }
