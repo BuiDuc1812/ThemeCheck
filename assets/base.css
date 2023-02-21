@@ -3030,33 +3030,3 @@ details-disclosure > details {
   background-color: #ccc !important;
   color: black !important;
 }
-
-/* new announcement */
-:root{
-  --color-navy: #7DAFCA;
-}
-@font-face {
-  font-family: Galano;
-  src: url(../font/galano.otf) format("opentype");
-}
-.announcement-new{
-  background-color: var(--color-navy);
-  width: 100%;
-  height: 42px;
-  color: white;
-}
-.width-page{
-  margin: 0 auto;
-  max-width: 1440px;
-  justify-content: space-around;
-  height: 100%;
-}
-.width-page p,.width-page a{
-  color: white;
-  font-size: 14px;
-  font-family: Galano;
-}
-.pickup, .width-page{
-  display: flex;
-  align-items: center;
-}

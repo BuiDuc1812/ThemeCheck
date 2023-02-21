@@ -1,0 +1,15 @@
+<section class="megamenu">
+  <div class="width-page">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'top' %}
+        <div class="top"></div>
+        {% when 'header' %}
+        <div class="header"></div>
+      {% endcase %}
+    {% endfor %}
+  </div>
+
+
+
+</section>
