@@ -4,33 +4,19 @@
     "sections":{
         "topmenu":{
             "type":"topmenu",
-            "blocks":{
-                "pickup":{
-                    "type":"pickuptext",
-                    "settings":{
-                        "text":"In-store pickup:"
-                    }
-                },
-                "announcement":{
-
-                },
-                "support":{
-
-                }
-            },
-            "block_order":[
-                "pickup","announcement","support"
-            ],
             "settings":{
-
+                
             }
         },
         "headermega":{
-            "type":"header"
+            "type":"header",
+            "settings":{
+
+            }
         }
     },
     "order": [
         "topmenu",
-        "header"
+        "headermega"
       ]
 }
