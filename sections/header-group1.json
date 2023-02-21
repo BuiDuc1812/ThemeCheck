@@ -14,14 +14,14 @@
         "link-support": "shopify:\/\/pages\/contact"
       }
     },
-    "headermega": {
-      "type": "headermega",
+    "header": {
+      "type": "header",
       "settings": {
       }
     }
   },
   "order": [
     "topmenu",
-    "headermega"
+    "header"
   ]
 }

@@ -1,13 +1,11 @@
 {{ 'mega_menu.css' | asset_url | stylesheet_tag }}
 <section class="topmenu">
-    <div class="width-page">
+    <div class="container">
+        <a class="announcement" href="{{ section.settings.link-announcement }}">{{ section.settings.text-announcement }}</a>
         <div class="pickup">
             {% render 'icon-house' %}
-            <p>{{ section.settings.text-pickup }}</p>
+            <p>{{ section.settings.text-pickup }} </p>
             <a href="{{ section.settings.pickup-link }}">{{ section.settings.pickup-button }}</a>
-        </div>
-        <div class="announcement">
-            <a href="{{ section.settings.link-announcement }}">{{ section.settings.text-announcement }}</a>
         </div>
         <div class="support">
             {% render 'icon-question' %}
@@ -24,7 +22,7 @@
             {
                 "type": "text",
                 "id":"text-pickup",
-                "default":"In-store pickup: ",
+                "default":"In-store pickup:",
                 "label": "Pickup text"
             },
             {
