@@ -1,0 +1,36 @@
+{
+    "name":"megamenu",
+    "type":"header",
+    "sections":{
+        "topmenu":{
+            "type":"topmenu",
+            "blocks":{
+                "pickup":{
+                    "type":"pickuptext",
+                    "settings":{
+                        "text":"In-store pickup:"
+                    }
+                },
+                "announcement":{
+
+                },
+                "support":{
+
+                }
+            },
+            "block_order":[
+                "pickup","announcement","support"
+            ],
+            "settings":{
+
+            }
+        },
+        "headermega":{
+            "type":"header"
+        }
+    },
+    "order": [
+        "topmenu",
+        "header"
+      ]
+}

@@ -11,39 +11,43 @@
   </div>
 </section>
 
-{% schema %}
-  {
-    "name": "megamenu",
-    "max_blocks": 3,
-    "class": "megamenu-section",
-    "blocks": [
-      {
-        "type": "announcement",
-        "name": "top",
-        "settings": [
-          {
-            "type": "text",
-            "id": "pickup-text",
-            "default": "In-store pickup",
-            "label": "In-store pickup"
-          }, {
-            "type": "text",
-            "id": "link-text",
-            "default": "Select store",
-            "label": "link text"
-          }, {
-            "type": "url",
-            "id": "link-url",
-            "label": "link url"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "category":"megamenu",
-        "name": "megamenu"
-      }
-    ]
-  }
-{% endschema %}
+  // {
+  //   "name": "megamenu",
+  //   "class": "megamenu-section",
+  //   "max_blocks": 2,
+  //   "blocks": [
+  //     {
+  //       "type": "topmenu",
+  //       "name": "topmenu",
+  //       "blocks": [
+  //         {
+  //           "type": "pickup",
+  //           "name": "pickup",
+  //           "settings": [
+  //             {
+  //               "type": "text",
+  //               "id": "pickuptext",
+  //               "default": "In-store pickup:",
+  //               "label": "pickuptext"
+  //             }, {
+  //               "type": "text",
+  //               "id": "link-text",
+  //               "default": "Select store",
+  //               "label": "link text"
+  //             }, {
+  //               "type": "url",
+  //               "id": "link-url",
+  //               "label": "link url"
+  //             }
+  //           ]
+  //         }
+  //       ]
+  //     }
+  //   ],
+  //   "presets": [
+  //     {
+  //       "category": "megamenu",
+  //       "name": "megamenu"
+  //     }
+  //   ]
+  // }
