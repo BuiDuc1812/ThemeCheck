@@ -1,13 +1,60 @@
+{{ 'mega_menu.css' | asset_url | stylesheet_tag }}
 <section class="topmenu">
     <div class="width-page">
         <div class="pickup">
-            <p>dfsdfsdfd</p>
+            {% render 'icon-house' %}
+            <p>{{ section.settings.text-pickup }}</p>
+            <a href="{{ section.settings.pickup-link }}">{{ section.settings.pickup-button }}</a>
         </div>
         <div class="announcement">
-            <p>sdfsdfsd</p>
+            <a href="{{ section.settings.link-announcement }}">{{ section.settings.text-announcement }}</a>
         </div>
         <div class="support">
-            sdfdsfsd
+            {% render 'icon-question' %}
+            <a href="{{ section.settings.link-support }}">{{ section.settings.text-support }}</a>
         </div>
     </div>
 </section>
+
+{% schema %}
+    {
+        "name":"topmenu",
+        "class":"topmenu",
+        "settings":[
+            {
+                "type": "text",
+                "id":"text-pickup",
+                "default":"In-store pickup: ",
+                "label": "text pickup"
+            },
+            {
+                "type": "text",
+                "id":"pickup-button",
+                "default":"Select store",
+                "label": "pickup button"
+            },{
+                "type": "url",
+                "id":"pickup-link",
+                "label": "pickup link"
+            },{
+                "type": "text",
+                "id":"text-announcement",
+                "default":"Buy 1 get 1 50% off almost everything!",
+                "label": "text announcement"
+            },{
+                "type": "url",
+                "id":"link-announcement",
+                "label": "link-announcement"
+            },{
+                "type": "text",
+                "id":"text-support",
+                "default":"Customer Support",
+                "label": "text-support"
+            },{
+                "type": "url",
+                "id":"link-support",
+                "label": "link-support"
+            }
+        ]
+    }
+{% endschema %}
