@@ -44,12 +44,24 @@
 .support{
   float: right;
 }
-
+.new-header{
+  display: flex;
+}
 @media screen and (max-width:768px) {
+  .container a,.container p{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width:990px) {
   .pickup,.support{
     display: none;
   }
-  .container a,.container p{
-    font-size: 12px;
+  .tat{
+    display: none !important;
+  }
+}
+@media screen and (min-width:990px) {
+  .show{
+    display: none !important;
   }
 }

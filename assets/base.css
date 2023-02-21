@@ -572,13 +572,6 @@ table:not([class]) th {
   padding: 1em;
   border: 0.1rem solid rgba(var(--color-foreground), 0.2);
 }
-
-@media screen and (max-width: 749px) {
-  .small-hide {
-    display: none !important;
-  }
-}
-
 @media screen and (min-width: 750px) and (max-width: 989px) {
   .medium-hide {
     display: none !important;
@@ -2258,7 +2251,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
   transition: top 0.15s ease-out;
 }
 
-.shopify-section-group-header-group {
+.shopify-section-group-header-group1 {
   z-index: 4;
 }
 
