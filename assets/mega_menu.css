@@ -5,7 +5,14 @@
     font-family: Galano;
     src: url(../font/galano.otf) format("opentype");
   }
-
+  @media screen and (max-width: 750px){
+    .announcement{
+      display: none;
+    }
+    .support{
+      display: none !important;
+    }
+  }
   .topmenu{
     width: 100%;
     height: 42px;
