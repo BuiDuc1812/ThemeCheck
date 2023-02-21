@@ -9,7 +9,7 @@
             }
         },
         "headermega":{
-            "type":"header",
+            "type":"headermega",
             "settings":{
 
             }
