@@ -14,24 +14,16 @@
     "header": {
       "type": "header",
       "blocks": {
-        "c2c1f260-5bb6-45d2-acc0-a3a66309e7d8": {
+        "bd826579-bc4d-4a4f-b41a-bc0d019466ab": {
           "type": "navigation",
           "settings": {
-            "text-navigation": "Homeadadsad",
-            "link-nav-test": "main-menu"
-          }
-        },
-        "04ffcb81-d79f-4a43-9814-0e125f7c5d0f": {
-          "type": "navigation",
-          "settings": {
-            "text-navigation": "Home",
+            "text-navigation": "Homeasdad",
             "link-nav-test": "main-menu"
           }
         }
       },
       "block_order": [
-        "c2c1f260-5bb6-45d2-acc0-a3a66309e7d8",
-        "04ffcb81-d79f-4a43-9814-0e125f7c5d0f"
+        "bd826579-bc4d-4a4f-b41a-bc0d019466ab"
       ],
       "settings": {
         "color_scheme": "background-1",
