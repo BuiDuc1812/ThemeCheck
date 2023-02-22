@@ -485,11 +485,10 @@
               <li>
                 {%- if link.links != blank -%}
                   <header-menu>
-                    <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
-                      <summary class="header__menu-item list-menu__item link focus-inset">
+                    <div id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
+                      <div class="header__menu-item list-menu__item link focus-inset">
                         <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
-                        {% render 'icon-caret' %}
-                      </summary>
+                      </div>
                       <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content gradient motion-reduce global-settings-popup" tabindex="-1">
                         <ul class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
                           {%- for childlink in link.links -%}
@@ -510,9 +509,12 @@
                               {%- endif -%}
                             </li>
                           {%- endfor -%}
+                          <li>
+                            <img class="sale-off" src="https://cdn.shopify.com/s/files/1/0690/5538/1801/files/Frame_69_8c5dfbbc-f0d8-4be2-a6ba-ef7be4b0883f.png?v=1672305771" alt="">
+                          </li>
                         </ul>
                       </div>
-                    </details>
+                    </div>
                   </header-menu>
                 {%- else -%}
                   <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
