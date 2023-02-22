@@ -13,6 +13,18 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "bd826579-bc4d-4a4f-b41a-bc0d019466ab": {
+          "type": "navigation",
+          "settings": {
+            "text-navigation": "Homeasdad",
+            "link-nav-test": "main-menu"
+          }
+        }
+      },
+      "block_order": [
+        "bd826579-bc4d-4a4f-b41a-bc0d019466ab"
+      ],
       "settings": {
         "color_scheme": "background-1",
         "logo_position": "middle-left",
