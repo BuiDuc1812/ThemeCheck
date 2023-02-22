@@ -2,11 +2,6 @@
 <section class="topmenu">
     <div class="container">
         <a class="announcement" href="{{ section.settings.link-announcement }}">{{ section.settings.text-announcement }}</a>
-        <div class="pickup">
-            {% render 'icon-house' %}
-            <p>{{ section.settings.text-pickup }} </p>
-            <a href="{{ section.settings.pickup-link }}">{{ section.settings.pickup-button }}</a>
-        </div>
         <div class="support">
             {% render 'icon-question' %}
             <a href="{{ section.settings.link-support }}">{{ section.settings.text-support }}</a>

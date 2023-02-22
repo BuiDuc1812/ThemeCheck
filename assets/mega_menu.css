@@ -39,6 +39,7 @@
 .support,.pickup{
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
 }
 .pickup{
@@ -56,7 +57,7 @@
   }
 }
 @media screen and (max-width:990px) {
-  .pickup,.support{
+  .support{
     display: none;
   }
   .tat{

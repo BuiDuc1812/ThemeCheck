@@ -3028,3 +3028,19 @@ details-disclosure > details {
   background-color: #ccc !important;
   color: black !important;
 }
+
+
+/* megamenu */
+@media screen and (max-width:768px){
+  .header{
+    padding: 0 20px ;
+  }
+}
+.pickup a, .pickup p{
+  font-size: 16px;
+  color: white;
+}
+#menu-drawer{
+  display: flex;
+  flex-direction: column;
+}

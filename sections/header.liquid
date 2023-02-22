@@ -85,14 +85,12 @@
 
 {%- style -%}
   .header {
-    /* padding-top: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px; */
     height:72px;
     line-height:72px;
   }
 
   .section-header {
-    position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
+    position: sticky;
     margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
   }
 
@@ -101,13 +99,7 @@
       margin-bottom: {{ section.settings.margin_bottom }}px;
     }
   }
-/* 
-  @media screen and (min-width: 990px) {
-    .header {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  } */
+
 {%- endstyle -%}
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
@@ -146,6 +138,11 @@
             </span>
           </summary>
           <div id="menu-drawer" class="gradient menu-drawer motion-reduce" tabindex="-1">
+              <div class="pickup" style="height:46px;background-color:var(--color-navy)">
+                {% render 'icon-house' %}
+                <p>{{ section.settings.text-pickup }} asdasfdfasfas </p>
+                <a href="{{ section.settings.pickup-link }}">asdasfsdgfdg{{ section.settings.pickup-button }}</a>
+            </div>
             <div class="menu-drawer__inner-container">
               <div class="menu-drawer__navigation-container">
                 <nav class="menu-drawer__navigation">
