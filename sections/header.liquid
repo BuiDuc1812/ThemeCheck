@@ -520,6 +520,7 @@
                   <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                     <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
                   </a>
+
                 {%- endif -%}
               </li>
             {%- endfor -%}
@@ -1020,6 +1021,27 @@
       "label": "t:sections.all.padding.padding_bottom",
       "default": 20
     }
+  ],
+  "blocks": [
+    {
+      "type":"navigation",
+      "name":"navigation",
+      "settings":[
+        {
+          "type": "text",
+          "id":"text-navigation",
+          "default": "Home",
+          "label": "text"
+        },
+        {
+          "type":"link_list",
+          "id":"link-nav-test",
+          "default": "main-menu",
+          "label": "link navigation"
+        }
+      ]
+    }
   ]
+
 }
 {% endschema %}
