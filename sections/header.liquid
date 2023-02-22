@@ -520,6 +520,15 @@
                   <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                     <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
                   </a>
+                  {% for block in section.blocks %}
+                    {% case block.type %}
+                      {% when 'navigation' %}
+                      <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                      <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ block.settings.title | escape }}</span>
+                    </a> 
+                        
+                    {% endcase %}
+                  {% endfor %}
 
                 {%- endif -%}
               </li>
