@@ -517,18 +517,16 @@
                     </div>
                   </header-menu>
                 {%- else -%}
-                  {% comment %} <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                  <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                     <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
-                  </a> {% endcomment %}
+                  </a>
                   {% for block in section.blocks %}
-                    <script>
-                          console.log({{ block | json }})
-                        </script>
                     {% case block.type %}
                       {% when 'navigation' %}
                       <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                       <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ block.settings.title | escape }}</span>
                     </a> 
+                        
                     {% endcase %}
                   {% endfor %}
 
