@@ -131,9 +131,9 @@
       {% case block.type %}
         {% when 'navigation' %}
           <div style="width:40px; height:40px;background-color:white">
-        <a href="{{ link.url }}">
-        <span>{{ block.settings.title | escape }}</span>
-      </a> 
+            <a href="{{ link.url }}">
+            <span>{{ block.settings.title | escape }}</span>
+            </a> 
           </div>
       {% endcase %}
     {% endfor %}
