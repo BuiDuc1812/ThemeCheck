@@ -27,7 +27,6 @@
 
 .mega-menu__list {
   display: grid;
-  gap: 2.4rem 4rem;
   grid-template-columns: repeat(6, minmax(0, 1fr));
   list-style: none;
   max-width: 1440px;
@@ -68,11 +67,7 @@
   padding-right: 2.4rem;
 }
 
-.mega-menu__link:hover,
-.mega-menu__link--active {
-  color: rgb(var(--color-foreground));
-  text-decoration: underline;
-}
+
 
 .mega-menu__link--active:hover {
   text-decoration-thickness: 0.2rem;
