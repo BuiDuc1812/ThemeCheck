@@ -5,9 +5,6 @@
     "topmenu": {
       "type": "topmenu",
       "settings": {
-        "text-pickup": "In-store pickup:",
-        "pickup-button": "Select store",
-        "pickup-link": "",
         "text-announcement": "Buy 1 get 1 50% off almost everything!",
         "link-announcement": "shopify:\/\/collections\/all",
         "text-support": "Customer Support",
@@ -17,6 +14,16 @@
     "header": {
       "type": "header",
       "settings": {
+        "color_scheme": "background-1",
+        "logo_position": "middle-left",
+        "menu": "main-menu",
+        "menu_type_desktop": "mega",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     }
   },
