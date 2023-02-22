@@ -2449,7 +2449,7 @@ span{
 
 .header__icon--menu[aria-expanded="true"]::before {
   content: "";
-  top: 100%;
+  top: -42px;
   left: 0;
   height: calc(var(--viewport-height, 100vh) - (var(--header-bottom-position, 100%)));
   width: 100%;
@@ -3043,4 +3043,6 @@ details-disclosure > details {
 #menu-drawer{
   display: flex;
   flex-direction: column;
+  position: absolute;
+  top: -42px;
 }
