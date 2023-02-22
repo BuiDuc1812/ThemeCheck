@@ -20,10 +20,18 @@
             "text-navigation": "Homeasdad",
             "link-nav-test": "main-menu"
           }
+        },
+        "f19dfe43-05f8-4925-874b-707caf0c941f": {
+          "type": "navigation",
+          "settings": {
+            "text-navigation": "asdada",
+            "link-nav-test": "main-menu"
+          }
         }
       },
       "block_order": [
-        "bd826579-bc4d-4a4f-b41a-bc0d019466ab"
+        "bd826579-bc4d-4a4f-b41a-bc0d019466ab",
+        "f19dfe43-05f8-4925-874b-707caf0c941f"
       ],
       "settings": {
         "color_scheme": "background-1",
