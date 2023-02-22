@@ -30,6 +30,10 @@
   gap: 2.4rem 4rem;
   grid-template-columns: repeat(6, minmax(0, 1fr));
   list-style: none;
+  max-width: 1440px;
+  padding: 0 80px;
+  height: 366px;
+  text-align: start;
 }
 
 .mega-menu__link {
@@ -80,4 +84,9 @@
 
 .mega-menu__list--condensed .mega-menu__link {
   font-weight: normal;
+}
+
+.sale-off{
+  width: 224px;
+  height: 278px;
 }
