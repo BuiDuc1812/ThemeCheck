@@ -168,8 +168,6 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer__menu-item > .icon-arrow {
   position: absolute;
   left: 7.5rem;
-  /* top: 50%;
-  transform: translateY(-50%); */
 }
 
 .js .menu-drawer__submenu {
