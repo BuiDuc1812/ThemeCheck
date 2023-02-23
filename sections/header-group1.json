@@ -53,6 +53,22 @@
             "link-nav-test": "shop-all",
             "color-fill": ""
           }
+        },
+        "1b46a341-ef89-4a8a-b51d-4b3d2e49ab3b": {
+          "type": "navigation",
+          "settings": {
+            "text-navigation": "Sale",
+            "link-nav-test": "",
+            "color-fill": ""
+          }
+        },
+        "2675c809-dbc8-4909-8aa2-be0aa939fdda": {
+          "type": "navigation",
+          "settings": {
+            "text-navigation": "Discover",
+            "link-nav-test": "",
+            "color-fill": ""
+          }
         }
       },
       "block_order": [
@@ -60,7 +76,9 @@
         "af8bcc0f-3ec2-4036-a4ad-c5f90ccfb125",
         "92dc4dde-e862-47fc-869d-7c9ed4716a06",
         "4cf94ef8-c1d9-46a4-8064-b29a23e08ac5",
-        "8f3c42f8-9b97-4169-9727-23e392ac14f9"
+        "8f3c42f8-9b97-4169-9727-23e392ac14f9",
+        "1b46a341-ef89-4a8a-b51d-4b3d2e49ab3b",
+        "2675c809-dbc8-4909-8aa2-be0aa939fdda"
       ],
       "settings": {
         "color_scheme": "background-1",
