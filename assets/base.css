@@ -3060,3 +3060,12 @@ details-disclosure > details {
 .list-menu>li:hover .mega-menu__content{
   display: block;
 }
+.menu-drawer__menu-item{
+  position: relative;
+}
+.child{
+  position: absolute;
+  height: 100%;
+  width: 72px;
+  right: 0;
+}

@@ -205,12 +205,10 @@
                             </div>
                           </details>
                           {%- else -%}
-                          <li>
-                            <a style="background-color: {{ block.settings.color-fill }};" href=" block.settings.link-nav-test  }}" class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"{% if link.current %} aria-current="page"{% endif %}>
-                            {{ block.settings.text-navigation | escape }}
-                            </a>
-                            <img height="72px" width="72px" src="" alt="">
-                          </li>
+                              <a style="background-color: {{ block.settings.color-fill }};" href=" block.settings.link-nav-test  }}" class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"{% if link.current %} aria-current="page"{% endif %}>
+                              {{ block.settings.text-navigation | escape }}
+                              <img class="child" src="{{ block.settings.img-choose }}" alt="">
+                              </a> 
                           {% endif %}
                       {% endcase %}
                     {% endfor %}
@@ -1064,6 +1062,11 @@
           "id":"link-img",
           "default": "add link img",
           "label": "Link img"
+        },
+        {
+          "type": "img_picker",
+          "id":"img-choose",
+          "label": "Choose"
         }
       ]
     }
