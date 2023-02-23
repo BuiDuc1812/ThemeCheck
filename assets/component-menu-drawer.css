@@ -255,24 +255,3 @@ details[open].menu-opening > .menu-drawer__submenu {
   display: flex;
   justify-content: space-between;
 }
-#menu-drawer .list-menu li:first-child{
-  background-color: #7197C3;
-}
-#menu-drawer .list-menu li:nth-child(2){
-  background-color: #E7C5CC;
-}
-#menu-drawer .list-menu li:nth-child(3){
-  background: linear-gradient(90deg, #9DCBED 0%, #C6E0F2 66.25%);
-}
-#menu-drawer .list-menu li:nth-child(4){
- background: #DB806B;
-}
-#menu-drawer .list-menu li:nth-child(5){
-  background: #AFA2DA;
- }
- #menu-drawer .list-menu li:nth-child(6){
-  background: #EC273C;
- }
- #menu-drawer .list-menu li:nth-child(7){
-  background: #EFD1A0;
- }
