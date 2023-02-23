@@ -3072,6 +3072,7 @@ details-disclosure > details {
   opacity: 1;
 }
 .menu-drawer__menu-item{
+  margin-bottom: 16px;
   position: relative;
 }
 .child{
