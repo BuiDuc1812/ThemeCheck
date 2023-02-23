@@ -485,6 +485,9 @@
               {% for block in section.blocks %}
                 {% case block.type %}
                   {% when 'navigation' %}
+                  <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                  <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ section.blocks.text-navigation | escape }}</span>
+                  </a>
                     {%- for link in section.blocks.settings.link-nav-test.links -%}
                       <li>
                         {%- if link.links != blank -%}
@@ -521,13 +524,10 @@
                             </div>
                           </header-menu>
                         {%- else -%}
-                          <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
-                            <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
-                          </a>
+  
                         {%- endif -%}
                       </li>
                     {%- endfor -%}
-                </a>
                 {% endcase %}
               {% endfor %}
             </li>
