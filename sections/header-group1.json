@@ -19,7 +19,7 @@
           "settings": {
             "text-navigation": "Shop All",
             "link-nav-test": "shop-all",
-            "color-fill": "",
+            "color-fill": "#7197c3",
             "link-img": "add link img"
           }
         },
@@ -28,7 +28,7 @@
           "settings": {
             "text-navigation": "Girls",
             "link-nav-test": "main-menu",
-            "color-fill": "",
+            "color-fill": "#e7c5cc",
             "link-img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0721\/9979\/9103\/files\/Frame_69.png?v=1677123594"
           }
         },
@@ -37,7 +37,7 @@
           "settings": {
             "text-navigation": "Boys",
             "link-nav-test": "",
-            "color-fill": "",
+            "color-fill": "#c6e0f2",
             "link-img": "add link img"
           }
         },
@@ -46,7 +46,7 @@
           "settings": {
             "text-navigation": "School",
             "link-nav-test": "shop-all",
-            "color-fill": "",
+            "color-fill": "#db806b",
             "link-img": "add link img"
           }
         },
@@ -55,7 +55,7 @@
           "settings": {
             "text-navigation": "Brands",
             "link-nav-test": "shop-all",
-            "color-fill": "",
+            "color-fill": "#afa2da",
             "link-img": "add link img"
           }
         },
@@ -64,7 +64,7 @@
           "settings": {
             "text-navigation": "Sale",
             "link-nav-test": "",
-            "color-fill": "",
+            "color-fill": "#ec273c",
             "link-img": "add link img"
           }
         },
@@ -73,7 +73,7 @@
           "settings": {
             "text-navigation": "Discover",
             "link-nav-test": "",
-            "color-fill": "",
+            "color-fill": "#efd1a0",
             "link-img": "add link img"
           }
         }
