@@ -513,7 +513,7 @@
                                     </li>
                                   {%- endfor -%}
                                   <li>
-                                    <img class="sale-off" src="{{ block.settings.image-navigation }}" alt="">
+                                    <img class="sale-off" src="{{ block.settings.image-sale }}" alt="">
                                   </li>
                                 </ul>
                               </div>
@@ -943,6 +943,11 @@
       ],
       "default": "on-scroll-up",
       "label": "t:sections.header.settings.sticky_header_type.label"
+    },
+    {
+          "type": "image_picker",
+          "id": "image-sale",
+          "label": "Image"
     },
     {
       "type": "checkbox",
