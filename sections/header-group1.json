@@ -25,7 +25,7 @@
         "af8bcc0f-3ec2-4036-a4ad-c5f90ccfb125": {
           "type": "navigation",
           "settings": {
-            "text-navigation": "Home",
+            "text-navigation": "Girls",
             "link-nav-test": "main-menu",
             "color-fill": ""
           }
@@ -33,7 +33,7 @@
         "92dc4dde-e862-47fc-869d-7c9ed4716a06": {
           "type": "navigation",
           "settings": {
-            "text-navigation": "Home",
+            "text-navigation": "Boy",
             "link-nav-test": "main-menu",
             "color-fill": ""
           }
