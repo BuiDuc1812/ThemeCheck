@@ -20,8 +20,8 @@
             "text-navigation": "Shop All",
             "link-nav-test": "shop-all",
             "color-fill": "#7197c3",
-            "link-img": "add link img",
-            "img-choose": "shopify:\/\/shop_images\/f3815c86889deba19e5df1db73f5f625.webp"
+            "link-img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0721\/9979\/9103\/files\/f3815c86889deba19e5df1db73f5f625.webp?v=1677138096",
+            "link-img-nav": "https:\/\/cdn.shopify.com\/s\/files\/1\/0721\/9979\/9103\/files\/f3815c86889deba19e5df1db73f5f625.webp?v=1677138096"
           }
         },
         "af8bcc0f-3ec2-4036-a4ad-c5f90ccfb125": {
@@ -30,7 +30,8 @@
             "text-navigation": "Girls",
             "link-nav-test": "main-menu",
             "color-fill": "#e7c5cc",
-            "link-img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0721\/9979\/9103\/files\/Frame_69.png?v=1677123594"
+            "link-img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0721\/9979\/9103\/files\/Frame_69.png?v=1677123594",
+            "link-img-nav": "add link img"
           }
         },
         "92dc4dde-e862-47fc-869d-7c9ed4716a06": {
@@ -39,7 +40,8 @@
             "text-navigation": "Boys",
             "link-nav-test": "",
             "color-fill": "#c6e0f2",
-            "link-img": "add link img"
+            "link-img": "add link img",
+            "link-img-nav": "add link img"
           }
         },
         "4cf94ef8-c1d9-46a4-8064-b29a23e08ac5": {
@@ -48,7 +50,8 @@
             "text-navigation": "School",
             "link-nav-test": "shop-all",
             "color-fill": "#db806b",
-            "link-img": "add link img"
+            "link-img": "add link img",
+            "link-img-nav": "add link img"
           }
         },
         "8f3c42f8-9b97-4169-9727-23e392ac14f9": {
@@ -57,7 +60,8 @@
             "text-navigation": "Brands",
             "link-nav-test": "shop-all",
             "color-fill": "#afa2da",
-            "link-img": "add link img"
+            "link-img": "add link img",
+            "link-img-nav": "add link img"
           }
         },
         "1b46a341-ef89-4a8a-b51d-4b3d2e49ab3b": {
@@ -66,7 +70,8 @@
             "text-navigation": "Sale",
             "link-nav-test": "",
             "color-fill": "#ec273c",
-            "link-img": "add link img"
+            "link-img": "add link img",
+            "link-img-nav": "add link img"
           }
         },
         "2675c809-dbc8-4909-8aa2-be0aa939fdda": {
@@ -75,7 +80,8 @@
             "text-navigation": "Discover",
             "link-nav-test": "",
             "color-fill": "#efd1a0",
-            "link-img": "add link img"
+            "link-img": "add link img",
+            "link-img-nav": "add link img"
           }
         }
       },
