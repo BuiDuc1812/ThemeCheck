@@ -13,6 +13,19 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "0e43c862-98f9-4d47-be3c-fecbeec06c26": {
+          "type": "navigation",
+          "settings": {
+            "text-navigation": "Home",
+            "link-nav-test": "main-menu",
+            "color-fill": ""
+          }
+        }
+      },
+      "block_order": [
+        "0e43c862-98f9-4d47-be3c-fecbeec06c26"
+      ],
       "settings": {
         "color_scheme": "background-1",
         "logo_position": "middle-left",
