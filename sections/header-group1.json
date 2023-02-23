@@ -19,7 +19,8 @@
           "settings": {
             "text-navigation": "Shop All",
             "link-nav-test": "shop-all",
-            "color-fill": ""
+            "color-fill": "",
+            "image-navigation": "shopify:\/\/shop_images\/Frame_69.png"
           }
         },
         "af8bcc0f-3ec2-4036-a4ad-c5f90ccfb125": {
