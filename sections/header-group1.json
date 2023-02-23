@@ -20,8 +20,7 @@
             "text-navigation": "Shop All",
             "link-nav-test": "shop-all",
             "color-fill": "",
-            "navigation-img": "shopify:\/\/shop_images\/Frame_69.png",
-            "text-test": "Home"
+            "link-img": "add link img"
           }
         },
         "af8bcc0f-3ec2-4036-a4ad-c5f90ccfb125": {
@@ -30,8 +29,7 @@
             "text-navigation": "Girls",
             "link-nav-test": "main-menu",
             "color-fill": "",
-            "navigation-img": "shopify:\/\/shop_images\/Frame_69.png",
-            "text-test": "Home"
+            "link-img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0721\/9979\/9103\/files\/Frame_69.png?v=1677123594"
           }
         },
         "92dc4dde-e862-47fc-869d-7c9ed4716a06": {
@@ -40,7 +38,7 @@
             "text-navigation": "Boys",
             "link-nav-test": "",
             "color-fill": "",
-            "text-test": "Home"
+            "link-img": "add link img"
           }
         },
         "4cf94ef8-c1d9-46a4-8064-b29a23e08ac5": {
@@ -49,7 +47,7 @@
             "text-navigation": "School",
             "link-nav-test": "shop-all",
             "color-fill": "",
-            "text-test": "Home"
+            "link-img": "add link img"
           }
         },
         "8f3c42f8-9b97-4169-9727-23e392ac14f9": {
@@ -58,7 +56,7 @@
             "text-navigation": "Brands",
             "link-nav-test": "shop-all",
             "color-fill": "",
-            "text-test": "Home"
+            "link-img": "add link img"
           }
         },
         "1b46a341-ef89-4a8a-b51d-4b3d2e49ab3b": {
@@ -67,7 +65,7 @@
             "text-navigation": "Sale",
             "link-nav-test": "",
             "color-fill": "",
-            "text-test": "Home"
+            "link-img": "add link img"
           }
         },
         "2675c809-dbc8-4909-8aa2-be0aa939fdda": {
@@ -76,7 +74,7 @@
             "text-navigation": "Discover",
             "link-nav-test": "",
             "color-fill": "",
-            "text-test": "Home"
+            "link-img": "add link img"
           }
         }
       },
