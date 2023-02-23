@@ -481,9 +481,17 @@
       {%- else -%}
         <nav class="header__inline-menu">
           <ul class="list-menu list-menu--inline" role="list">
-            {%- for link in section.settings.menu.links -%}
+          
               <li>
-                {%- if link.links != blank -%}
+                {% for block in section.blocks %}
+                  {% case block.type %}
+                    {% when 'navigation' %}
+                    <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                    <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ block.settings.text-navigation }}</span>
+                  </a>
+                  {% endcase %}
+                {% endfor %}
+                {% comment %} {%- if link.links != blank -%}
                   <header-menu>
                     <div id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
                       <div class="header__menu-item list-menu__item link focus-inset">
@@ -520,17 +528,9 @@
                   <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                     <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
                   </a>
-                  {% for block in section.blocks %}
-                    {% case block.type %}
-                      {% when 'navigation' %}
-                      <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
-                      <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ block.settings.text-navigation }}</span>
-                    </a>
-                    {% endcase %}
-                  {% endfor %}
-                {%- endif -%}
+                {%- endif -%} {% endcomment %}
               </li>
-            {%- endfor -%}
+            {% comment %} {%- endfor -%} {% endcomment %}
           </ul>
         </nav>
       {%- endif -%}
