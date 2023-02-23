@@ -2649,10 +2649,21 @@ details[open] > .header__submenu {
   .header--top-center .header__inline-menu > .list-menu--inline {
     justify-content: center;
   }
-  .list-menu--inline >li {
+ .hove {
     text-decoration: none;
     margin: 0 19px;
+    padding: 25px 0;
+    transition: all 0.3s ease;
   }
+  .hove::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+  }
+
   .header--middle-left .header__inline-menu {
     margin-left: 0;
     text-align: center;
@@ -3056,10 +3067,14 @@ details-disclosure > details {
   left: 0;
 } */
 .mega-menu__content{
-  display: none;
+  opacity: 0;
+  height: 0;
+  transition: all 0.2s ease;
+  /* display: none; */
 }
 .list-menu>li:hover .mega-menu__content{
-  display: block;
+  height: 366px;
+  opacity: 1;
 }
 .menu-drawer__menu-item{
   position: relative;
