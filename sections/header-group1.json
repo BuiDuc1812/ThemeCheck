@@ -45,13 +45,22 @@
             "link-nav-test": "main-menu",
             "color-fill": ""
           }
+        },
+        "8f3c42f8-9b97-4169-9727-23e392ac14f9": {
+          "type": "navigation",
+          "settings": {
+            "text-navigation": "Homeêr",
+            "link-nav-test": "shop-all",
+            "color-fill": ""
+          }
         }
       },
       "block_order": [
         "0e43c862-98f9-4d47-be3c-fecbeec06c26",
         "af8bcc0f-3ec2-4036-a4ad-c5f90ccfb125",
         "92dc4dde-e862-47fc-869d-7c9ed4716a06",
-        "4cf94ef8-c1d9-46a4-8064-b29a23e08ac5"
+        "4cf94ef8-c1d9-46a4-8064-b29a23e08ac5",
+        "8f3c42f8-9b97-4169-9727-23e392ac14f9"
       ],
       "settings": {
         "color_scheme": "background-1",
