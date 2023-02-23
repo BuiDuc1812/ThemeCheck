@@ -485,7 +485,8 @@
                 {% case block.type %}
                   {% when 'navigation' %} 
                       <li>
-                        {%- if block.settings.link-nav-test.links != blank -%}
+                        {% assign link =  block.settings.link-nav-test %}
+                        {%- if link.links != blank -%}
                           <header-menu>
                             <div id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
                               <div class="header__menu-item list-menu__item link focus-inset">
