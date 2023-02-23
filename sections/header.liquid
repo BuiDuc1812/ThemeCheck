@@ -487,7 +487,7 @@
                     {% assign set = section.blocks.settings %}
                     {% assign navigation = section.blocks.settings.link-nav-test.links %}
                       <li>
-                        <a href="">{{ set.text-navigation | escape }}</a>
+                        <a style="background-color:black; height:24px; width:24px" href="">{{ set.text-navigation | escape }}</a>
                         {% comment %} {%- if navigation.links != blank -%}
                           <header-menu>
                             <div id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
