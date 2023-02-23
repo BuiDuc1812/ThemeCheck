@@ -486,10 +486,6 @@
                   {% when 'navigation' %} 
                       <li>
                         {% assign link =  block.settings.link-nav-test %}
-                        <script>
-                         
-                          console.log({{ block.settings | json }})
-                        </script>
                         {%- if link.links != blank -%}
                           <header-menu>
                             <div id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
@@ -517,7 +513,7 @@
                                     </li>
                                   {%- endfor -%}
                                   <li>
-                                      <img class="sale-off" src="{{ block.settings.image-navigation | img_url: 'medium' }}" alt="">
+                                      <img class="sale-off" src="{{ block.settings.link-img }}" alt="">
                                   </li> 
                                 </ul>
                               </div>
@@ -1057,15 +1053,10 @@
           "label":"Color fill"
         },
         {
-          "type": "image_picker",
-          "id": "navigation-img",
-          "label": "Image"
-        },
-        {
           "type": "text",
-          "id":"text-test",
-          "default": "Home",
-          "label": "Title test"
+          "id":"link-img",
+          "default": "",
+          "label": "Link img"
         }
       ]
     }
