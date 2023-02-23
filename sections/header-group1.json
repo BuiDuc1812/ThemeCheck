@@ -86,6 +86,7 @@
         "menu": "main-menu",
         "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
+        "image-sale": "shopify:\/\/shop_images\/Frame_69.png",
         "show_line_separator": true,
         "mobile_logo_position": "center",
         "text-pickup": "In-store pickup:",
