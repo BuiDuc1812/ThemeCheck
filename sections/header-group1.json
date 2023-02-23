@@ -19,7 +19,7 @@
           "settings": {
             "text-navigation": "Shop All",
             "link-nav-test": "shop-all",
-            "color-fill": "",
+            "color-fill": "#7197c3",
             "link-img": "add link img"
           }
         },
