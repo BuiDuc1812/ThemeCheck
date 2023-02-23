@@ -521,7 +521,7 @@
                             </div>
                           </header-menu>
                         {%- else -%}
-                          <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                          <a href="{{ set.nav-url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                             <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ set.text-navigation | escape }}</span>
                           </a>
                         {%- endif -%}
@@ -976,6 +976,11 @@
       "id":"text-pickup",
       "default":"In-store pickup:",
       "label": "Pickup text"
+    },
+    {
+      "type":"url",
+      "id": "nav-url",
+      "label": "Url"
     },
     {
       "type": "text",
