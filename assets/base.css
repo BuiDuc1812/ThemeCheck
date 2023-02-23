@@ -2649,7 +2649,10 @@ details[open] > .header__submenu {
   .header--top-center .header__inline-menu > .list-menu--inline {
     justify-content: center;
   }
-
+  .list-menu--inline >li {
+    text-decoration: none;
+    margin: 0 19px;
+  }
   .header--middle-left .header__inline-menu {
     margin-left: 0;
     text-align: center;
@@ -2661,8 +2664,6 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item {
-  /* padding:0 1.2rem; */
-  margin: 0 19px;
   text-decoration: none;
   color: rgba(var(--color-foreground), 0.75);
 }
