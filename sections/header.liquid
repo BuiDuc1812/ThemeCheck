@@ -433,7 +433,7 @@
                                       {%- if childlink.links != blank -%}
                                         <ul class="list-unstyled" role="list">
                                           {%- for grandchildlink in childlink.links -%}    
-                                          <li {% if forloop.length > 8 %} style="background-color:black" {% endif %}>
+                                          <li class="{% if forloop.length > 8 %}layout{% endif %}" >
                                               <a href="{{ grandchildlink.url }}" class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
                                                 {{ grandchildlink.title | escape }}
                                               </a>
