@@ -484,10 +484,7 @@
               {% for block in section.blocks %}
                 {% case block.type %}
                   {% when 'navigation' %} 
-                    {% assign set = section.blocks.settings %}
-                    {% assign navigation = section.blocks.settings.link-nav-test.links %}
                       <li>
-                        <a style="background-color:black; height:24px; width:24px" href="">{{ section.blocks.settings.text-navigation | escape }}</a>
                         {%- if navigation.links != blank -%}
                           <header-menu>
                             <div id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
@@ -523,7 +520,7 @@
                           </header-menu>
                         {%- else -%}
                           <a href="{{ set.nav-url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
-                            <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ set.text-navigation | escape }}</span>
+                            <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ block.settings.text-navigation | escape }}</span>
                           </a>
                         {%- endif -%}
                       </li>
@@ -1063,11 +1060,3 @@
 
 }
 {% endschema %}
-{% for block in section.blocks %}
-  {% case block.type %}
-    {% when 'navigation' %}
-      <script>
-        console.log({{ block.text-navigation | json }})
-      </script>
-  {% endcase %}
-{% endfor %}
