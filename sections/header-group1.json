@@ -13,6 +13,19 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "22233b5b-f533-4a86-85bd-74ebd7f4ad08": {
+          "type": "navigation",
+          "settings": {
+            "text-navigation": "Homea",
+            "link-nav-test": "main-menu",
+            "color-fill": ""
+          }
+        }
+      },
+      "block_order": [
+        "22233b5b-f533-4a86-85bd-74ebd7f4ad08"
+      ],
       "settings": {
         "color_scheme": "background-1",
         "logo_position": "middle-left",
