@@ -46,7 +46,7 @@
           "settings": {
             "text-navigation": "School",
             "link-nav-test": "shop-all",
-            "color-fill": "",
+            "color-fill": "#db806b",
             "link-img": "add link img"
           }
         },
@@ -55,7 +55,7 @@
           "settings": {
             "text-navigation": "Brands",
             "link-nav-test": "shop-all",
-            "color-fill": "",
+            "color-fill": "#afa2da",
             "link-img": "add link img"
           }
         },
@@ -64,7 +64,7 @@
           "settings": {
             "text-navigation": "Sale",
             "link-nav-test": "",
-            "color-fill": "",
+            "color-fill": "#ec273c",
             "link-img": "add link img"
           }
         },
@@ -73,7 +73,7 @@
           "settings": {
             "text-navigation": "Discover",
             "link-nav-test": "",
-            "color-fill": "",
+            "color-fill": "#efd1a0",
             "link-img": "add link img"
           }
         }
