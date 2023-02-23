@@ -485,7 +485,13 @@
                 {% case block.type %}
                   {% when 'navigation' %} 
                     {% assign set = section.blocks.settings %}
+                    <script>
+                      console.log( {{ set | json }})
+                    </script>
                     {% assign navigation = section.blocks.settings.link-nav-test.links %}
+                    <script>
+                      console.log( {{ section.blocks.settings.text-navigation | json }})
+                    </script>
                       <li>
                         <a style="background-color:black; height:24px; width:24px" href="">{{ section.blocks.settings.text-navigation | escape }}</a>
                         {% comment %} {%- if navigation.links != blank -%}
