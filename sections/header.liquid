@@ -485,11 +485,11 @@
                 {% case block.type %}
                   {% when 'navigation' %} 
                       <li>
-                        {%- if navigation.links != blank -%}
+                        {%- if block.settings.link-nav-test.links != blank -%}
                           <header-menu>
                             <div id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
                               <div class="header__menu-item list-menu__item link focus-inset">
-                                <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ navigation.text-navigation | escape }}</span>
+                                <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ block.settings.text-navigation | escape }}</span>
                               </div>
                               <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content gradient motion-reduce global-settings-popup" tabindex="-1">
                                 <ul class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
@@ -519,7 +519,7 @@
                             </div>
                           </header-menu>
                         {%- else -%}
-                          <a href="{{ set.nav-url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                          <a href="{{ block.settings.link-nav-test }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                             <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ block.settings.text-navigation | escape }}</span>
                           </a>
                         {%- endif -%}
