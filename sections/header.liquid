@@ -1066,3 +1066,11 @@
 
 }
 {% endschema %}
+{% for block in section.blocks %}
+  {% case block.type %}
+    {% when 'navigation' %}
+      <script>
+        console.log({{ block.text-navigation | json }})
+      </script>
+  {% endcase %}
+{% endfor %}
