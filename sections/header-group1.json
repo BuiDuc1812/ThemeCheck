@@ -13,6 +13,19 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "c31f3fe3-4757-43e4-a0d2-02abc8aee74a": {
+          "type": "navigation",
+          "settings": {
+            "text-navigation": "Home",
+            "link-nav-test": "main-menu",
+            "color-fill": ""
+          }
+        }
+      },
+      "block_order": [
+        "c31f3fe3-4757-43e4-a0d2-02abc8aee74a"
+      ],
       "settings": {
         "color_scheme": "background-1",
         "logo_position": "middle-left",
@@ -22,6 +35,7 @@
         "show_line_separator": true,
         "mobile_logo_position": "center",
         "text-pickup": "In-store pickup:",
+        "nav-url": "",
         "pickup-button": "Select store",
         "pickup-link": "",
         "margin_bottom": 0,
