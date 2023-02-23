@@ -481,16 +481,13 @@
       {%- else -%}
         <nav class="header__inline-menu">
           <ul class="list-menu list-menu--inline" role="list">
-            <li>
               {% for block in section.blocks %}
                 {% case block.type %}
-                  {% when 'navigation' %}
-                  <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
-                  <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ section.blocks.text-navigation | escape }}</span>
-                  </a>
-                    {%- for link in section.blocks.settings.link-nav-test.links -%}
+                  {% when 'navigation' %} 
+                    {% assign set = section.blocks.settings %}
+                    {% assign navigation = section.blocks.settings.link-nav-test.links %}
                       <li>
-                        {%- if link.links != blank -%}
+                        {%- if navigation.links != blank -%}
                           <header-menu>
                             <div id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
                               <div class="header__menu-item list-menu__item link focus-inset">
@@ -524,13 +521,13 @@
                             </div>
                           </header-menu>
                         {%- else -%}
-  
+                          <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                            <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ set.text-navigation | escape }}</span>
+                          </a>
                         {%- endif -%}
                       </li>
-                    {%- endfor -%}
                 {% endcase %}
               {% endfor %}
-            </li>
           </ul>
         </nav>
       {%- endif -%}
