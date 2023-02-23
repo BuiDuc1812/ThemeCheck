@@ -27,7 +27,8 @@
           "settings": {
             "text-navigation": "Girls",
             "link-nav-test": "main-menu",
-            "color-fill": ""
+            "color-fill": "",
+            "image-navigation": "shopify:\/\/shop_images\/Frame_69.png"
           }
         },
         "92dc4dde-e862-47fc-869d-7c9ed4716a06": {
@@ -86,7 +87,6 @@
         "menu": "main-menu",
         "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
-        "image-sale": "shopify:\/\/shop_images\/Frame_69.png",
         "show_line_separator": true,
         "mobile_logo_position": "center",
         "text-pickup": "In-store pickup:",
