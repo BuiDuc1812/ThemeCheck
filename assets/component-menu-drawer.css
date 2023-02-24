@@ -173,7 +173,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   left: 7.5rem;
 }
 
-.js .menu-drawer__submenu {
+/* .js .menu-drawer__submenu {
   position: absolute;
   top: 0;
   width: 100%;
@@ -184,7 +184,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   z-index: 1;
   transform: translateX(100%);
   visibility: hidden;
-}
+} */
 
 .js .menu-drawer__submenu .menu-drawer__submenu {
   overflow-y: auto;
