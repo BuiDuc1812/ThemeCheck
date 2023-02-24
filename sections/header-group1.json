@@ -87,7 +87,7 @@
         "5181e2c0-66ba-4586-9e51-56b06e464c4f": {
           "type": "links",
           "settings": {
-            "icon-text": "Text",
+            "icon-text": "icon-message",
             "button-text": "Store Locator",
             "button-url": "shopify:\/\/pages\/contact"
           }
