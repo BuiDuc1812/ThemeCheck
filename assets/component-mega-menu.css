@@ -79,6 +79,6 @@
 }
 
 .sale-off{
-  width: 224px;
-  height: 278px;
+  margin: 0 auto;
+    display: block;
 }
