@@ -110,7 +110,8 @@
         "margin_bottom": 0,
         "padding_top": 20,
         "padding_bottom": 20,
-        "sale-off": "shopify:\/\/shop_images\/c6921bfeb416ebbfcc2f075e1ef6380b.webp"
+        "sale-off": "shopify:\/\/shop_images\/c6921bfeb416ebbfcc2f075e1ef6380b.webp",
+        "sale-off-desk": "shopify:\/\/shop_images\/Frame_69.png"
       }
     }
   },
