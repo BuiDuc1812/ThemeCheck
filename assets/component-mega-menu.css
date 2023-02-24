@@ -26,8 +26,7 @@
   grid-template-columns: repeat(6, minmax(0, 1fr));
   list-style: none;
   max-width: 1440px;
-  padding: 0 80px;
-  height: 366px;
+  padding: 0 80px;  
   text-align: start;
   margin-top: 40px;
 }
