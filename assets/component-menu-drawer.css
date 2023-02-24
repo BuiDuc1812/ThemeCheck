@@ -211,6 +211,8 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__utility-links {
+  display: flex;
+  flex-direction: column;
   padding: 2rem;
   background-color: rgba(var(--color-foreground), 0.03);
 }
