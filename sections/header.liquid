@@ -218,10 +218,13 @@
                   {% for block in section.blocks %}
                     {% case block.type %}
                       {% when "links" %}
-                      <a href="{{ block.settings.button-url }}" class="menu-drawer__account link focus-inset h5">
-                        {% render {{ block.settings.icon-text }} %}
-                        {{ block.settings.button-text }}
-                      </a> 
+                        <div>
+                          <img class="icon icon-account" src="{{ block.settings.icon-image }}" alt="">
+                          <a href="{{ block.settings.button-url }}" class="menu-drawer__account link focus-inset h5">
+                            {{ block.settings.button-text }}
+                          </a> 
+                        </div>
+                      
                     {% endcase %}
                   {% endfor %}
                   {%- if shop.customer_accounts_enabled -%}
@@ -1006,12 +1009,6 @@
       "settings": [
         {
           "type": "text",
-          "id":"icon-text",
-          "default": "Text",
-          "label": "Icon text"
-        },
-        {
-          "type": "text",
           "id":"button-text",
           "default": "add the text",
           "label": "Button text"
@@ -1020,6 +1017,11 @@
           "type": "url",
           "id":"button-url",
           "label": "Button link"
+        },
+        {
+          "type": "image_picker",
+          "id":"icon-image",
+          "label": "Icon image"
         }
       ]
     }

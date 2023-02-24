@@ -3085,3 +3085,6 @@ details-disclosure > details {
   width: 50%;
   float: left;
 }
+.space{
+  margin-right: 1rem  ;
+}
