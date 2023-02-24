@@ -196,7 +196,7 @@
                                     </li>
                                   {%- endfor -%}
                                   <li>
-                                      <img class="sale-off" src="{{ block.settings.link-img }}" alt="">
+                                      <img class="sale-off" src="{{ block.settings.link-img.src | img_url: 'medium' }}" alt="">
                                   </li> 
                                 </ul>
                               </div>
