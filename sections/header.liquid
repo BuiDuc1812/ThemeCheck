@@ -196,7 +196,7 @@
                                     </li>
                                   {%- endfor -%}
                                   <li>
-                                      <img class="sale-off" src="{{ block.settings.sale-off | img_url: 'medium' }}" alt="">
+                                      <img class="sale-off" src="{{ section.settings.sale-off.src | img_url: 'medium' }}" alt="">
                                   </li> 
                                 </ul>
                               </div>
@@ -962,6 +962,11 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 20
+    },
+    {
+          "type": "image_picker",
+          "id":"sale-off",
+          "label": "Image"
     }
   ],
   "blocks": [
@@ -990,11 +995,6 @@
           "type": "image_picker",
           "id":"img-nav",
           "label": "Navigation image"
-        },
-        {
-          "type": "image_picker",
-          "id":"sale-off",
-          "label": "Image"
         }
       ]
     },
