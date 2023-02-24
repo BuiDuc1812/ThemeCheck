@@ -3111,4 +3111,5 @@ details-disclosure > details {
 .list-img-brand{
   display: grid;
   grid-template-columns: repeat(5, auto);
+  gap: 16px;
 }
