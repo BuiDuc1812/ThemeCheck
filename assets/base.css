@@ -3086,5 +3086,14 @@ details-disclosure > details {
   float: left;
 }
 .space{
-  margin-right: 1rem  ;
+  margin-right: 1rem;
+}
+.icon-link{
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+}
+.bottom-links{
+  display: flex;
+  align-items: center;
 }
