@@ -253,7 +253,3 @@ details[open].menu-opening > .menu-drawer__submenu {
   padding: 1.3rem 1.25rem;
 }
 /* megamenu */
-#menu-drawer .list-menu li{
-  display: flex;
-  justify-content: space-between;
-}

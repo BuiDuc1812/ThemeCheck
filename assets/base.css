@@ -3097,3 +3097,7 @@ details-disclosure > details {
   display: flex;
   align-items: center;
 }
+.down{
+  position: absolute;
+    right: 2.5rem;
+}
