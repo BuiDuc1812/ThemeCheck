@@ -63,7 +63,8 @@
           "settings": {
             "text-navigation": "Sale",
             "link-nav-test": "",
-            "color-fill": "#ec273c"
+            "color-fill": "#ec273c",
+            "img-nav": "shopify:\/\/shop_images\/c6921bfeb416ebbfcc2f075e1ef6380b.webp"
           }
         },
         "2675c809-dbc8-4909-8aa2-be0aa939fdda": {
@@ -71,7 +72,8 @@
           "settings": {
             "text-navigation": "Discover",
             "link-nav-test": "",
-            "color-fill": "#efd1a0"
+            "color-fill": "#efd1a0",
+            "img-nav": "shopify:\/\/shop_images\/5e12d151bf879f68383465b6efa9a6b1.webp"
           }
         },
         "5181e2c0-66ba-4586-9e51-56b06e464c4f": {
