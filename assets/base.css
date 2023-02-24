@@ -3110,6 +3110,6 @@ details-disclosure > details {
 }
 .list-img-brand{
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(5, 187px);
   gap: 16px;
 }
