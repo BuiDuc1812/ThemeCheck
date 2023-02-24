@@ -28,7 +28,8 @@
           "settings": {
             "text-navigation": "Girls",
             "link-nav-test": "main-menu",
-            "color-fill": "#e7c5cc"
+            "color-fill": "#e7c5cc",
+            "img-nav": "shopify:\/\/shop_images\/11b44b752e0b6a981537f146af8765e9.webp"
           }
         },
         "92dc4dde-e862-47fc-869d-7c9ed4716a06": {
@@ -56,20 +57,35 @@
             "link-nav-test": "brands",
             "color-fill": "#afa2da",
             "img-nav1": "shopify:\/\/shop_images\/Logo.webp",
+            "link-nav1": "",
             "img-nav2": "shopify:\/\/shop_images\/Logo_1.webp",
+            "link-nav2": "",
             "img-nav3": "shopify:\/\/shop_images\/Logo_2.webp",
+            "link-nav3": "",
             "img-nav4": "shopify:\/\/shop_images\/Logo_3.webp",
+            "link-nav4": "",
             "img-nav5": "shopify:\/\/shop_images\/Logo_4.webp",
+            "link-nav5": "",
             "img-nav6": "shopify:\/\/shop_images\/Logo_5.webp",
+            "link-nav6": "",
             "img-nav7": "shopify:\/\/shop_images\/Logo.webp",
+            "link-nav7": "",
             "img-nav8": "shopify:\/\/shop_images\/Logo_1.webp",
+            "link-nav8": "",
             "img-nav9": "shopify:\/\/shop_images\/Logo_2.webp",
+            "link-nav9": "",
             "img-nav10": "shopify:\/\/shop_images\/Logo_3.webp",
+            "link-nav10": "",
             "img-nav11": "shopify:\/\/shop_images\/Logo_4.webp",
+            "link-nav11": "",
             "img-nav12": "shopify:\/\/shop_images\/Logo_5.webp",
+            "link-nav12": "",
             "img-nav13": "shopify:\/\/shop_images\/Logo.webp",
+            "link-nav13": "",
             "img-nav14": "shopify:\/\/shop_images\/Logo_1.webp",
-            "img-nav15": "shopify:\/\/shop_images\/Logo_6.webp"
+            "link-nav14": "",
+            "img-nav15": "shopify:\/\/shop_images\/Logo_6.webp",
+            "link-nav15": ""
           }
         },
         "1b46a341-ef89-4a8a-b51d-4b3d2e49ab3b": {
