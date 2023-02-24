@@ -53,7 +53,7 @@
           "type": "navigation",
           "settings": {
             "text-navigation": "Brands",
-            "link-nav-test": "shop-all",
+            "link-nav-test": "brands",
             "color-fill": "#afa2da",
             "img-nav": "shopify:\/\/shop_images\/336dbe4a89a284a7118c610c4e7fd0d6.webp"
           }
