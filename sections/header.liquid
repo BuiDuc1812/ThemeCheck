@@ -215,7 +215,16 @@
                   </ul>
                 </nav>
                 <div class="menu-drawer__utility-links">
-                  {%- if shop.customer_accounts_enabled -%}
+                  {% for block in section.blocks %}
+                    {% case block.type %}
+                      {% when "links" %}
+                      <a href="{{ block.settings.button-url }}" class="menu-drawer__account link focus-inset h5">
+                        {% render 'icon-account' %}
+                        {{ block.settings.button-text }}
+                      </a> 
+                    {% endcase %}
+                  {% endfor %}
+                  {% comment %} {%- if shop.customer_accounts_enabled -%}
                     <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="menu-drawer__account link focus-inset h5">
                       {% render 'icon-account' %}
                       {%- liquid
@@ -226,7 +235,8 @@
                         endif
                       -%}
                     </a>
-                  {%- endif -%}
+                  {%- endif -%} {% endcomment %}
+
                 </div>
               </div>
             </div>
@@ -994,6 +1004,23 @@
           "id":"link-img-nav",
           "default": "add link img",
           "label": "Link img"
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "name": "Bottom Links",
+      "settings": [
+        {
+          "type": "text",
+          "id":"button-text",
+          "default": "add the text",
+          "label": "Button text"
+        },
+        {
+          "type": "url",
+          "id":"button-url",
+          "label": "Button link"
         }
       ]
     }
