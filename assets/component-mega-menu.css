@@ -8,7 +8,7 @@
   border-radius: 0;
   border-right: 0;
   left: 0;
-  overflow-y: auto;
+  overflow-y: hidden  ;
   position: absolute;
   right: 0;
   top: 100%;
@@ -80,4 +80,8 @@
 .sale-off{
   margin: 0 auto;
   display: block;
+  transition: all 0.2s ease;
+}
+.sale-off:hover{
+  transform: scale(1.05);
 }
