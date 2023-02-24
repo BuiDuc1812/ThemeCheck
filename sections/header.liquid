@@ -218,8 +218,10 @@
                   {% for block in section.blocks %}
                     {% case block.type %}
                       {% when "links" %}
-                        <div>
-                          <img class="icon icon-account" src="{{ block.settings.icon-image }}" alt="">
+                        <div style="display: flex;align-items:center">
+                          <img 
+                          width="12"
+                          height="12" loading="lazy" src="{{ block.settings.icon-image.src | img_url: "medium"}}">
                           <a href="{{ block.settings.button-url }}" class="menu-drawer__account link focus-inset h5">
                             {{ block.settings.button-text }}
                           </a> 
