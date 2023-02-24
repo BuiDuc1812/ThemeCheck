@@ -211,6 +211,7 @@
                               <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
                               <summary style="background-color: {{ block.settings.color-fill }};" class="zoom menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.child_active %} menu-drawer__menu-item--active{% endif %}">
                                 {{ block.settings.text-navigation | escape }}
+                                <img class="child" src="{{ block.settings.img-nav.src | img_url: 'medium'}}" alt="">
                                 {% render 'left' %}
                               </summary>
                               <div id="link-{{ link.handle | escape }}" class="menu-drawer__submenu has-submenu gradient motion-reduce" tabindex="-1">
