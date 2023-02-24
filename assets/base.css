@@ -3101,3 +3101,10 @@ details-disclosure > details {
   position: absolute;
     right: 2.5rem;
 }
+.con{
+  display: none;
+  transition: all 0.2s ease;
+}
+.show{
+  display: block;
+}

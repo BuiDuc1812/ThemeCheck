@@ -1100,3 +1100,22 @@ function addToCart(){
   }
 }
 addToCart()
+
+function click(){
+  var focus = document.querySelectorAll(".an");
+  if (focus){
+    focus.forEach(item=>{
+      item.querySelector(".mo").addEventListener("click",() => {
+        var check = item.querySelector(".con").getAttribute("active")
+        if (check == "false"){
+          item.querySelector(".con").classList.add("show");
+          item.querySelector(".con").setAttribute("active","true")
+        } else{
+          item.querySelector(".con").classList.remove("show");
+          item.querySelector(".con").setAttribute("active","false")
+        } 
+      })
+    })
+  }
+}
+click()
