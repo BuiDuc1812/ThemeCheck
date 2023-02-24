@@ -3108,3 +3108,7 @@ details-disclosure > details {
 .show{
   display: block;
 }
+.list-img-brand{
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
