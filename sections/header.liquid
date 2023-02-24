@@ -204,6 +204,61 @@
                               <img class="child" src="{{ block.settings.img-nav.src | img_url: 'medium'}}" alt="">
                               </a> 
                           {% endif %}
+                          {% when 'brands' %} 
+                            {% assign link =  block.settings.link-nav-test %}
+                              {%- if link.links != blank -%}
+                              <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
+                              <summary style="background-color: {{ block.settings.color-fill }};" class="zoom menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.child_active %} menu-drawer__menu-item--active{% endif %}">
+                                {{ block.settings.text-navigation | escape }}
+                                {% render 'left' %}
+                              </summary>
+                              <div id="link-{{ link.handle | escape }}" class="menu-drawer__submenu has-submenu gradient motion-reduce" tabindex="-1">
+                                <div class="menu-drawer__inner-submenu">
+                                  <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+                                    {% render 'icon-arrow' %}
+                                    {{ link.title | escape }}
+                                  </button>
+                                  <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                                    {%- for childlink in link.links -%}
+                                      <li>
+                                        {%- if childlink.links == blank -%}
+                                          <a href="{{ childlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                                            {{ childlink.title | escape }}
+                                          </a>
+                                        {%- else -%}
+                                          <div class="an" id="Details-menu-drawer-submenu-{{ forloop.index }}">
+                                            <summary class="mo menu-drawer__menu-item link link--text list-menu__item focus-inset menu-drawer__close-button">
+                                              {{ childlink.title | escape }}
+                                              {% render 'down' %}
+                                            </summary>
+                                            <div id="childlink-{{ childlink.handle | escape }}" class="con" active="false">
+                                              <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                                                {%- for grandchildlink in childlink.links -%}
+                                                  <li>
+                                                    <a href="{{ grandchildlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                                                      {{ grandchildlink.title | escape }}
+                                                    </a>
+                                                  </li>
+                                                {%- endfor -%}
+                                              </ul>
+                                            </div>
+                                          </div>
+                                        {%- endif -%}
+                                      </li>
+                                    {%- endfor -%}
+                                    <li>
+                                        <img class="sale-off" src="{{ section.settings.sale-off.src | img_url: 'medium' }}" alt="">
+                                    </li> 
+                                  </ul>
+                                </div>
+                              </div>
+                            </details>
+                            {%- else -%}
+                                <a style="background-color: {{ block.settings.color-fill }};" href=" block.settings.link-nav-test  }}" class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"{% if link.current %} aria-current="page"{% endif %}>
+                                {{ block.settings.text-navigation | escape }}
+                                <img class="child" src="{{ block.settings.img-nav.src | img_url: 'medium'}}" alt="">
+                                </a> 
+                            {% endif %}
                       {% endcase %}
                     {% endfor %}
                   </ul>
@@ -486,49 +541,49 @@
                                     {%- endfor -%}
                                     <li class="list-img-brand">
                                         <a href="{{ block.settings.link-nav1}}">
-                                          <img width="100%" src="{{ block.settings.img-nav1.src | img_url: 'medium' }}" alt="">
+                                          <img src="{{ block.settings.img-nav1.src | img_url: 'medium' }}" alt="">
                                         </a>
                                         <a href="{{ block.settings.link-nav2}}">
-                                          <img width="100%" src="{{ block.settings.img-nav2.src | img_url: 'medium' }}" alt="">
+                                          <img src="{{ block.settings.img-nav2.src | img_url: 'medium' }}" alt="">
                                         </a>
                                         <a href="{{ block.settings.link-nav3}}">
-                                          <img width="100%" src="{{ block.settings.img-nav3.src | img_url: 'medium' }}" alt="">
+                                          <img src="{{ block.settings.img-nav3.src | img_url: 'medium' }}" alt="">
                                         </a>
                                         <a href="{{ block.settings.link-nav4}}">
-                                          <img width="100%" src="{{ block.settings.img-nav4.src | img_url: 'medium' }}" alt="">
+                                          <img src="{{ block.settings.img-nav4.src | img_url: 'medium' }}" alt="">
                                         </a>
                                         <a href="{{ block.settings.link-nav5}}">
-                                          <img width="100%" src="{{ block.settings.img-nav5.src | img_url: 'medium' }}" alt="">
+                                          <img src="{{ block.settings.img-nav5.src | img_url: 'medium' }}" alt="">
                                         </a>
                                         <a href="{{ block.settings.link-nav6}}">
-                                          <img width="100%" src="{{ block.settings.img-nav6.src | img_url: 'medium' }}" alt="">
+                                          <img src="{{ block.settings.img-nav6.src | img_url: 'medium' }}" alt="">
                                         </a>
                                         <a href="{{ block.settings.link-nav7}}">
-                                          <img width="100%" src="{{ block.settings.img-nav7.src | img_url: 'medium' }}" alt="">
+                                          <img src="{{ block.settings.img-nav7.src | img_url: 'medium' }}" alt="">
                                         </a>
                                         <a href="{{ block.settings.link-nav8}}">
-                                          <img width="100%" src="{{ block.settings.img-nav8.src | img_url: 'medium' }}" alt="">
+                                          <img src="{{ block.settings.img-nav8.src | img_url: 'medium' }}" alt="">
                                         </a>
                                         <a href="{{ block.settings.link-nav9}}">
-                                          <img width="100%" src="{{ block.settings.img-nav9.src | img_url: 'medium' }}" alt="">
+                                          <img src="{{ block.settings.img-nav9.src | img_url: 'medium' }}" alt="">
                                         </a>
                                         <a href="{{ block.settings.link-nav10}}">
-                                          <img width="100%" src="{{ block.settings.img-nav10.src | img_url: 'medium' }}" alt="">
+                                          <img src="{{ block.settings.img-nav10.src | img_url: 'medium' }}" alt="">
                                         </a>
                                         <a href="{{ block.settings.link-nav11}}">
-                                          <img width="100%" src="{{ block.settings.img-nav11.src | img_url: 'medium' }}" alt="">
+                                          <img src="{{ block.settings.img-nav11.src | img_url: 'medium' }}" alt="">
                                         </a>
                                         <a href="{{ block.settings.link-nav12}}">
-                                          <img width="100%" src="{{ block.settings.img-nav12.src | img_url: 'medium' }}" alt="">
+                                          <img src="{{ block.settings.img-nav12.src | img_url: 'medium' }}" alt="">
                                         </a>
                                         <a href="{{ block.settings.link-nav13}}">
-                                          <img width="100%" src="{{ block.settings.img-nav13.src | img_url: 'medium' }}" alt="">
+                                          <img src="{{ block.settings.img-nav13.src | img_url: 'medium' }}" alt="">
                                         </a>
                                         <a href="{{ block.settings.link-nav14}}">
-                                          <img width="100%" src="{{ block.settings.img-nav14.src | img_url: 'medium' }}" alt="">
+                                          <img src="{{ block.settings.img-nav14.src | img_url: 'medium' }}" alt="">
                                         </a>
                                         <a href="{{ block.settings.link-nav15}}">
-                                          <img width="100%" src="{{ block.settings.img-nav15.src | img_url: 'medium' }}" alt="">
+                                          <img src="{{ block.settings.img-nav15.src | img_url: 'medium' }}" alt="">
                                         </a>
                                     </li>
                                   </ul>
