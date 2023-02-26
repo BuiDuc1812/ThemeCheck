@@ -78,13 +78,23 @@
 }
 
 .sale-off{
-  display: block;
-  /* max-width: 500px; */
-  min-width: 280px;
-  width: 100%;
   margin: 0 auto;
+  display: block;
   transition: all 0.2s ease;
 }
 .sale-off:hover{
   transform: scale(1.05);
+}
+.mobile{
+  min-width: 240px;
+  width: 100%;
+}
+
+.list-brands img{
+  min-width: 132px;
+  /* max-width: 186.8px; */
+  width: 100%;
+}
+.list-brands a{
+  display: -webkit-inline-box;
 }
