@@ -172,12 +172,12 @@
                                           {{ childlink.title | escape }}
                                         </a>
                                       {%- else -%}
-                                        <div class="an" id="Details-menu-drawer-submenu-{{ forloop.index }}">
-                                          <summary class="mo menu-drawer__menu-item link link--text list-menu__item focus-inset menu-drawer__close-button">
+                                        <div class="accordion" id="Details-menu-drawer-submenu-{{ forloop.index }}">
+                                          <summary class="accordion-header menu-drawer__menu-item link link--text list-menu__item focus-inset menu-drawer__close-button">
                                             {{ childlink.title | escape }}
                                             {% render 'down' %}
                                           </summary>
-                                          <div id="childlink-{{ childlink.handle | escape }}" class="con" active="false">
+                                          <div class="accordion-description" id="childlink-{{ childlink.handle | escape }}">
                                             <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
                                               {%- for grandchildlink in childlink.links -%}
                                                 <li>
@@ -193,7 +193,9 @@
                                     </li>
                                   {%- endfor -%}
                                   <li>
+                                    <a href="">
                                       <img class="sale-off" src="{{ section.settings.sale-off.src | img_url: 'medium' }}" alt="">
+                                    </a>
                                   </li> 
                                 </ul>
                               </div>
