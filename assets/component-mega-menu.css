@@ -104,6 +104,9 @@
   .list-brands{
     grid-template-columns: repeat(4, auto);
   }
+  .header__search{
+    display: none;
+  }
 }
 @media screen and (max-width:640px) {
   .list-brands{
