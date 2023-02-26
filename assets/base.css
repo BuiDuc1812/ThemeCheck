@@ -3130,6 +3130,10 @@ details-disclosure > details {
 .accordion{
   overflow: hidden;
 }
+.accordion-header{
+  font-weight: bold;
+  border-top: 1px solid #ccc;
+}
 .accordion-description{
   height: 0;
   transition:all 0.2s linear;
@@ -3139,4 +3143,10 @@ details-disclosure > details {
   justify-content: center;
   font-size: 16px;
   font-weight: bold;
+}
+.accordion-description> ul{
+  padding:0 20px 20px 20px;
+}
+.accordion-description a{
+  margin-bottom: 10px;
 }

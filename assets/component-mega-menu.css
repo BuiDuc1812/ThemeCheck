@@ -78,8 +78,11 @@
 }
 
 .sale-off{
-  margin: 0 auto;
   display: block;
+  /* max-width: 500px; */
+  min-width: 280px;
+  width: 100%;
+  margin: 0 auto;
   transition: all 0.2s ease;
 }
 .sale-off:hover{
