@@ -3127,10 +3127,10 @@ details-disclosure > details {
 .list-img-brand img{
   height: 100%;
 } 
-/* .accordion{
+.accordion{
   overflow: hidden;
 }
 .accordion-description{
   height: 0;
   transition:all 0.2s linear;
-} */
+}
