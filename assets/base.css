@@ -3103,29 +3103,18 @@ details-disclosure > details {
 }
 .list-img-brand{
   display: grid;
-  grid-template-columns: repeat(5, auto);
-  grid-template-rows: repeat(3, 80px);
   gap : 16px;
-}
-@media screen and (max-width:1279px) {
-  .list-img-brand{
-    grid-template-columns: repeat(5, 165px);
-  }
-  .list-img-brand img{
-    width: 100%;
-  } 
-}
-@media screen and (max-width:1138px) {
-  .list-img-brand{
-    grid-template-columns: repeat(5, 140px);
-  }
+  grid-template-columns: repeat(5, auto);
 
 }
-.list-img-brand>a{
-  height: 80px;
+.list-img-brand a{
+  display: contents;
+  width: 100%;
 }
 .list-img-brand img{
-  height: 100%;
+  min-width: 132px;
+  max-width: 186.8px;
+  width: 100%;
 } 
 .accordion{
   overflow: hidden;

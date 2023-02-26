@@ -30,7 +30,12 @@
   text-align: start;
   margin-top: 40px;
 }
-
+.default{
+  grid-template-columns: repeat(2, auto);
+}
+.default >li{
+  min-width: 130px;
+}
 .mega-menu__link {
   color: rgba(var(--color-foreground), 0.75);
   display: block;
