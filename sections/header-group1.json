@@ -20,8 +20,7 @@
             "text-navigation": "Shop All",
             "link-nav-test": "shop-all",
             "color-fill": "#7197c3",
-            "img-nav": "shopify:\/\/shop_images\/f3815c86889deba19e5df1db73f5f625.webp",
-            "url-navigation": "shopify:\/\/products\/black-leather-bag"
+            "img-nav": "shopify:\/\/shop_images\/f3815c86889deba19e5df1db73f5f625.webp"
           }
         },
         "af8bcc0f-3ec2-4036-a4ad-c5f90ccfb125": {
@@ -30,8 +29,7 @@
             "text-navigation": "Girls",
             "link-nav-test": "main-menu",
             "color-fill": "#e7c5cc",
-            "img-nav": "shopify:\/\/shop_images\/11b44b752e0b6a981537f146af8765e9.webp",
-            "url-navigation": "shopify:\/\/collections\/men"
+            "img-nav": "shopify:\/\/shop_images\/11b44b752e0b6a981537f146af8765e9.webp"
           }
         },
         "92dc4dde-e862-47fc-869d-7c9ed4716a06": {
@@ -40,8 +38,7 @@
             "text-navigation": "Boys",
             "link-nav-test": "",
             "color-fill": "#c6e0f2",
-            "img-nav": "shopify:\/\/shop_images\/9a8a33706994f8d34797eae2e7af141c.webp",
-            "url-navigation": ""
+            "img-nav": "shopify:\/\/shop_images\/9a8a33706994f8d34797eae2e7af141c.webp"
           }
         },
         "4cf94ef8-c1d9-46a4-8064-b29a23e08ac5": {
@@ -50,8 +47,7 @@
             "text-navigation": "School",
             "link-nav-test": "shop-all",
             "color-fill": "#db806b",
-            "img-nav": "shopify:\/\/shop_images\/b72fbc402e4d2b4327a5b73d8def9cb4.webp",
-            "url-navigation": ""
+            "img-nav": "shopify:\/\/shop_images\/b72fbc402e4d2b4327a5b73d8def9cb4.webp"
           }
         },
         "1ac46d70-53e0-45b7-a2d2-d56ced22fc69": {
@@ -99,8 +95,7 @@
             "text-navigation": "Sale",
             "link-nav-test": "",
             "color-fill": "#ec273c",
-            "img-nav": "shopify:\/\/shop_images\/c6921bfeb416ebbfcc2f075e1ef6380b.webp",
-            "url-navigation": ""
+            "img-nav": "shopify:\/\/shop_images\/c6921bfeb416ebbfcc2f075e1ef6380b.webp"
           }
         },
         "2675c809-dbc8-4909-8aa2-be0aa939fdda": {
@@ -109,8 +104,7 @@
             "text-navigation": "Discover",
             "link-nav-test": "",
             "color-fill": "#efd1a0",
-            "img-nav": "shopify:\/\/shop_images\/5e12d151bf879f68383465b6efa9a6b1.webp",
-            "url-navigation": ""
+            "img-nav": "shopify:\/\/shop_images\/5e12d151bf879f68383465b6efa9a6b1.webp"
           }
         },
         "5181e2c0-66ba-4586-9e51-56b06e464c4f": {
@@ -119,6 +113,12 @@
             "button-text": "Store Locator",
             "button-url": "shopify:\/\/pages\/contact",
             "icon-image": "shopify:\/\/shop_images\/1a047f4e4bbe91e0c8af.jpg"
+          }
+        },
+        "99c80a6c-f273-492b-9b70-175cda1f3bf1": {
+          "type": "account",
+          "settings": {
+            "account-text": "axz"
           }
         }
       },
@@ -130,7 +130,8 @@
         "1ac46d70-53e0-45b7-a2d2-d56ced22fc69",
         "1b46a341-ef89-4a8a-b51d-4b3d2e49ab3b",
         "2675c809-dbc8-4909-8aa2-be0aa939fdda",
-        "5181e2c0-66ba-4586-9e51-56b06e464c4f"
+        "5181e2c0-66ba-4586-9e51-56b06e464c4f",
+        "99c80a6c-f273-492b-9b70-175cda1f3bf1"
       ],
       "settings": {
         "color_scheme": "background-1",
