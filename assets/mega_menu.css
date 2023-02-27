@@ -48,7 +48,9 @@
 }
 .pickup{
   float: left;
+  height:100% ;
 }
+
 .support{
   float: right;
 }
@@ -64,12 +66,12 @@
   }
 }
 @media screen and (max-width:990px) {
-  .support{
+  /* .support{
     display: none;
   }
   .tat{
     display: none !important;
-  }
+  } */
 }
 @media screen and (min-width:990px) {
   .show{
@@ -82,7 +84,7 @@
   }
 }
 .pickup a, .pickup p{
-  font-size: 16px;
+  font-size: 14px;
   color: white;
 }
 #menu-drawer{

@@ -1,7 +1,7 @@
 {{ 'mega_menu.css' | asset_url | stylesheet_tag }}
 <section class="topmenu">
     <div class="container">
-        <div class="pickup" style="height:46px;background-color:var(--color-navy)">
+        <div class="pickup" style="background-color:var(--color-navy)">
                 {% render 'icon-house' %}
                 <p>{{ section.settings.text-pickup }}</p>
                 <a href="{{ section.settings.pickup-link }}">{{ section.settings.pickup-button }}</a>
@@ -19,6 +19,27 @@
         "name":"topmenu",
         "class":"topmenu",
         "settings":[
+            {
+            "type": "text",
+            "id":"text-pickup",
+            "default":"In-store pickup:",
+            "label": "Pickup text"
+            },
+            {
+            "type":"url",
+            "id": "nav-url",
+            "label": "Url"
+            },
+            {
+            "type": "text",
+            "id":"pickup-button",
+            "default":"Select store",
+            "label": "Pickup text button"
+            },{
+            "type": "url",
+            "id":"pickup-link",
+            "label": "Pickup link"
+            },
             {
                 "type": "text",
                 "id":"text-announcement",
