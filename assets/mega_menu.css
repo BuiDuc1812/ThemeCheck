@@ -39,11 +39,15 @@
   left: 50%;
   transform: translate(-50%);
 } */
-.support,.pickup{
+/* .support,.pickup{
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
+} */
+
+.slider-header .pickup,.slider-header .support{
+  display: flex;
 }
 /* .pickup{
   float: left;
