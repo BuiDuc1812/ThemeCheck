@@ -197,6 +197,6 @@
   width: 100%;
   background-color:#007aff;
 }
-.hove:hover>a, .hove:hover.line>a {
+.hove:hover>a,.hove:hover .line>a {
   color: #007aff;
 }
