@@ -553,7 +553,7 @@
                               </div>
                             </header-menu>
                           {%- else -%}
-                            <a href="{{ block.settings.link-nav-test }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                            <a href="{{ block.settings.link-nav }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                               <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ block.settings.text-navigation | escape }}</span>
                             </a>
                           {%- endif -%}
