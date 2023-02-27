@@ -49,9 +49,9 @@ menu-drawer > details[open] > summary::before {
   );
 }
 
-/* .js .menu-drawer {
+.js .menu-drawer {
   height: calc(100vh + 100%);
-} */
+}
 
 .js details[open] > .menu-drawer,
 .js details[open] > .menu-drawer__submenu {
