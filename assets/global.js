@@ -1104,18 +1104,18 @@ addToCart()
 
 var accordion = document.querySelectorAll(".accordion");
 accordion.forEach((item, index)=>{
-  var header = item.querySelector(".accordion-header")
+  var header = item.querySelector(".accordion-header");
   console.log(header);
   header.addEventListener('click',()=>{
-    item.classList.toggle("open")
+    item.classList.toggle("open");
     let description = item.querySelector(".accordion-description");
     if(item.classList.contains("open")){
-      description.style.height = `${description.scrollHeight}px`
+      description.style.height = `${description.scrollHeight}px`;
     }
     else{
-      description.style.height = "0"
+      description.style.height = "0";
     }
-    removeOpen(index)
+    removeOpen(index);
   })
 })
 function removeOpen(i){
