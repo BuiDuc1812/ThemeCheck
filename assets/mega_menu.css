@@ -46,8 +46,11 @@
   gap: 6px;
 } */
 
-.slider-header .pickup,.slider-header .support{
+.slider-header .pickup,.slider-header .support,.slider-header .announcement{
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 }
 /* .pickup{
   float: left;
