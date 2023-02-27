@@ -29,7 +29,8 @@
             "text-navigation": "Girls",
             "link-nav-test": "main-menu",
             "color-fill": "#e7c5cc",
-            "img-nav": "shopify:\/\/shop_images\/11b44b752e0b6a981537f146af8765e9.webp"
+            "img-nav": "shopify:\/\/shop_images\/11b44b752e0b6a981537f146af8765e9.webp",
+            "sale-off": "shopify:\/\/shop_images\/c6921bfeb416ebbfcc2f075e1ef6380b.webp"
           }
         },
         "92dc4dde-e862-47fc-869d-7c9ed4716a06": {
@@ -147,9 +148,7 @@
         "pickup-link": "",
         "margin_bottom": 0,
         "padding_top": 20,
-        "padding_bottom": 20,
-        "sale-off": "shopify:\/\/shop_images\/c6921bfeb416ebbfcc2f075e1ef6380b.webp",
-        "sale-off-desk": "shopify:\/\/shop_images\/Frame_69.png"
+        "padding_bottom": 20
       }
     }
   },
