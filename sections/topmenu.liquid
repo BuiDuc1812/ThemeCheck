@@ -1,5 +1,5 @@
 {{ 'mega_menu.css' | asset_url | stylesheet_tag }}
-
+<section class="topmenu">
     <div class="container">
         <div class="pickup">
             {% render 'icon-house' %}
@@ -12,7 +12,7 @@
             <a href="{{ section.settings.link-support }}">{{ section.settings.text-support }}</a>
         </div>
     </div>
-
+</section>
 {% schema %}
     {
         "name":"topmenu",
