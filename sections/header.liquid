@@ -278,14 +278,15 @@
                             {{ block.settings.button-text }}
                           </a> 
                         </div>
+                      {% when "account" %}
+                        {%- if shop.customer_accounts_enabled -%}
+                        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="menu-drawer__account link focus-inset h5">
+                          {% render 'icon-account' %}
+                          {{ block.settings.account-text }}
+                        </a>                   
+                        {%- endif -%}
                     {% endcase %}
                   {% endfor %}
-                  {%- if shop.customer_accounts_enabled -%}
-                    <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="menu-drawer__account link focus-inset h5">
-                      {% render 'icon-account' %}
-                      My Account
-                    </a>                   
-                  {%- endif -%}
                 </div>
               </div>
             </div>
@@ -1313,6 +1314,18 @@
           "type": "image_picker",
           "id":"icon-image",
           "label": "Icon image"
+        }
+      ]
+    }, 
+    {
+      "type": "account",
+      "name": "Account Links",
+      "settings": [
+        {
+          "type": "text",
+          "id":"account-text",
+          "default": "add the text",
+          "label": "Button text"
         }
       ]
     }
