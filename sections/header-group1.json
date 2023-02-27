@@ -19,7 +19,7 @@
           "settings": {
             "text-navigation": "Shop All",
             "link-nav-test": "shop-all",
-            "link-nav": "",
+            "link-nav": "shopify:\/\/pages\/contact",
             "color-fill": "#7197c3",
             "img-nav": "shopify:\/\/shop_images\/f3815c86889deba19e5df1db73f5f625.webp"
           }
