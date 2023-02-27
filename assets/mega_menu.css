@@ -31,27 +31,27 @@
   text-decoration: none;
 }
 
-.announcement{
+/* .announcement{
   width: 100%;
   display: flex;
   justify-content: center;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-}
+} */
 .support,.pickup{
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
 }
-.pickup{
+/* .pickup{
   float: left;
 }
 
 .support{
   float: right;
-}
+} */
 .new-header{
   display: flex;
 }
@@ -208,4 +208,7 @@
   font-size: 14px;
   font-family: Galano;
   color: white;
+}
+.slick-slider button{
+  display: none !important;
 }
