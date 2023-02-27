@@ -153,6 +153,21 @@
           "settings": {
             "account-text": "add the text"
           }
+        },
+        "abec3839-64de-496c-aac1-b62daf29b6c7": {
+          "type": "account",
+          "settings": {
+            "account-text": "add the text"
+          }
+        },
+        "0928dcdb-c505-4cb9-9e87-dba26e0e9dc1": {
+          "type": "navigation",
+          "settings": {
+            "text-navigation": "Home",
+            "link-nav-test": "main-menu",
+            "link-nav": "",
+            "color-fill": "#c6e0f2"
+          }
         }
       },
       "block_order": [
@@ -167,7 +182,9 @@
         "99c80a6c-f273-492b-9b70-175cda1f3bf1",
         "8fd486be-3592-4892-ae2e-9cb2c0fc03d8",
         "c72770d4-3b2d-40c8-9730-663356155750",
-        "4fcfcecb-dd78-4c9a-9ef5-05e095fc70b0"
+        "4fcfcecb-dd78-4c9a-9ef5-05e095fc70b0",
+        "abec3839-64de-496c-aac1-b62daf29b6c7",
+        "0928dcdb-c505-4cb9-9e87-dba26e0e9dc1"
       ],
       "settings": {
         "color_scheme": "background-1",
