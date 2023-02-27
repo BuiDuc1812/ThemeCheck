@@ -140,18 +140,23 @@
             </span>
           </summary>
           <div id="menu-drawer" class="gradient menu-drawer motion-reduce" tabindex="-1">
-            <div class="slider-header">
-              <div class="pickup">
-                {% render 'icon-house' %}
-                <p>{{ section.settings.text-pickup }}</p>
-                <a href="{{ section.settings.pickup-link }}">{{ section.settings.pickup-button }}</a>
-              </div>
-              <a class="announcement" href="{{ section.settings.link-announcement }}">{{ section.settings.text-announcement }}</a>
-              <div class="support">
-                {% render 'icon-question' %}
-                <a href="{{ section.settings.link-support }}">{{ section.settings.text-support }}</a>
-              </div>
-          </div>
+            {% for block in section.blocks %}
+              {% case block.type %}
+                {% when 'topheader' %}
+                  <div class="slider-header">
+                    <div class="pickup">
+                      {% render 'icon-house' %}
+                      <p>{{ section.settings.text-pickup }}</p>
+                      <a href="{{ section.settings.pickup-link }}">{{ section.settings.pickup-button }}</a>
+                    </div>
+                    <a class="announcement" href="{{ section.settings.link-announcement }}">{{ section.settings.text-announcement }}</a>
+                    <div class="support">
+                      {% render 'icon-question' %}
+                      <a href="{{ section.settings.link-support }}">{{ section.settings.text-support }}</a>
+                    </div>
+                  </div>
+              {% endcase %}
+            {% endfor %}
             <div class="menu-drawer__inner-container">
               <div class="menu-drawer__navigation-container">
                 <nav class="menu-drawer__navigation">
