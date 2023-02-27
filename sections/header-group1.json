@@ -19,6 +19,7 @@
           "settings": {
             "text-navigation": "Shop All",
             "link-nav-test": "shop-all",
+            "link-nav": "",
             "color-fill": "#7197c3",
             "img-nav": "shopify:\/\/shop_images\/f3815c86889deba19e5df1db73f5f625.webp"
           }
@@ -28,6 +29,7 @@
           "settings": {
             "text-navigation": "Girls",
             "link-nav-test": "main-menu",
+            "link-nav": "shopify:\/\/collections\/women",
             "color-fill": "#e7c5cc",
             "img-nav": "shopify:\/\/shop_images\/11b44b752e0b6a981537f146af8765e9.webp",
             "sale-off": "shopify:\/\/shop_images\/c6921bfeb416ebbfcc2f075e1ef6380b.webp",
@@ -39,6 +41,7 @@
           "settings": {
             "text-navigation": "Boys",
             "link-nav-test": "",
+            "link-nav": "",
             "color-fill": "#c6e0f2",
             "img-nav": "shopify:\/\/shop_images\/9a8a33706994f8d34797eae2e7af141c.webp"
           }
@@ -48,6 +51,7 @@
           "settings": {
             "text-navigation": "School",
             "link-nav-test": "shop-all",
+            "link-nav": "",
             "color-fill": "#db806b",
             "img-nav": "shopify:\/\/shop_images\/b72fbc402e4d2b4327a5b73d8def9cb4.webp"
           }
@@ -57,6 +61,7 @@
           "settings": {
             "text-navigation": "Brands",
             "link-nav-test": "brands",
+            "link-nav": "",
             "color-fill": "#afa2da",
             "img-nav": "shopify:\/\/shop_images\/336dbe4a89a284a7118c610c4e7fd0d6.webp",
             "img-nav1": "shopify:\/\/shop_images\/Logo.webp",
@@ -96,6 +101,7 @@
           "settings": {
             "text-navigation": "Sale",
             "link-nav-test": "",
+            "link-nav": "",
             "color-fill": "#ec273c",
             "img-nav": "shopify:\/\/shop_images\/c6921bfeb416ebbfcc2f075e1ef6380b.webp"
           }
@@ -105,6 +111,7 @@
           "settings": {
             "text-navigation": "Discover",
             "link-nav-test": "",
+            "link-nav": "",
             "color-fill": "#efd1a0",
             "img-nav": "shopify:\/\/shop_images\/5e12d151bf879f68383465b6efa9a6b1.webp"
           }
