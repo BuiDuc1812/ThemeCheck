@@ -1,17 +1,5 @@
-{{ 'mega_menu.css' | asset_url | stylesheet_tag }}
 <section class="topmenu">
-    <div class="container">
-        <div class="pickup">
-            {% render 'icon-house' %}
-            <p>{{ section.settings.text-pickup }}</p>
-            <a href="{{ section.settings.pickup-link }}">{{ section.settings.pickup-button }}</a>
-        </div>
-        <a class="announcement" href="{{ section.settings.link-announcement }}">{{ section.settings.text-announcement }}</a>
-        <div class="support">
-            {% render 'icon-question' %}
-            <a href="{{ section.settings.link-support }}">{{ section.settings.text-support }}</a>
-        </div>
-    </div>
+    {% render 'topmenu' %}
 </section>
 {% schema %}
     {

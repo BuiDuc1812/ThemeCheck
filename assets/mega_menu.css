@@ -21,7 +21,6 @@
   height: 100%;
   padding: 0 80px;
   margin: 0 auto;
-
 }
 .topmenu{
   height: 42px;
@@ -48,7 +47,6 @@
 }
 .pickup{
   float: left;
-  height:100% ;
 }
 
 .support{
@@ -79,10 +77,6 @@
   .header{
     padding: 0 20px ;
   }
-}
-.pickup a, .pickup p{
-  font-size: 14px;
-  color: white;
 }
 #menu-drawer{
   display: flex;
@@ -198,4 +192,8 @@
 }
 .hove:hover>a,.hove:hover .line>a {
   color: #007aff;
+}
+.slider-header{
+  height: 46px;
+  background-color: var(--color-navy);
 }
