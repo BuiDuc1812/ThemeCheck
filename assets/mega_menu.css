@@ -178,3 +178,25 @@
 .menu-drawer__menu{
   background-color: white;
 }
+
+/* hover */
+.hove>a,.line{
+  position:relative ; 
+}
+.hove> a::after, .line::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  background-color: black;
+  height: 2px;
+  bottom: -26px;
+  left: 0;
+  transition:all 0.2s ease;
+}
+.hove:hover.hove> a::after, .hove:hover .line::after{
+  width: 100%;
+  background-color:#007aff;
+}
+.hove:hover>a, .hove:hover.line>a {
+  color: #007aff;
+}
