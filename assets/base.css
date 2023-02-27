@@ -2682,7 +2682,10 @@ details[open] > .header__submenu {
 .header__menu-item span {
   transition: text-decoration var(--duration-short) ease;
 }
-
+.header__menu-item a{
+  text-decoration: none;
+  color: #121212BF;
+}
 
 
 /* details[open] > .header__menu-item {
