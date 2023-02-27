@@ -33,6 +33,9 @@
 }
 
 .announcement{
+  width: 100%;
+  display: flex;
+  justify-content: center;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
@@ -55,6 +58,9 @@
 @media screen and (max-width:768px) {
   .container a,.container p{
     font-size: 12px;
+  }
+  .container{
+    padding: 0;
   }
 }
 @media screen and (max-width:990px) {
