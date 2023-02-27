@@ -202,4 +202,10 @@
 .slider-header{
   height: 46px;
   background-color: var(--color-navy);
+  line-height: 46px;
+}
+.slider-header a,.slider-header p{
+  font-size: 14px;
+  font-family: Galano;
+  color: white;
 }
