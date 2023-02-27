@@ -50,7 +50,7 @@ menu-drawer > details[open] > summary::before {
 }
 
 .js .menu-drawer {
-  /* height: calc(100vh + 100%); */
+  height: calc(100vh + 100%);
 }
 
 .js details[open] > .menu-drawer,
