@@ -50,10 +50,7 @@ menu-drawer > details[open] > summary::before {
 }
 
 .js .menu-drawer {
-  height: calc(100vh - 100%);
-  height: calc(
-    var(--viewport-height, 100vh) - (var(--header-bottom-position, 100%))
-  );
+  height: calc(100vh + 100%);
 }
 
 .js details[open] > .menu-drawer,
@@ -80,26 +77,18 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__inner-container {
-  position: relative;
   height: 100%;
 }
 
 .menu-drawer__navigation-container {
   display: grid;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: auto auto;
   align-content: space-between;
-  height: 100%;
-  gap: 16px;
 }
 
 .menu-drawer__navigation {
   padding: 20px;
 }
-
-.menu-drawer__inner-submenu {
-  height: 100%;
-}
-
 .no-js .menu-drawer__navigation {
   padding: 0;
 }
