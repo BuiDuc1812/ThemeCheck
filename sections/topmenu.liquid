@@ -1,4 +1,5 @@
 {{ 'mega_menu.css' | asset_url | stylesheet_tag }}
+{% comment %} {{ 'test.css' | asset_url | stylesheet_tag }} {% endcomment %}
 <section class="topmenu">
     <div class="container">
         <a class="announcement" href="{{ section.settings.link-announcement }}">{{ section.settings.text-announcement }}</a>
