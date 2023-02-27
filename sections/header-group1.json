@@ -5,6 +5,10 @@
     "topmenu": {
       "type": "topmenu",
       "settings": {
+        "text-pickup": "In-store pickup:",
+        "nav-url": "",
+        "pickup-button": "Select store",
+        "pickup-link": "",
         "text-announcement": "Buy 1 get 1 50% off almost everything!",
         "link-announcement": "shopify:\/\/collections\/all",
         "text-support": "Customer Support",
@@ -129,6 +133,19 @@
           "settings": {
             "account-text": "My Account"
           }
+        },
+        "f2c60000-f737-417f-8f3d-081f6f686587": {
+          "type": "topheader",
+          "settings": {
+            "text-pickup": "In-store pickup:",
+            "nav-url": "",
+            "pickup-button": "Select store",
+            "pickup-link": "",
+            "text-announcement": "Buy 1 get 1 50% off almost everything!",
+            "link-announcement": "",
+            "text-support": "Customer Support",
+            "link-support": ""
+          }
         }
       },
       "block_order": [
@@ -140,7 +157,8 @@
         "1b46a341-ef89-4a8a-b51d-4b3d2e49ab3b",
         "2675c809-dbc8-4909-8aa2-be0aa939fdda",
         "5181e2c0-66ba-4586-9e51-56b06e464c4f",
-        "99c80a6c-f273-492b-9b70-175cda1f3bf1"
+        "99c80a6c-f273-492b-9b70-175cda1f3bf1",
+        "f2c60000-f737-417f-8f3d-081f6f686587"
       ],
       "settings": {
         "color_scheme": "background-1",
