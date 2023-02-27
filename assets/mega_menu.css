@@ -174,3 +174,7 @@
   text-decoration: none;
   color: #121212BF;
 }
+
+.menu-drawer__menu{
+  background-color: white;
+}

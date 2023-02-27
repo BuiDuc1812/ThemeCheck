@@ -84,6 +84,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   display: grid;
   grid-template-rows: auto auto;
   align-content: space-between;
+  height: 100%;
 }
 
 .menu-drawer__navigation {
