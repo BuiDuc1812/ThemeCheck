@@ -62,6 +62,9 @@
   .container{
     padding: 0;
   }
+  .header{
+    padding: 0 14px;
+  }
 }
 @media screen and (max-width:990px) {
   .tat{
