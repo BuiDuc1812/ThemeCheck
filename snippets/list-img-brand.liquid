@@ -1,50 +1,80 @@
 {% for block in section.blocks %}
     {% case block.type %}
         {% when 'brands' %}
-            <a href="{{ block.settings.link-nav1}}">
+            {% if block.settings.img-nav1 %}
+                <a href="{{ block.settings.link-nav1}}">
                 <img src="{{ block.settings.img-nav1.src | img_url: 'medium' }}" alt="">
               </a>
-              <a href="{{ block.settings.link-nav2}}">
+            {% endif %}
+            {% if block.settings.img-nav2 %}
+                <a href="{{ block.settings.link-nav2}}">
                 <img src="{{ block.settings.img-nav2.src | img_url: 'medium' }}" alt="">
               </a>
-              <a href="{{ block.settings.link-nav3}}">
+            {% endif %}
+            {% if block.settings.img-nav3 %}
+                <a href="{{ block.settings.link-nav3}}">
                 <img src="{{ block.settings.img-nav3.src | img_url: 'medium' }}" alt="">
               </a>
-              <a href="{{ block.settings.link-nav4}}">
+            {% endif %}
+            {% if block.settings.img-nav4 %}
+                <a href="{{ block.settings.link-nav4}}">
                 <img src="{{ block.settings.img-nav4.src | img_url: 'medium' }}" alt="">
               </a>
-              <a href="{{ block.settings.link-nav5}}">
+            {% endif %}
+            {% if block.settings.img-nav5 %}
+                <a href="{{ block.settings.link-nav5}}">
                 <img src="{{ block.settings.img-nav5.src | img_url: 'medium' }}" alt="">
               </a>
-              <a href="{{ block.settings.link-nav6}}">
+            {% endif %}
+            {% if block.settings.img-nav6 %}
+                <a href="{{ block.settings.link-nav6}}">
                 <img src="{{ block.settings.img-nav6.src | img_url: 'medium' }}" alt="">
               </a>
-              <a href="{{ block.settings.link-nav7}}">
+            {% endif %}
+            {% if block.settings.img-nav7 %}
+                <a href="{{ block.settings.link-nav7}}">
                 <img src="{{ block.settings.img-nav7.src | img_url: 'medium' }}" alt="">
               </a>
-              <a href="{{ block.settings.link-nav8}}">
+            {% endif %}
+            {% if block.settings.img-nav8 %}
+                <a href="{{ block.settings.link-nav8}}">
                 <img src="{{ block.settings.img-nav8.src | img_url: 'medium' }}" alt="">
               </a>
-              <a href="{{ block.settings.link-nav9}}">
+            {% endif %}
+            {% if block.settings.img-nav9 %}
+                <a href="{{ block.settings.link-nav9}}">
                 <img src="{{ block.settings.img-nav9.src | img_url: 'medium' }}" alt="">
               </a>
-              <a href="{{ block.settings.link-nav10}}">
+            {% endif %}
+            {% if block.settings.img-nav10 %}
+                <a href="{{ block.settings.link-nav10}}">
                 <img src="{{ block.settings.img-nav10.src | img_url: 'medium' }}" alt="">
               </a>
-              <a href="{{ block.settings.link-nav11}}">
+            {% endif %}
+            {% if block.settings.img-nav11 %}
+                <a href="{{ block.settings.link-nav11}}">
                 <img src="{{ block.settings.img-nav11.src | img_url: 'medium' }}" alt="">
               </a>
-              <a href="{{ block.settings.link-nav12}}">
+            {% endif %}
+            {% if block.settings.img-nav12 %}
+                <a href="{{ block.settings.link-nav12}}">
                 <img src="{{ block.settings.img-nav12.src | img_url: 'medium' }}" alt="">
               </a>
-              <a href="{{ block.settings.link-nav13}}">
+            {% endif %}
+            {% if block.settings.img-nav13 %}
+                <a href="{{ block.settings.link-nav13}}">
                 <img src="{{ block.settings.img-nav13.src | img_url: 'medium' }}" alt="">
               </a>
-              <a href="{{ block.settings.link-nav14}}">
+            {% endif %}
+            {% if block.settings.img-nav14 %}
+                <a href="{{ block.settings.link-nav14}}">
                 <img src="{{ block.settings.img-nav14.src | img_url: 'medium' }}" alt="">
               </a>
-              <a href="{{ block.settings.link-nav15}}">
+            {% endif %}
+            {% if block.settings.img-nav15 %}
+                <a href="{{ block.settings.link-nav15}}">
                 <img src="{{ block.settings.img-nav15.src | img_url: 'medium' }}" alt="">
               </a>
+            {% endif %}
     {% endcase %}
 {% endfor %}
