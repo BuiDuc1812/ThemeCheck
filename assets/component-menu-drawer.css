@@ -90,6 +90,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer__navigation {
   padding:  20px 20px 0 20px;
 }
+
 .no-js .menu-drawer__navigation {
   padding: 0;
 }

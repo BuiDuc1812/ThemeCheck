@@ -2424,8 +2424,6 @@ span{
 }
 
 .header__icon .icon {
-  height: 2rem;
-  width: 2rem;
   fill: none;
   vertical-align: middle;
 }
@@ -2452,7 +2450,7 @@ span{
   content: "";
   top: -42px;
   left: 0;
-  height: calc(var(--viewport-height, 100vh) +  (var(--header-bottom-position, 100%)));
+  height: calc( 100vh + var(--header-bottom-position, 100%));
   width: 100%;
   display: block;
   position: absolute;
@@ -3021,4 +3019,12 @@ details-disclosure > details {
 .style-soul{
   background-color: #ccc !important;
   color: black !important;
+}
+.turn-off{
+  display: none !important;
+}
+.icon-close{
+  z-index: 1;
+  top: -12px;
+  right: 12px;
 }

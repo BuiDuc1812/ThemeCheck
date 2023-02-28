@@ -5,7 +5,7 @@ function getFocusableElements(container) {
     )
   );
 }
-
+let bottomLink = document.querySelector(".menu-drawer__utility-links");
 document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
   summary.setAttribute('role', 'button');
   summary.setAttribute('aria-expanded', summary.parentNode.hasAttribute('open'));
@@ -352,7 +352,7 @@ class MenuDrawer extends HTMLElement {
     const parentMenuElement = detailsElement.closest('.has-submenu');
     const isOpen = detailsElement.hasAttribute('open');
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-
+    
     function addTrapFocus() {
       trapFocus(summaryElement.nextElementSibling, detailsElement.querySelector('button'));
       summaryElement.nextElementSibling.removeEventListener('transitionend', addTrapFocus);
@@ -368,6 +368,8 @@ class MenuDrawer extends HTMLElement {
     } else {
       setTimeout(() => {
         detailsElement.classList.add('menu-opening');
+        bottomLink.classList.add('turn-off')
+        
         summaryElement.setAttribute('aria-expanded', true);
         parentMenuElement && parentMenuElement.classList.add('submenu-open');
         !reducedMotion || reducedMotion.matches ? addTrapFocus() : summaryElement.nextElementSibling.addEventListener('transitionend', addTrapFocus);
@@ -386,11 +388,12 @@ class MenuDrawer extends HTMLElement {
 
   closeMenuDrawer(event, elementToFocus = false) {
     if (event === undefined) return;
-
+    console.log(bottomLink);
     this.mainDetailsToggle.classList.remove('menu-opening');
     this.mainDetailsToggle.querySelectorAll('details').forEach(details => {
       details.removeAttribute('open');
       details.classList.remove('menu-opening');
+      console.log(bottomLink);
     });
     this.mainDetailsToggle.querySelectorAll('.submenu-open').forEach(submenu => {
       submenu.classList.remove('submenu-open');
@@ -414,6 +417,7 @@ class MenuDrawer extends HTMLElement {
   closeSubmenu(detailsElement) {
     const parentMenuElement = detailsElement.closest('.submenu-open');
     parentMenuElement && parentMenuElement.classList.remove('submenu-open');
+    bottomLink.classList.remove('turn-off')
     detailsElement.classList.remove('menu-opening');
     detailsElement.querySelector('summary').setAttribute('aria-expanded', false);
     removeTrapFocus(detailsElement.querySelector('summary'));
