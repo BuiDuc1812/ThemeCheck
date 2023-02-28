@@ -6,10 +6,14 @@ accordion.forEach((item, index)=>{
     item.classList.toggle("open");
     let description = item.querySelector(".accordion-description");
     if(item.classList.contains("open")){
+      item.querySelector(".down").classList.add('turn-off')
+      item.querySelector(".up").classList.remove('turn-off')
       description.style.height = `${description.scrollHeight}px`;
     }
     else{
       description.style.height = "0";
+      item.querySelector(".down").classList.remove('turn-off')
+      item.querySelector(".up").classList.add('turn-off')
     }
     removeOpen(index);
   })
@@ -20,6 +24,8 @@ function removeOpen(i){
       item.classList.remove("open");
       let des = item.querySelector(".accordion-description");
       des.style.height="0";
+      item.querySelector(".down").classList.remove('turn-off')
+      item.querySelector(".up").classList.add('turn-off')
     }
   })
 }
