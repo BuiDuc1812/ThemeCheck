@@ -128,6 +128,7 @@
 .down,.up{
   position: absolute;
     right: 2.5rem;
+    transition: all 0.2s ease;
 }
 .list-img-brand{
   display: grid;
