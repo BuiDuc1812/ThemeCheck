@@ -132,8 +132,7 @@
 .list-img-brand{
   display: grid;
   gap : 16px;
-  grid-template-columns: repeat(5, auto);
-
+  grid-template-columns: repeat(5, minmax(auto,186.8px));
 }
 .list-img-brand a{
   display: contents;
@@ -141,9 +140,12 @@
 }
 .list-img-brand img{
   min-width: 132px;
-  max-width: 186.8px;
   width: 100%;
+  transition: all 0.3s ease;
 } 
+.list-img-brand img:hover{
+  transform: scale(1.05);
+}
 .accordion{
   overflow: hidden;
 }
@@ -210,4 +212,8 @@
 }
 .slick-slider button{
   display: none !important;
+}
+.li-sale{
+  overflow: hidden;
+  height: 278px;
 }
