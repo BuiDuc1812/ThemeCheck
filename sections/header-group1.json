@@ -146,6 +146,14 @@
             "text-support": "Customer Support",
             "link-support": ""
           }
+        },
+        "12e6df3a-c9f3-44e2-bd4a-099284756822": {
+          "type": "links",
+          "settings": {
+            "button-text": "Contact Us",
+            "button-url": "",
+            "icon-image": "shopify:\/\/shop_images\/b04051a654018e5fd710.jpg"
+          }
         }
       },
       "block_order": [
@@ -158,7 +166,8 @@
         "2675c809-dbc8-4909-8aa2-be0aa939fdda",
         "5181e2c0-66ba-4586-9e51-56b06e464c4f",
         "99c80a6c-f273-492b-9b70-175cda1f3bf1",
-        "f2c60000-f737-417f-8f3d-081f6f686587"
+        "f2c60000-f737-417f-8f3d-081f6f686587",
+        "12e6df3a-c9f3-44e2-bd4a-099284756822"
       ],
       "settings": {
         "color_scheme": "background-1",
