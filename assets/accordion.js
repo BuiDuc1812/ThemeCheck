@@ -2,7 +2,6 @@
 var accordion = document.querySelectorAll(".accordion");
 accordion.forEach((item, index)=>{
   var header = item.querySelector(".accordion-header");
-  console.log(header);
   header.addEventListener('click',()=>{
     item.classList.toggle("open");
     let description = item.querySelector(".accordion-description");

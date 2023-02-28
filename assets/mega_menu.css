@@ -30,35 +30,12 @@
 .announcement,.support a{
   text-decoration: none;
 }
-
-.announcement{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-}
-.support,.pickup{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-}
-
 .slider-header .pickup,.slider-header .support,.slider-header .announcement{
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
 }
-/* .pickup{
-  float: left;
-}
-
-.support{
-  float: right;
-} */
 .new-header{
   display: flex;
 }
@@ -77,17 +54,32 @@
   .tat{
     display: none !important;
   } 
+  .container .pickup,.container .announcement, .container .support{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
 }
 @media screen and (min-width:990px) {
   .show{
     display: none !important;
   }
-}
-/* @media screen and (max-width:768px){
-  .header{
-    padding: 0 20px ;
+  .container{
+    display: flex;
+    justify-content: space-between;
   }
-} */
+  .container .pickup, .container .support{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+  .container .announcement{
+    position: absolute;
+  }
+}
+
 
 
 
