@@ -105,10 +105,10 @@
 
 .child{
   position: absolute;
-  height: 100%;
-  width: 72px;
+  height: inherit;
   right: 0;
 }
+
 .layout{
   width: 50%;
   float: left;
