@@ -165,7 +165,7 @@
   padding:0 20px 20px 20px;
 }
 .accordion-description a{
-  margin-bottom: 10px;
+  line-height: 30px;
 }
 
 .header__menu-item a{
