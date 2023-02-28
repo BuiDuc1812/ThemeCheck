@@ -9,4 +9,4 @@ $(document).ready(function() {
   }
   else
  
-  console.log(screen.width);
+  console.log(window.width);
