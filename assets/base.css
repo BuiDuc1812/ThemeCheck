@@ -342,7 +342,9 @@ body,
   padding: 0;
   list-style: none;
 }
-
+.list-unstyled li>a{
+  padding: 7px 0;
+}
 .hidden {
   display: none !important;
 }
@@ -2646,7 +2648,7 @@ details[open] > .header__submenu {
   }
  .hove {
     text-decoration: none;
-    margin: 0 19px;
+    margin: 0 17px;
     padding: 25px 0;
     transition: all 0.3s ease;
   }
