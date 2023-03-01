@@ -14,21 +14,20 @@
   top: 100%;
 }
 
-.shopify-section-header-sticky .mega-menu__content {
-  max-height: calc(100vh - var(--header-bottom-position-desktop, 20rem) - 4rem);
-}
+
 
 .header-wrapper--border-bottom .mega-menu__content {
   border-top: 0;
 }
 .mega-menu__list {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  display: flex;
+  justify-content: space-between;
   list-style: none;
-  max-width: 1440px;
-  padding: 0 80px;  
   text-align: start;
   margin-top: 40px;
+}
+.mega-menu__list a {
+  color: black;
 }
 .default{
   grid-template-columns: repeat(2, auto);
@@ -85,6 +84,7 @@
 
 .sale-off{
   width: 100%;
+  height: 100%;
   margin: 0 auto;
   display: block;
   transition: all 0.2s ease;
