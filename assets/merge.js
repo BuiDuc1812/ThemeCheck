@@ -14,3 +14,6 @@ list.forEach((item, index)=>{
         insertAfter(li,item)
     }
 })
+function insertAfter(li, element) {
+    element.parentNode.insertBefore(li, element.nextSibling);
+}
