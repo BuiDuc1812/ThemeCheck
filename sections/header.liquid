@@ -499,14 +499,14 @@
                               <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content gradient motion-reduce global-settings-popup" tabindex="-1">
                                 <ul class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
                                   {%- for childlink in link.links -%}
-                                    <li>
+                                    <li class="merge">
                                       <a href="{{ childlink.url }}" class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
                                         {{ childlink.title | escape }}
                                       </a>
                                       {%- if childlink.links != blank -%}
                                         <ul class="list-unstyled" role="list">
                                           {%- for grandchildlink in childlink.links -%}    
-                                          <li class="{% if forloop.length > 8 %}layout{% endif %}" >
+                                            <li class="{% if forloop.length > 8 %}layout{% endif %}" >
                                               <a href="{{ grandchildlink.url }}" class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
                                                 {{ grandchildlink.title | escape }}
                                               </a>
@@ -514,11 +514,19 @@
                                           {%- endfor -%}
                                         </ul>
                                       {%- endif -%}
-                                    </li>
+                                    </li>                            
                                   {%- endfor -%}
                                   <li class="li-sale">
                                     <a href="#"><img class="sale-off" src="{{ block.settings.sale-off-desk.src | img_url: 'medium' }}" alt=""></a>
                                   </li> 
+                                  <script>
+                                      var merge = document.querySelectorAll(".merge");
+                                      merge.forEach((item, index)=>{
+                                        item.setAttribute("index",index)    
+                                        console.log(item)
+
+                                      })                                                                                                                                                             
+                                  </script> 
                                 </ul>
                               </div>
                             </div>
@@ -1117,6 +1125,18 @@
           "type": "image_picker",
           "id":"sale-off-desk",
           "label": "Image desktop"
+        },
+        {
+          "type": "text",
+          "id":"index-first",
+          "default": "index of col",
+          "label": "Columns first"
+        },
+        {
+          "type": "text",
+          "id":"index-seconds",
+          "default": "index of col",
+          "label": "Columns seconds"
         }
       ]
     },
