@@ -3022,5 +3022,6 @@ details-disclosure > details {
 }
 .icon-close{
   z-index: 1;
-  right: 12px;
+  top: -16px;
+  right: 16px;
 }

@@ -9,6 +9,7 @@ list.forEach((item, index)=>{
     }
     if(index == second ){
         li.appendChild(item)
+        item.style.margin = "24px 0 0 0" ;
     }
     if(index == first - 1){
         insertAfter(li,item)
