@@ -523,8 +523,8 @@
                                       var merge = document.querySelectorAll(".merge");
                                       merge.forEach((item, index)=>{
                                         item.setAttribute("index",index)    
-                                        console.log(item)
-
+                                        console.log({{ block.settings.index-first | json }})
+                                        console.log({{ block.settings.index-seconds | json }})
                                       })                                                                                                                                                             
                                   </script> 
                                 </ul>
