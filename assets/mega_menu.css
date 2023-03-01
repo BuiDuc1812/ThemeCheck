@@ -26,6 +26,8 @@
   max-width: 1440px;
   padding: 0 80px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 .container .pickup, .container .support{
   display: flex;
@@ -217,4 +219,10 @@
 .li-sale{
   overflow: hidden;
   height: 278px;
+}
+.mega-menu__link{
+  transition: all 0.2s ease;
+}
+.mega-menu__link:hover{
+  color: #007aff;
 }
