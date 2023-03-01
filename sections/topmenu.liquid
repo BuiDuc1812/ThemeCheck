@@ -1,15 +1,18 @@
 <section class="topmenu">
-    <div class="container">
-        <div class="pickup">
+    <div class="swiper swiper-slider container">
+        <div class="swiper-wrapper topmenu-custom-height-desk">
+            <div class="pickup swiper-slide">
             {% render 'icon-house' %}
             <p>{{ section.settings.text-pickup }}</p>
             <a href="{{ section.settings.pickup-link }}">{{ section.settings.pickup-button }}</a>
+            </div>
+            <a class="announcement swiper-slide " href="{{ section.settings.link-announcement }}">{{ section.settings.text-announcement }}</a>
+            <div class="support swiper-slide">
+                {% render 'icon-question' %}
+            <a href="{{ section.settings.link-support }}">{{ section.settings.text-support }}</a>
+            </div>
         </div>
-        <a class="announcement" href="{{ section.settings.link-announcement }}">{{ section.settings.text-announcement }}</a>
-        <div class="support">
-            {% render 'icon-question' %}
-        <a href="{{ section.settings.link-support }}">{{ section.settings.text-support }}</a>
-        </div>
+        
     </div>
 </section>
 {% schema %}

@@ -8,6 +8,11 @@
   p{
     margin: 0;
   }
+.container{
+  max-width: 1440px;
+  padding: 0 80px;
+  margin: 0 auto;
+}
 .container a,.container p{
   font-size: 14px;
   font-family: Galano;
@@ -17,36 +22,17 @@
   font-family: Galano;
 }
 .topmenu{
+  overflow: hidden;
   width: 100%;
   height: 42px;
   background-color: var(--color-navy);
-  line-height: 42px;
-}
-.container{
-  max-width: 1440px;
-  padding: 0 80px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-.container .pickup, .container .support{
-  display: flex;
-  align-items: center;
-  gap: 6px;
+  line-height: inherit;
 }
 
 .announcement,.support a{
   text-decoration: none;
 }
-.slider-header .pickup,.slider-header .support,.slider-header .announcement{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-}
-.new-header{
-  display: flex;
-}
+
 @media screen and (max-width:768px) {
   .container a,.container p{
     font-size: 12px;
@@ -61,35 +47,57 @@
 @media screen and (max-width:990px) {
   .topmenu{
     height: 30px;
-    line-height: 30px;
+  }
+  .topmenu-custom-height-desk{
+    height: 30px;
+    align-items: center;
   }
   .tat{
     display: none !important;
   } 
-  .container .pickup,.container .announcement, .container .support{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-  }
 }
 @media screen and (min-width:990px) {
   .show{
     display: none !important;
   }
-  .container{
-    display: flex;
-  }
+}
+.swiper{
+  margin: 0 0;
+  overflow: unset;
 }
 
-
-
-
+.swiper-slider{
+  background-color: var(--color-navy);
+  height: 46px;
+}
+.swiper-wrapper{
+  /* height: 46px; */
+  transition: all 0.2s linear;
+}
+.swiper-custom-height{
+  height: 46px;
+}
+.topmenu-custom-height-desk{
+  height: 42px;
+}
+.swiper-wrapper a{
+  color: white;
+}
+.swiper-slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  color: white
+}
+.new-header{
+  display: flex;
+}
 #menu-drawer{
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: -30px;
+  position: fixed;
+
 }
 
 .mega-menu__content{

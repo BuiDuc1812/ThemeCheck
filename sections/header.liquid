@@ -144,17 +144,19 @@
             {% for block in section.blocks %}
               {% case block.type %}
                 {% when 'topheader' %}
-                  <div class="slider-header">
-                    <div class="pickup">
+                  <div class="swiper swiper-slider">
+                    <div class="swiper-wrapper swiper-custom-height">
+                      <div class="pickup swiper-slide">
                       {% render 'icon-house' %}
                       <p>{{ block.settings.text-pickup }}</p>
                       <a href="{{ block.settings.pickup-link }}">{{ block.settings.pickup-button }}</a>
-                    </div>
-                    <a class="announcement" href="{{ block.settings.link-announcement }}">{{ block.settings.text-announcement }}</a>
-                    <div class="support">
-                      {% render 'icon-question' %}
-                      <a href="{{ block.settings.link-support }}">{{ block.settings.text-support }}</a>
-                    </div>
+                      </div>
+                      <a class="announcement swiper-slide" href="{{ block.settings.link-announcement }}">{{ block.settings.text-announcement }}</a>
+                      <div class="support swiper-slide">
+                        {% render 'icon-question' %}
+                        <a href="{{ block.settings.link-support }}">{{ block.settings.text-support }}</a>
+                      </div>
+                    </div> 
                   </div>
               {% endcase %}
             {% endfor %}
