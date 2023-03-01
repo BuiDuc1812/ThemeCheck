@@ -10,7 +10,7 @@ list.forEach((item, index)=>{
     if(index == second ){
         li.appendChild(item)
     }
-    if(index == 0){
+    if(index == first - 1){
         insertAfter(li,item)
     }
 })
