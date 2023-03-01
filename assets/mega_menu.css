@@ -48,18 +48,6 @@
     padding: 0 14px;
   }
 }
-@media screen and (max-width:990px) {
-  .topmenu{
-    height: 30px;
-  }
-  .topmenu-custom-height-desk{
-    height: 30px;
-    align-items: center;
-  }
-  .tat{
-    display: none !important;
-  } 
-}
 @media screen and (min-width:990px) {
   .show{
     display: none !important;
@@ -81,8 +69,28 @@
 .swiper-custom-height{
   height: 46px;
 }
+.pickup,.support{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
 .topmenu-custom-height-desk{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 42px;
+}
+@media screen and (max-width:990px) {
+  .topmenu{
+    height: 30px;
+  }
+  .topmenu-custom-height-desk{
+    height: 30px;
+    align-items: center;
+  }
+  .tat{
+    display: none !important;
+  } 
 }
 .swiper-wrapper a{
   color: white;

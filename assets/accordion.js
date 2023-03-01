@@ -29,3 +29,8 @@ function removeOpen(i){
     }
   })
 }
+var swiper = new Swiper(".swiper-drawer", {
+  autoplay: {
+    delay: 2000,
+  },
+});
