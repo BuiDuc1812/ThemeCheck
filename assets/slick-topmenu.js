@@ -4,8 +4,7 @@ $(document).ready(function() {
       autoplaySpeed:2000
     });
   });
-  
-  if(screen.width()<=990){
+  if($(window).width()<=990){
      $(document).ready(function() {
         $('.container').slick({
           autoplay:true,
