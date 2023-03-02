@@ -76,9 +76,6 @@ details[open].menu-opening > .menu-drawer__submenu {
     height: auto;
   }
 }
-.menu-drawer__navigation-container {
-  height: inherit;
-}
 .menu-drawer__navigation {
   padding:  20px 20px 0 20px;
 }
@@ -178,9 +175,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__utility-links {
-  height: inherit;
   padding: 2rem;
-  background-color: rgba(var(--color-foreground), 0.03);
 }
 
 .menu-drawer__account {
