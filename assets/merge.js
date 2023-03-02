@@ -1,18 +1,18 @@
-var ul = document.querySelector(".list-girl")
-var li = document.createElement("li")
-var first = ul.getAttribute("first")
-var second = ul.getAttribute("second")
-var list = ul.querySelectorAll(".merge")
+var ul = document.querySelector(".list-girl");
+var li = document.createElement("li");
+var first = ul.getAttribute("first");
+var second = ul.getAttribute("second");
+var list = ul.querySelectorAll(".merge");
 list.forEach((item, index)=>{
     if(index == first ){
-        li.appendChild(item)
+        li.appendChild(item);
     }
     if(index == second ){
-        li.appendChild(item)
+        li.appendChild(item);
         item.style.margin = "24px 0 0 0" ;
     }
     if(index == first - 1){
-        insertAfter(li,item)
+        insertAfter(li,item);
     }
 })
 function insertAfter(li, element) {
