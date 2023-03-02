@@ -388,12 +388,11 @@ class MenuDrawer extends HTMLElement {
 
   closeMenuDrawer(event, elementToFocus = false) {
     if (event === undefined) return;
-    console.log(bottomLink);
     this.mainDetailsToggle.classList.remove('menu-opening');
     this.mainDetailsToggle.querySelectorAll('details').forEach(details => {
       details.removeAttribute('open');
       details.classList.remove('menu-opening');
-      console.log(bottomLink);
+
     });
     this.mainDetailsToggle.querySelectorAll('.submenu-open').forEach(submenu => {
       submenu.classList.remove('submenu-open');
