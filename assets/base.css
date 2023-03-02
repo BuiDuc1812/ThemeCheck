@@ -3017,6 +3017,6 @@ details-disclosure > details {
 }
 .icon-close{
   z-index: 1;
-  top: -16px;
-  right: 16px;
+  top: -18px;
+  right: 13px;
 }

@@ -76,17 +76,10 @@ details[open].menu-opening > .menu-drawer__submenu {
     height: auto;
   }
 }
-
-.menu-drawer__inner-container {
-  height: 100%;
-}
-
 .menu-drawer__navigation-container {
   display: grid;
   grid-template-rows: auto auto;
-  
 }
-
 .menu-drawer__navigation {
   padding:  20px 20px 0 20px;
 }
