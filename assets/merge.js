@@ -18,26 +18,28 @@ arr.forEach(item=>{
 })
 var newCols = document.querySelectorAll(".new-cols")
 var list = nameUl.querySelectorAll(".merge");
-let myArray = Array.from(list)
 let t = 0;
-newCols.forEach((item)=>{
+newCols.forEach((item, index)=>{
     let i = 0;
-    var quantityItem = item.getAttribute("item") 
-    console.log(quantityItem)
-    for (const child in myArray) {
-        if (Object.hasOwnProperty.call(myArray, child)) {
-            const element = myArray[child];
+    if(index == t){
+        var quantityItem = item.getAttribute("item") 
+    }
+    for (const child in list) {
+        if (Object.hasOwnProperty.call(list, child)) {
+            const element = list[child];
             item.appendChild(element);
-            i++; 
-            if(i >= quantityItem){
+            i++;
+            console.log(element)
+            console.log(item)
+            // get first element
+            // item.appendChild(element);
+            // delete this
+            if(i>=quantityItem){
                 break;
-            } 
+            }
         }
     }
-    for(var x = 0; x < quantityItem; x++){
-        myArray.shift();
-    } 
-    console.log(myArray)
+    t++;
 })
 
 
