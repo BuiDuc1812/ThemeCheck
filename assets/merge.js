@@ -1,13 +1,15 @@
-var merge = document.querySelector(".merge-list");
+var nameUl = document.querySelector(".merge-list");
 var newLi = document.createElement("li");
-var first = merge.getAttribute("first");
-var second = merge.getAttribute("second");
-var third = merge.getAttribute("third");
-var fouth = merge.getAttribute("fouth");
-
+var first = nameUl.getAttribute("first");
+var second = nameUl.getAttribute("second");
+var third = nameUl.getAttribute("third");
+var fouth = nameUl.getAttribute("fouth");
 console.log(first,second,third,fouth)
 
-// var list = ul.querySelectorAll(".merge");
+var list = nameUl.querySelectorAll(".merge");
+list.forEach((item, index)=>{
+    console.log(item)
+})
 // list.forEach((item, index)=>{
 //     if(index == first ){
 //         li.appendChild(item);
