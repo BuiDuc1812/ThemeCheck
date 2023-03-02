@@ -16,6 +16,7 @@ arr.forEach((item, index)=>{
 })
 var list = nameUl.querySelectorAll(".merge");
 
+
 // list.forEach((item, index)=>{
 //     if(index == first ){
 //         li.appendChild(item);
