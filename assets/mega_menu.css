@@ -115,6 +115,7 @@
   transition: all 0.2s ease;
 }
 .list-menu>li:hover .mega-menu__content{
+  overflow-y: auto;
   height: 366px;
   opacity: 1;
 }
@@ -230,7 +231,7 @@
 }
 .li-sale{
   overflow: hidden;
-  min-width: 224px;
+  min-width: 224px !important;
   height: 278px;
 }
 .mega-menu__link{

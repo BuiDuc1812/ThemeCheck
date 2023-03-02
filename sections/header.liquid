@@ -267,6 +267,7 @@
                                         {%- endif -%}
                                       </li>
                                     {%- endfor -%}
+                                    <li style="padding: 20px; font-weight: bold; border-top: 1px #ccc solid; color:black">Top Brands</li>
                                     <li class="list-brands">
                                       {% render 'list-img-brand' %}
                                     </li> 
@@ -700,7 +701,7 @@
           </span>
         </a>
       {%- endif -%}
-      <a style="display:flex;align-items:center;justify-content: center; width:40px;" href="#">
+      <a style="display: flex; align-items: center; justify-content: center; width: 44px;" href="#">
         {% render 'heart' %}
       </a>
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
