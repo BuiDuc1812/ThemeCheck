@@ -1,4 +1,4 @@
-var ul = document.querySelector(".list-girl");
+var ul = document.querySelector(".merge-list");
 var li = document.createElement("li");
 var first = ul.getAttribute("first");
 var second = ul.getAttribute("second");
