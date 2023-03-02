@@ -103,8 +103,6 @@
   display: flex;
 }
 #menu-drawer{
-  display: flex;
-  flex-direction: column;
   position: fixed;
 }
 .mega-menu__content{
@@ -240,4 +238,7 @@
 }
 .merge{
   max-width: 232px;
+}
+.menu-drawer__inner-container{
+  height: inherit;
 }
