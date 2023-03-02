@@ -41,20 +41,6 @@ newCols.forEach((item)=>{
 })
 
 
-
-
-
-// console.log(newCols)
-
-// nameUl.children.forEach(item=>{
-//     console.log(item)
-// })
-// console.log(nameUl.children)
-
-// console.log(nameUl)
-
-
-
 // list.forEach((item, index)=>{
 //     if(index == first ){
 //         li.appendChild(item);
