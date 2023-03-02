@@ -1,26 +1,23 @@
-const breakpoint = window.matchMedia( '(max-width:990px)' );
-var swiper;
-  const enableSwiper = function() {
-    swiper = new Swiper(".swiper-topmenu", {
-      autoplay: {
-        delay: 2000,
-      },
-    });
-  };
-function breakpointChecker() {
-  if ( breakpoint.matches === false ) {
-	  if ( swiper !== undefined ) swiper.destroy( true, true );
-	  return;
-    } else if ( breakpoint.matches === true ) {
-      return enableSwiper();
+var init = false;
+var swiper = '';
+
+function enableSwiper() {
+  if (window.innerWidth < 990) {
+    if (!init) {
+      init = true;
+      swiper = new Swiper(".swiper-topmenu", {
+        autoplay: {
+          delay: 2000,
+        },
+      });
+    }
+  } else if (init) {
+    swiper.destroy();
+    init = false;
   }
-};
-function slide(){
-  console.log(breakpoint.matches)
-  breakpointChecker();
 }
-window.addEventListener('resize', slide);
-slide();
+enableSwiper();
+window.addEventListener('resize', enableSwiper)
 
 
   

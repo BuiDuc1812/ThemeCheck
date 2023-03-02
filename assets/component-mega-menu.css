@@ -25,8 +25,10 @@
   list-style: none;
   text-align: start;
   margin-top: 40px;
-  flex-wrap: wrap;
   row-gap: 16px;
+}
+.wrap{
+  flex-wrap: wrap;
 }
 .mega-menu__list a {
   color: black;

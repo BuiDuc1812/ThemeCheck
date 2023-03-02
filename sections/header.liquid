@@ -501,7 +501,7 @@
                                 <span class="line" {%- if link.child_active %} class="header__active-menu-item"{% endif %}> <a href=" {{ block.settings.link-nav }}">{{ block.settings.text-navigation | escape }}</a></span>
                               </div>
                               <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content gradient motion-reduce global-settings-popup" tabindex="-1">
-                                <ul class="mega-menu__list list-girl container page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" first="{{ block.settings.index-first }}" second="{{ block.settings.index-seconds }}" role="list">
+                                <ul class="mega-menu__list wrap list-girl container page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" first="{{ block.settings.index-first }}" second="{{ block.settings.index-seconds }}" role="list">
                                   {%- for childlink in link.links -%}
                                     <li class="merge">
                                       <a href="{{ childlink.url }}" class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
