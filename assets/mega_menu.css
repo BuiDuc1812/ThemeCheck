@@ -112,7 +112,7 @@
   transition: all 0.2s ease;
 }
 .list-menu>li:hover .mega-menu__content{
-  overflow-y: auto;
+  overflow-y:auto;
   height: 366px;
   opacity: 1;
 }
