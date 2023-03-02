@@ -1,13 +1,13 @@
 <section class="topmenu">
     <div class="swiper swiper-slider swiper-topmenu container">
         <div class="swiper-wrapper topmenu-custom-height-desk">
-            <div class="pickup swiper-slide resp">
+            <div class="pickup swiper-slide">
                 {% render 'icon-house' %}
                 <p>{{ section.settings.text-pickup }}</p>
                 <a href="{{ section.settings.pickup-link }}">{{ section.settings.pickup-button }}</a>
             </div>
-                <a class="announcement swiper-slide resp" href="{{ section.settings.link-announcement }}">{{ section.settings.text-announcement }}</a>
-            <div class="support swiper-slide resp">
+                <a class="announcement swiper-slide" href="{{ section.settings.link-announcement }}">{{ section.settings.text-announcement }}</a>
+            <div class="support swiper-slide">
                 {% render 'icon-question' %}
                 <a href="{{ section.settings.link-support }}">{{ section.settings.text-support }}</a>
             </div>
