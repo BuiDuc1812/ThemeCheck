@@ -1,7 +1,7 @@
 var nameUl = document.querySelector(".merge-list");
 
 var newLi = document.createElement("li");
-
+var liSale = document.querySelector(".li-sale")
 var first = nameUl.getAttribute("first");
 var second = nameUl.getAttribute("second");
 var third = nameUl.getAttribute("third");
@@ -19,7 +19,7 @@ arr.forEach(item=>{
 var newCols = document.querySelectorAll(".new-cols")
 var list = nameUl.querySelectorAll(".merge");
 let myArray = Array.from(list);
-newCols.forEach((item)=>{
+newCols.forEach((item,index)=>{
     let i = 0;
     var quantityItem = item.getAttribute("item") ;
     for (const child in myArray) {
@@ -35,8 +35,8 @@ newCols.forEach((item)=>{
     for(var x = 0; x < quantityItem; x++){
         myArray.shift();
     } 
-    console.log(myArray)
 })
+liSale.style.order = "5";
 
 
 // list.forEach((item, index)=>{
