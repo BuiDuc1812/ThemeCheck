@@ -1,5 +1,7 @@
 var nameUl = document.querySelector(".merge-list");
+
 var newLi = document.createElement("li");
+
 var first = nameUl.getAttribute("first");
 var second = nameUl.getAttribute("second");
 var third = nameUl.getAttribute("third");
@@ -15,15 +17,41 @@ arr.forEach(item=>{
     nameUl.appendChild(newLi)
 })
 var newCols = document.querySelectorAll(".new-cols")
+var list = nameUl.querySelectorAll(".merge");
+let t = 0;
+let i = 0;
 newCols.forEach((item, index)=>{
-    console.log(item,index)
+    if(index == t){
+        var quantityItem = item.getAttribute("item") 
+        console.log(quantityItem)
+    }
+    list.forEach((itemC, indexC)=>{
+        if(i != quantityItem){
+            console.log("true")
+            i++;
+        }  
+        else{
+            i = 0;
+        }
+    })
+    t++;
 })
 
-var list = nameUl.querySelectorAll(".merge");
-list.forEach((item, index)=>{
-    console.log(item,index)
- })
-console.log(newCols)
+
+
+
+
+// console.log(newCols)
+
+// nameUl.children.forEach(item=>{
+//     console.log(item)
+// })
+// console.log(nameUl.children)
+
+// console.log(nameUl)
+
+
+
 // list.forEach((item, index)=>{
 //     if(index == first ){
 //         li.appendChild(item);
