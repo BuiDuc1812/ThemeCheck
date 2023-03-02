@@ -1,32 +1,18 @@
+var parent = document.querySelector(".topmenu");
+var child = parent.querySelectorAll(".resp");
 
-// onresize = (item)=>{
-//   if(screen.width <= 990 ){
-//     var swiper = new Swiper(".swiper-topmenu", {
-//       autoplay: {
-//         delay: 2000,
-//       },
-//     });
-//   }
-//   else{
-//     var parent = document.querySelector(".topmenu");
-//     var element = parent.querySelectorAll(".swiper-slide");
-//     element.forEach(item=>{
-//       item.classList.remove("swiper-slide");
-//     })
-//     parent.querySelector(".swiper-wrapper").classList.remove("swiper-wrapper");
-//     parent.querySelector(".swiper").classList.remove("swiper");
-//   }
-// }
-
-// console.log(screen.width)
-var width = screen.width
-function resizeWindow(){
-  if(width < 990){
+function slide(){
+  
+  if(window.innerWidth<=990){
     var swiper = new Swiper(".swiper-topmenu", {
         autoplay: {
         delay: 2000,
       },
     });
   }
+  else{
+    console.log(window.innerWidth)
+  }
 }
-window.onresize = resizeWindow ;
+window.addEventListener('resize', slide);
+slide();
