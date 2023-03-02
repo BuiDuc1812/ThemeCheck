@@ -18,12 +18,10 @@ arr.forEach(item=>{
 })
 var newCols = document.querySelectorAll(".new-cols")
 var list = nameUl.querySelectorAll(".merge");
-let myArray = Array.from(list)
-let t = 0;
+let myArray = Array.from(list);
 newCols.forEach((item)=>{
     let i = 0;
-    var quantityItem = item.getAttribute("item") 
-    console.log(quantityItem)
+    var quantityItem = item.getAttribute("item") ;
     for (const child in myArray) {
         if (Object.hasOwnProperty.call(myArray, child)) {
             const element = myArray[child];
