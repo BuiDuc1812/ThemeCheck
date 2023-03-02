@@ -11,8 +11,7 @@ arr.forEach((item, index)=>{
     if(newLi.getAttribute("item")=="0"){
         newLi.style.display = "none";
     }
-    console.log(newLi)
-
+    console.log(arr[0])
 })
 var list = nameUl.querySelectorAll(".merge");
 
