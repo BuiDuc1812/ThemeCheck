@@ -21,7 +21,6 @@
   font-family: Galano;
   color: white;
 }
-
 .header{
   font-family: Galano;
 }
@@ -32,11 +31,9 @@
   background-color: var(--color-navy);
   line-height: inherit;
 }
-
 .announcement,.support a{
   text-decoration: none;
 }
-
 @media screen and (max-width:768px) {
   .container a,.container p{
     font-size: 12px;
@@ -57,7 +54,6 @@
   margin: 0 0;
   overflow: unset;
 }
-
 .swiper-slider{
   background-color: var(--color-navy);
   height: 46px;
@@ -112,9 +108,7 @@
   display: flex;
   flex-direction: column;
   position: fixed;
-
 }
-
 .mega-menu__content{
   opacity: 0;
   height: 0;
@@ -127,13 +121,11 @@
 .menu-drawer__menu-item{
   position: relative;
 }
-
 .child{
   position: absolute;
   height: inherit;
   right: 0;
 }
-
 .layout{
   float: left;
   width: 50%;
@@ -195,16 +187,13 @@
 .accordion-description a{
   line-height: 30px;
 }
-
 .header__menu-item a{
   text-decoration: none;
   color: #121212BF;
 }
-
 .menu-drawer__menu{
   background-color: white;
 }
-
 /* hover */
 .hove>a,.line{
   position:relative ; 
@@ -250,7 +239,6 @@
 .mega-menu__link:hover{
   color: #007aff;
 }
-
 .merge{
   max-width: 232px;
 }
