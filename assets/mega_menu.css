@@ -106,15 +106,31 @@
 #menu-drawer{
   position: fixed;
 }
+
 .mega-menu__content{
+  transform: translateY(-100%);
   opacity: 0;
-  height: 0;
-  transition: all 0.2s ease;
+  height: 366px;
+  visibility: hidden;
+  transition: all 0.3s ease-out;
+}
+@keyframes opa{
+  0%{
+    opacity: 0;
+  }
+  70%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 .list-menu>li:hover .mega-menu__content{
-  overflow-y:auto;
-  height: 366px;
+  animation-name: opa;
   opacity: 1;
+  visibility: inherit;
+  transform: translateY(0);
+  overflow-y:auto;
 }
 .menu-drawer__menu-item{
   position: relative;
@@ -202,7 +218,7 @@
   width: 0;
   background-color: black;
   height: 2px;
-  bottom: -26px;
+  bottom: -2.74rem;
   left: 0;
   transition:all 0.2s ease;
 }
