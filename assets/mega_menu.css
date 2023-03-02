@@ -34,17 +34,6 @@
 .announcement,.support a{
   text-decoration: none;
 }
-@media screen and (max-width:768px) {
-  .container a,.container p{
-    font-size: 12px;
-  }
-  .container{
-    padding: 0;
-  }
-  .header{
-    padding: 0 14px;
-  }
-}
 @media screen and (min-width:990px) {
   .show{
     display: none !important;
@@ -90,6 +79,15 @@
   .tat{
     display: none !important;
   } 
+  .container a,.container p{
+    font-size: 12px;
+  }
+  .container{
+    padding: 0;
+  }
+  .header{
+    padding: 0 14px;
+  }
 }
 .swiper-wrapper a{
   color: white;
