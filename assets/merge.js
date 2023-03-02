@@ -14,8 +14,15 @@ arr.forEach(item=>{
     }
     nameUl.appendChild(newLi)
 })
-var list = nameUl.querySelectorAll(".merge");
 var newCols = document.querySelectorAll(".new-cols")
+newCols.forEach((item, index)=>{
+    console.log(item,index)
+})
+
+var list = nameUl.querySelectorAll(".merge");
+list.forEach((item, index)=>{
+    console.log(item,index)
+ })
 console.log(newCols)
 // list.forEach((item, index)=>{
 //     if(index == first ){
