@@ -5,17 +5,18 @@ var second = nameUl.getAttribute("second");
 var third = nameUl.getAttribute("third");
 var fouth = nameUl.getAttribute("fouth");
 var arr = [first, second, third, fouth]
-arr.forEach((item, index)=>{
+arr.forEach(item=>{
     var newLi = document.createElement("li");
-    newLi.setAttribute("item",item)
+    newLi.setAttribute("item",item);
+    newLi.setAttribute("class","new-cols")
     if(newLi.getAttribute("item")=="0"){
         newLi.style.display = "none";
     }
-    console.log(arr[0])
+    nameUl.appendChild(newLi)
 })
 var list = nameUl.querySelectorAll(".merge");
-
-
+var newCols = document.querySelectorAll(".new-cols")
+console.log(newCols)
 // list.forEach((item, index)=>{
 //     if(index == first ){
 //         li.appendChild(item);
