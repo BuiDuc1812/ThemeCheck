@@ -26,8 +26,8 @@
             "link-nav": "shopify:\/\/pages\/contact",
             "color-fill": "#7197c3",
             "img-nav": "shopify:\/\/shop_images\/f3815c86889deba19e5df1db73f5f625.webp",
-            "index-first": "index of col",
-            "index-seconds": "index of col"
+            "index-third": 0,
+            "index-fouth": 0
           }
         },
         "af8bcc0f-3ec2-4036-a4ad-c5f90ccfb125": {
@@ -40,8 +40,10 @@
             "img-nav": "shopify:\/\/shop_images\/11b44b752e0b6a981537f146af8765e9.webp",
             "sale-off": "shopify:\/\/shop_images\/c6921bfeb416ebbfcc2f075e1ef6380b.webp",
             "sale-off-desk": "shopify:\/\/shop_images\/Frame_69.png",
-            "index-first": "1",
-            "index-seconds": "2"
+            "index-first": 1,
+            "index-seconds": 2,
+            "index-third": 1,
+            "index-fouth": 1
           }
         },
         "92dc4dde-e862-47fc-869d-7c9ed4716a06": {
@@ -52,8 +54,8 @@
             "link-nav": "",
             "color-fill": "#c6e0f2",
             "img-nav": "shopify:\/\/shop_images\/9a8a33706994f8d34797eae2e7af141c.webp",
-            "index-first": "index of col",
-            "index-seconds": "index of col"
+            "index-third": 0,
+            "index-fouth": 0
           }
         },
         "4cf94ef8-c1d9-46a4-8064-b29a23e08ac5": {
@@ -64,8 +66,8 @@
             "link-nav": "",
             "color-fill": "#db806b",
             "img-nav": "shopify:\/\/shop_images\/b72fbc402e4d2b4327a5b73d8def9cb4.webp",
-            "index-first": "index of col",
-            "index-seconds": "index of col"
+            "index-third": 0,
+            "index-fouth": 0
           }
         },
         "1ac46d70-53e0-45b7-a2d2-d56ced22fc69": {
@@ -116,8 +118,8 @@
             "link-nav": "",
             "color-fill": "#ec273c",
             "img-nav": "shopify:\/\/shop_images\/c6921bfeb416ebbfcc2f075e1ef6380b.webp",
-            "index-first": "index of col",
-            "index-seconds": "index of col"
+            "index-third": 0,
+            "index-fouth": 0
           }
         },
         "2675c809-dbc8-4909-8aa2-be0aa939fdda": {
@@ -128,8 +130,8 @@
             "link-nav": "",
             "color-fill": "#efd1a0",
             "img-nav": "shopify:\/\/shop_images\/5e12d151bf879f68383465b6efa9a6b1.webp",
-            "index-first": "index of col",
-            "index-seconds": "index of col"
+            "index-third": 0,
+            "index-fouth": 0
           }
         },
         "5181e2c0-66ba-4586-9e51-56b06e464c4f": {
