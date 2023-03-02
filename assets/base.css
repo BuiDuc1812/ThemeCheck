@@ -2944,11 +2944,9 @@ details-disclosure > details {
     }
   }
 }
-
 .font-body-bold {
   font-weight: var(--font-body-weight-bold);
 }
-
 /* outline and border styling for Windows High Contrast Mode */
 @media (forced-colors: active) {
   .button,
@@ -2956,7 +2954,6 @@ details-disclosure > details {
   .customer button {
     border: transparent solid 1px;
   }
-
   .button:focus-visible,
   .button:focus,
   .button.focused,
@@ -2966,7 +2963,6 @@ details-disclosure > details {
   .shopify-payment-button [role="button"]:focus {
     outline: solid transparent 1px;
   }
-
   .field__input:focus,
   .select__select:focus,
   .customer .field input:focus,
@@ -2988,7 +2984,6 @@ details-disclosure > details {
   float: left;
   width: 50%;
 }
-
 .showbtn{
   display: block;
 }
