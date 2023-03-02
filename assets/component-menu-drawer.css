@@ -77,7 +77,8 @@ details[open].menu-opening > .menu-drawer__submenu {
   }
 }
 .menu-drawer__navigation {
-  padding:  20px 20px 0 20px;
+  background-color: white;
+  padding:  20px 20px 4px 20px;
 }
 
 .no-js .menu-drawer__navigation {
@@ -214,4 +215,8 @@ details[open].menu-opening > .menu-drawer__submenu {
 .mobie{
   min-width: 240px;
   width: 100%;
+}
+.menu-drawer__inner-container{
+  background-color: rgba(var(--color-foreground), 0.03);
+  height: calc(100% - 46px);
 }
