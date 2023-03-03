@@ -35,6 +35,10 @@
   text-decoration: none;
 }
 @media screen and (min-width:990px) {
+  .topmenu{
+    position: relative;
+    z-index: 99;
+  }
   .show{
     display: none !important;
   }
