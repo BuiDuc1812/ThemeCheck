@@ -24,7 +24,7 @@ newCols.forEach((item)=>{
     for (const child in myArray) {
         if (Object.hasOwnProperty.call(myArray, child)) {
             const element = myArray[child];
-            element.style.margin = "0 0 20px 0";
+            element.style.margin = "0 0 24px 0";
             item.appendChild(element);
             i++; 
             if(i >= quantityItem){
@@ -38,5 +38,5 @@ newCols.forEach((item)=>{
     if(item.hasChildNodes() == false){
         item.style.display = "none";
     }
-    
+
 })
