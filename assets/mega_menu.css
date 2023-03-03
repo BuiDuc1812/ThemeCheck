@@ -113,11 +113,14 @@
   visibility: hidden;
   overflow-y:auto;
   transition: all 0.3s ease-out;
+  transform: translateY(-100%);
+ 
 }
 
 .list-menu>li:hover .mega-menu__content{
   opacity: 1;
   visibility: visible;
+  transform: translateY(0);
 }
 .menu-drawer__menu-item{
   position: relative;
