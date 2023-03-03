@@ -15,7 +15,6 @@ function createLi(params){
     var fouth = params.getAttribute('fouth');
     var arr = [first, second, third, fouth]
     arr.forEach(item=>{
-        console.log(item)
         var newLi = document.createElement('li');
         newLi.setAttribute('item',item);
         newLi.setAttribute('class','new-cols')

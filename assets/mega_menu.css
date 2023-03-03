@@ -273,6 +273,11 @@
     grid-template-columns: repeat(4, minmax(auto,186.8px));
   }
 }
+@media screen and (max-width: 1250px) and (min-width: 990px) {
+  .header__inline-menu{
+    margin-left: 40px !important;
+  }
+}
 
 .new-cols{
   margin-right: 32px;
