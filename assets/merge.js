@@ -19,7 +19,8 @@ arr.forEach(item=>{
 var newCols = document.querySelectorAll(".new-cols")
 var list = parentNodeUl.querySelectorAll(".merge");
 let myArray = Array.from(list);
-newCols.forEach((item,index)=>{
+newCols.forEach((item)=>{
+    console.log(item.children)
     let i = 0;
     var quantityItem = item.getAttribute("item") ;
     for (const child in myArray) {
@@ -35,7 +36,12 @@ newCols.forEach((item,index)=>{
     for(var x = 0; x < quantityItem; x++){
         myArray.shift();
     } 
+    console.log(!item.children)
+    if(!item.children){
+
+    }
 })
+
 liSale.style.order = "5";
 
 
