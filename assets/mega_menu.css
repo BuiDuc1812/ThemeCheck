@@ -203,7 +203,7 @@
   text-align: center;
 }
 .accordion-description> ul{
-  padding:0 20px;
+  padding:0 20px 14px 20px;
 }
 .accordion-description a{
   line-height: 32px;

@@ -17,7 +17,6 @@
 }
 .mega-menu__list {
   display: flex;
-  /* justify-content: space-between; */
   list-style: none;
   text-align: start;
   margin-top: 40px;
@@ -74,12 +73,16 @@
 .mega-menu__list--condensed .mega-menu__link {
   font-weight: normal;
 }
+@media screen and (max-width:990px) {
+  .sale-off{
+    padding:6px 0 32px;
 
+  }
+}
 .sale-off{
   width: 100%;
   margin: 0 auto;
   display: block;
-  padding-bottom: 20px 0 32px;
   transition: all 0.2s ease;
 }
 .sale-off:hover{
