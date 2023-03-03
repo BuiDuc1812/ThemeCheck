@@ -183,6 +183,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
+  column-gap: 10px;
   padding: 1rem;
   margin-left: -1.2rem;
   font-size: 1.4rem;
