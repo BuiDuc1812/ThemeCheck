@@ -268,11 +268,6 @@
 @media screen and (max-width: 1200px) {
   .hove{
     margin: 0 10px;
-    font-size: 14px;
-
-  }
-  .hove a,.hove span{
-    font-size: 14px;
   }
   .list-img-brand{
     grid-template-columns: repeat(4, minmax(auto,186.8px));
