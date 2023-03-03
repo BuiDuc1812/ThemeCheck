@@ -79,7 +79,7 @@
   width: 100%;
   margin: 0 auto;
   display: block;
-  padding-bottom: 20px;
+  padding-bottom: 32px;
   transition: all 0.2s ease;
 }
 .sale-off:hover{
@@ -114,7 +114,7 @@
   }
 }
 .list-brands{
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 32px 20px;
   display: grid;
   gap: 12px;
 }
