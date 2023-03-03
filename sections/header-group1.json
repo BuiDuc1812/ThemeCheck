@@ -52,7 +52,7 @@
           "type": "navigation",
           "settings": {
             "text-navigation": "Boys",
-            "link-nav-test": "",
+            "link-nav-test": "boys",
             "link-nav": "",
             "color-fill": "#c6e0f2",
             "img-nav": "shopify:\/\/shop_images\/9a8a33706994f8d34797eae2e7af141c.webp",
