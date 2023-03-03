@@ -38,4 +38,5 @@ newCols.forEach((item)=>{
     if(item.hasChildNodes() == false){
         item.style.display = "none";
     }
+    
 })
