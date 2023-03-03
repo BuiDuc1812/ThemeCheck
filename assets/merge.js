@@ -36,9 +36,9 @@ newCols.forEach((item)=>{
     for(var x = 0; x < quantityItem; x++){
         myArray.shift();
     } 
-    console.log(!item.children)
-    if(!item.children){
-
+    console.log(item.hasChildNodes())
+    if(item.hasChildNodes()== false){
+        item.style.display = "none";
     }
 })
 
