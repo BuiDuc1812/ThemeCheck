@@ -5,13 +5,11 @@
 .mega-menu__content {
   background-color: rgb(var(--color-background));
   left: 0;
-  overflow-y: hidden ;
   position: absolute;
   right: 0;
   left: 0;
   top: 100%;
 }
-
 
 
 .header-wrapper--border-bottom .mega-menu__content {

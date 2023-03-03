@@ -111,13 +111,13 @@
   opacity: 0;
   height: 366px;
   visibility: hidden;
+  overflow-y:auto;
   transition: all 0.3s ease-out;
 }
 
 .list-menu>li:hover .mega-menu__content{
   opacity: 1;
-  visibility: inherit;
-  overflow-y:auto;
+  visibility: visible;
 }
 .menu-drawer__menu-item{
   position: relative;
