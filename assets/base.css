@@ -2332,7 +2332,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
 .header__heading-link {
   display: inline-block;
-  padding: 0.75rem;
+  padding-right: 20px ;
   text-decoration: none;
   word-break: break-word;
 }

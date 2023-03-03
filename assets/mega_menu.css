@@ -254,3 +254,13 @@
   max-width: 232px;
   width: 100%;
 }
+@media screen and (max-width: 1200px) {
+  .hove{
+    margin: 0 10px;
+    font-size: 14px;
+
+  }
+  .hove a,.hove span{
+    font-size: 14px;
+  }
+}
