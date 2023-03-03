@@ -1,7 +1,10 @@
-var parentNodeUl = document.querySelectorAll('.merge-list');
-parentNodeUl.forEach(item=>{
-    addItem(item);
-})
+function mergeCol(){
+    var parentNodeUl = document.querySelectorAll('.merge-list');
+    parentNodeUl.forEach(item=>{
+        addItem(item);
+    })
+}
+mergeCol();
 
 function createLi(params){
     var newLi = document.createElement('li');
