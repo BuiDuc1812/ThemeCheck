@@ -1,7 +1,6 @@
 var parentNodeUl = document.querySelectorAll('.merge-list');
 
 parentNodeUl.forEach(item=>{
-
     const createLi = function(){
         var newLi = document.createElement('li');
         var liSale = document.querySelector('.li-sale')
