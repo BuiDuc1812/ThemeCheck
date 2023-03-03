@@ -1,11 +1,11 @@
-var nameUl = document.querySelector(".merge-list");
+var parentNodeUl = document.querySelector(".merge-list");
 
 var newLi = document.createElement("li");
 var liSale = document.querySelector(".li-sale")
-var first = nameUl.getAttribute("first");
-var second = nameUl.getAttribute("second");
-var third = nameUl.getAttribute("third");
-var fouth = nameUl.getAttribute("fouth");
+var first = parentNodeUl.getAttribute("first");
+var second = parentNodeUl.getAttribute("second");
+var third = parentNodeUl.getAttribute("third");
+var fouth = parentNodeUl.getAttribute("fouth");
 var arr = [first, second, third, fouth]
 arr.forEach(item=>{
     var newLi = document.createElement("li");
@@ -14,10 +14,10 @@ arr.forEach(item=>{
     if(newLi.getAttribute("item")=="0"){
         newLi.style.display = "none";
     }
-    nameUl.appendChild(newLi)
+    parentNodeUl.appendChild(newLi)
 })
 var newCols = document.querySelectorAll(".new-cols")
-var list = nameUl.querySelectorAll(".merge");
+var list = parentNodeUl.querySelectorAll(".merge");
 let myArray = Array.from(list);
 newCols.forEach((item,index)=>{
     let i = 0;

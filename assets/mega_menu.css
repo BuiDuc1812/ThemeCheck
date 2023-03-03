@@ -253,6 +253,7 @@
 .mega-menu__link:hover{
   color: #007aff;
 }
-.merge{
+.new-cols{
   max-width: 232px;
+  width: 100%;
 }
