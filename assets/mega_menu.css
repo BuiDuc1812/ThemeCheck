@@ -45,6 +45,9 @@
   .swiper-slide{
     width: fit-content;
   }
+  .topmenu .announcement{
+    margin-left: -72px;
+  }
 }
 .swiper{
   /* margin: 0 0; */
