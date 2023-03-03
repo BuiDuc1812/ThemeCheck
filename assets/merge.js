@@ -1,3 +1,5 @@
+
+
 var parentNodeUl = document.querySelector(".merge-list");
 var newLi = document.createElement("li");
 var liSale = document.querySelector(".li-sale")
@@ -10,7 +12,7 @@ arr.forEach(item=>{
     var newLi = document.createElement("li");
     newLi.setAttribute("item",item);
     newLi.setAttribute("class","new-cols")
-    if(newLi.getAttribute("item")=="0"){
+    if (newLi.getAttribute("item") == "0"){
         newLi.style.display = "none";
     }
     parentNodeUl.insertBefore(newLi,liSale);
@@ -18,7 +20,7 @@ arr.forEach(item=>{
 var newCols = document.querySelectorAll(".new-cols");
 var list = parentNodeUl.querySelectorAll(".merge");
 let myArray = Array.from(list);
-newCols.forEach((item)=>{
+newCols.forEach((item) => {
     let i = 0;
     var quantityItem = item.getAttribute("item") ;
     for (const child in myArray) {
@@ -26,16 +28,16 @@ newCols.forEach((item)=>{
             const element = myArray[child];
             element.style.margin = "0 0 24px 0";
             item.appendChild(element);
-            i++; 
-            if(i >= quantityItem){
+            i++;
+            if (i >= quantityItem){
                 break;
-            } 
+            }
         }
     }
-    for(var x = 0; x < quantityItem; x++){
+    for (var x = 0; x < quantityItem; x++){
         myArray.shift();
-    } 
-    if(item.hasChildNodes() == false){
+    }
+    if (item.hasChildNodes() == false){
         item.style.display = "none";
     }
 })
