@@ -162,6 +162,7 @@
   display: grid;
   gap : 16px;
   grid-template-columns: repeat(5, minmax(auto,186.8px));
+  grid-auto-rows: 80px;
 }
 .list-img-brand a{
   /* display: contents; */
@@ -270,4 +271,8 @@
   .list-img-brand{
     grid-template-columns: repeat(4, minmax(auto,186.8px));
   }
+}
+
+.new-cols{
+  margin-right: 32px;
 }
