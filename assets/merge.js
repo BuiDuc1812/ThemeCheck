@@ -1,5 +1,4 @@
 var parentNodeUl = document.querySelector(".merge-list");
-
 var newLi = document.createElement("li");
 var liSale = document.querySelector(".li-sale")
 var first = parentNodeUl.getAttribute("first");
@@ -14,19 +13,18 @@ arr.forEach(item=>{
     if(newLi.getAttribute("item")=="0"){
         newLi.style.display = "none";
     }
-    parentNodeUl.appendChild(newLi)
+    parentNodeUl.insertBefore(newLi,liSale);
 })
-var newCols = document.querySelectorAll(".new-cols")
+var newCols = document.querySelectorAll(".new-cols");
 var list = parentNodeUl.querySelectorAll(".merge");
 let myArray = Array.from(list);
 newCols.forEach((item)=>{
-    console.log(item.children)
     let i = 0;
     var quantityItem = item.getAttribute("item") ;
     for (const child in myArray) {
         if (Object.hasOwnProperty.call(myArray, child)) {
             const element = myArray[child];
-            element.style.margin = "0 0 20px 0"
+            element.style.margin = "0 0 20px 0";
             item.appendChild(element);
             i++; 
             if(i >= quantityItem){
@@ -41,22 +39,3 @@ newCols.forEach((item)=>{
         item.style.display = "none";
     }
 })
-
-liSale.style.order = "5";
-
-
-// list.forEach((item, index)=>{
-//     if(index == first ){
-//         li.appendChild(item);
-//     }
-//     if(index == second ){
-//         li.appendChild(item);
-//         item.style.margin = "24px 0 0 0" ;
-//     }
-//     if(index == first - 1){
-//         insertAfter(li,item);
-//     }
-// })
-// function insertAfter(li, element) {
-//     element.parentNode.insertBefore(li, element.nextSibling);
-// }
