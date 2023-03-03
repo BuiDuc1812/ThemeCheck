@@ -35,7 +35,7 @@
   justify-content: space-between;
 }
 .default >li{
-  min-width: 130px;
+  min-width: 150px;
 }
 .mega-menu__link {
   color: rgba(var(--color-foreground), 0.75);
