@@ -196,15 +196,17 @@
 }
 .center{
   position: relative;
+  line-height: 24px;
   justify-content: center;
   font-size: 16px;
   font-weight: bold;
+  text-align: center;
 }
 .accordion-description> ul{
-  padding:0 20px 20px 20px;
+  padding:0 20px;
 }
 .accordion-description a{
-  line-height: 30px;
+  line-height: 32px;
 }
 .header__menu-item a{
   text-decoration: none;

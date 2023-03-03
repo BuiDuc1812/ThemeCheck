@@ -79,7 +79,7 @@
   width: 100%;
   margin: 0 auto;
   display: block;
-  padding-bottom: 32px;
+  padding-bottom: 20px 0 32px;
   transition: all 0.2s ease;
 }
 .sale-off:hover{
