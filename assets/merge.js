@@ -2,7 +2,6 @@ var parentNodeUl = document.querySelectorAll('.merge-list');
 parentNodeUl.forEach(item=>{
     addItem(item);
 })
-
 function createLi(params){
     var newLi = document.createElement('li');
     var liSale = params.querySelector('.li-sale')
@@ -22,7 +21,6 @@ function createLi(params){
         params.insertBefore(newLi, liSale);
     })
 }
-
 function addItem(params){
     createLi(params);
     var newCols = params.querySelectorAll('.new-cols');
