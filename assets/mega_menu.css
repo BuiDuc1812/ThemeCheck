@@ -155,7 +155,7 @@
 .bottom-links{
   display: flex;
   align-items: center;
-  margin-top: 7px;
+  margin-top: 5px;
 }
 .down,.up{
   position: absolute;
