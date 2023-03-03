@@ -1,22 +1,29 @@
-
 var accordion = document.querySelectorAll('.accordion');
-accordion.forEach((item, index)=>{
-  var header = item.querySelector('.accordion-header');
+if(accordion){
+  accordionDrawer()
+}
+function accordionDrawer(){
+  accordion.forEach((item, index)=>{
+    addOpen(item,index)
+  })
+}
+function addOpen(params, ind){
+  var header = params.querySelector('.accordion-header');
   header.addEventListener('click',()=>{
-    item.classList.toggle('open');
-    let description = item.querySelector('.accordion-description');
-    if(item.classList.contains('open')){
-      item.querySelector('.down').classList.add('turn-off');
-      item.querySelector('.up').classList.remove('turn-off');
+    params.classList.toggle('open');
+    let description = params.querySelector('.accordion-description');
+    if(params.classList.contains('open')){
+      params.querySelector('.down').classList.add('turn-off');
+      params.querySelector('.up').classList.remove('turn-off');
       description.style.height = `${description.scrollHeight}px`;
     } else{
       description.style.height = '0';
-      item.querySelector('.down').classList.remove('turn-off');
-      item.querySelector('.up').classList.add('turn-off');
+      params.querySelector('.down').classList.remove('turn-off');
+      params.querySelector('.up').classList.add('turn-off');
     }
-    removeOpen(index);
+    removeOpen(ind);
   })
-})
+}
 
 function removeOpen(i){
   accordion.forEach((item, ind)=>{
@@ -29,6 +36,8 @@ function removeOpen(i){
     }
   })
 }
+
+
 var swiper = new Swiper('.swiper-drawer', {
   autoplay: {
     delay: 2000,
