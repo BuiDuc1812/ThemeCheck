@@ -1,8 +1,10 @@
 function mergeCol(){
     var parentNodeUl = document.querySelectorAll('.merge-list');
-    parentNodeUl.forEach(item=>{
+    if(parentNodeUl){
+        parentNodeUl.forEach(item=>{
         addItem(item);
     })
+    } 
 }
 mergeCol();
 
