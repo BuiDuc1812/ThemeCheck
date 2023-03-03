@@ -2332,7 +2332,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
 .header__heading-link {
   display: inline-block;
-  padding-right: 20px ;
+  /* padding-right: 20px ; */
   text-decoration: none;
   word-break: break-word;
 }
@@ -2357,7 +2357,9 @@ product-info .loading-overlay:not(.hidden) ~ *,
   .header__heading-link {
     text-align: center;
   }
-
+  .header__heading-logo{
+    padding: 0 10px;
+  }
   .header--mobile-left .header__heading,
   .header--mobile-left .header__heading-link {
     text-align: left;

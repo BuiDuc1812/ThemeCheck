@@ -217,7 +217,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   min-width: 240px;
   width: 100%;
 }
-.menu-drawer__inner-container{
+/* .menu-drawer__inner-container{
   background-color: rgba(var(--color-foreground), 0.03);
   height: calc(100% - 46px);
-}
+} */

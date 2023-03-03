@@ -109,6 +109,7 @@
 }
 #menu-drawer{
   position: fixed;
+  background-color: #F5F5F5;
 }
 
 .mega-menu__content{
