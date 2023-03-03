@@ -263,6 +263,7 @@
 
 .new-cols{
   max-width: 232px;
+  min-width: 162px;
   width: 100%;
 }
 @media screen and (max-width: 1250px) {
@@ -278,7 +279,11 @@
     margin-left: 40px !important;
   }
 }
-
+@media screen and (max-width:1100px) {
+  .wrap{
+    flex-wrap: wrap;
+  }
+}
 .new-cols{
   margin-right: 32px;
 }

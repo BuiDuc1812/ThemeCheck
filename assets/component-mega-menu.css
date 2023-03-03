@@ -23,9 +23,6 @@
   margin-bottom: 16px;
   row-gap: 16px;
 }
-.wrap{
-  flex-wrap: wrap;
-}
 .mega-menu__list a {
   color: black;
 }

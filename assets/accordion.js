@@ -9,8 +9,7 @@ accordion.forEach((item, index)=>{
       item.querySelector('.down').classList.add('turn-off');
       item.querySelector('.up').classList.remove('turn-off');
       description.style.height = `${description.scrollHeight}px`;
-    }
-    else{
+    } else{
       description.style.height = '0';
       item.querySelector('.down').classList.remove('turn-off');
       item.querySelector('.up').classList.add('turn-off');
@@ -18,6 +17,7 @@ accordion.forEach((item, index)=>{
     removeOpen(index);
   })
 })
+
 function removeOpen(i){
   accordion.forEach((item, ind)=>{
     if(i != ind){
