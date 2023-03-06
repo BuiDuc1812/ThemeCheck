@@ -17,9 +17,18 @@
         {% endcase %}
       {% endfor %}
     </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </div>
 </section>
-
+<script>
+  var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+</script>
 {% schema %}
   {   
     "name": "Banner Image",
