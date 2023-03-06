@@ -5,14 +5,33 @@
 }
 .custom-height-rbt{
     height: inherit;
-    line-height: 50px;
+    display: flex;
+    align-items: center;
 }
 .content-rbt{
-    display: flex;
+    display: inline-flex    ;
     justify-content: center;
     align-items: center;
 }
-.swiper-slide{
-    display: flex;
-    align-items: center;
+.custom-slide{
+    padding: 0 80px;
+}
+.custom-slide:nth-child(2){
+    position: relative;
+}
+.custom-slide:nth-child(2)::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: white;
+    left:0 ;
+}
+.custom-slide:nth-child(2)::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: white;
+    right: 0;
 }
