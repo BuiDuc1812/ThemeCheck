@@ -1,30 +1,23 @@
 <link rel="stylesheet" href="{{ 'rbt-style.css' | asset_url }}">
 {% comment %} <script src="{{ 'swiper-banner.js' | asset_url }}" defer="defer"></script> {% endcomment %}
 <section 
-style="background-color: {{ section.settings.color-fill-bg }};
-        color: {{ section.settings.color-fill-text }};"
-class="rbt"
+    style="background-color: {{ section.settings.color-fill-bg }};color: {{ section.settings.color-fill-text }};"
+    class="rbt"
 >
         <div class="swiper swiper-rbt container">
             <div class="swiper-wrapper wrapper-rbt">
-                <div class="swiper-slide custom-slide">
-                    {% render 'arrowcounter' %}
-                    <a href="{%- if section.settings.rbt-slide1-url -%}{{ section.settings.rbt-slide1-url }}{% else %} # {% endif %}"> 
-                        {{ section.settings.rbt-slide1 | escape }}
-                    </a>
-                </div>
-                <div class="swiper-slide custom-slide">
-                    {% render 'icon-truck' %}
-                    <a href="{%- if section.settings.rbt-slide2-url -%}{{ section.settings.rbt-slide2-url }}{% else %} # {% endif %}">
-                        {{ section.settings.rbt-slide2 | escape }}
-                    </a>
-                </div>
-                <div class="swiper-slide custom-slide">
-                    {% render 'icon-celanderbank' %}
-                    <a href="{%- if section.settings.rbt-slide3-url -%}{{ section.settings.rbt-slide3-url }}{% else %} # {% endif %}">
-                        {{ section.settings.rbt-slide3 | escape }}
-                    </a>
-                </div>
+                {% for block in section.blocks %}
+                    {% case block.type %}
+                        {% when 'rtb' %}
+                            <div class="swiper-slide custom-slide">
+                                <img loading="lazy" width="24" height="24" src="" alt="">
+                                <a href="{%- if section.settings.rbt-slide1-url -%}{{ section.settings.rbt-slide1-url }}{% else %} # {% endif %}"> 
+                                    {{ section.settings.rbt-slide1 | escape }}
+                                </a>
+                            </div>    
+                    {% endcase %}
+                {% endfor %}
+                
             </div>
         </div>
 </section>
@@ -33,54 +26,33 @@ class="rbt"
     {
         "name":"rbt",
         "class":"rbt",
-        "settings": [
+        "blocks": [
             {
-                "type": "color",
-                "id": "color-fill-bg",
-                "label": "Color fill background"
-            },
-            {
-                "type": "color",
-                "id":"color-fill-text",
-                "label": "Color fill text"
-            },
-            {
-                "type":"text",
-                "id":"rbt-slide1",
-                "default": "Easy Returns",
-                "label":"Rbt text 1"
-            },
-            {
-                "type":"url",
-                "id":"rbt-slide1-url",
-                "label":"Rbt url 1"
-            },
-            {
-                "type":"text",
-                "id":"rbt-slide2",
-                "default": "Spend $79+ and your order ships free",
-                "label":"Rbt text 2"
-            },
-            {
-                "type":"url",
-                "id":"rbt-slide2-url",
-                "label":"Rbt url 2"
-            },
-            {
-                "type":"text",
-                "id":"rbt-slide3",
-                "default": "Book a Fitting",
-                "label":"Rbt text 3"
-            },
-            {
-                "type":"url",
-                "id":"rbt-slide3-url",
-                "label":"Rbt url 3"
-            }
-        ],
-        "presets": [
-            {
-                "name": "rbt"
+                "type":"rtb",
+                "name":"RTB link",
+                "settings": [
+                    {
+                    "type": "color",
+                    "id": "color-fill-bg",
+                    "label": "Color fill background"
+                    },
+                    {
+                        "type": "color",
+                        "id":"color-fill-text",
+                        "label": "Color fill text"
+                    },
+                    {
+                        "type":"text",
+                        "id":"rbt-slide1",
+                        "default": "Easy Returns",
+                        "label":"Rbt text 1"
+                    },
+                    {
+                        "type":"url",
+                        "id":"rbt-slide1-url",
+                        "label":"Rbt url 1"
+                    }
+                ]
             }
         ]
     }
