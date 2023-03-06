@@ -1,3 +1,22 @@
 {
-    
+    "name":"banner",
+    "type":"custom",
+    "sections":{
+        "rbt":{
+            "type":"rbt",
+            "settings":{
+
+            }
+        },
+        "banner":{
+            "type":"banner",
+            "settings":{
+
+            }
+        }
+    },
+    "order":[
+        "rbt",
+        "banner"
+    ]
 }
