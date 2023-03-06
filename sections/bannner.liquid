@@ -1,16 +1,16 @@
 <section class="banner-homeqage">
-<div class="swiper swiper-banner">
-    <div class="swiper-wrapper">
-        {% for block in section %}
-            {% case block.type %}
-                {% when "imgBanner" %}
-                    <div class="swiper-slide">
-                        <img width="100%" height="90vh" loading="lazy" src="{{ block.settings.img-banner.src |img_url: 'medium' }}" alt="">
-                    </div>         
-            {% endcase %}
-        {% endfor %}
+    <div class="swiper swiper-banner">
+        <div class="swiper-wrapper">
+            {% for block in section %}
+                {% case block.type %}
+                    {% when "img" %}
+                        <div class="swiper-slide">
+                            <img width="100%" height="90vh" loading="lazy" src="{{ block.settings.img-banner.src |img_url: 'medium' }}" alt="">
+                        </div>         
+                {% endcase %}
+            {% endfor %}
+        </div>
     </div>
-</div>
 </section>
 
 {% schema %}
