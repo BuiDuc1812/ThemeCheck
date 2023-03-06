@@ -1,7 +1,7 @@
 <section class="banner-homeqage">
     <div class="swiper swiper-banner">
         <div class="swiper-wrapper">
-            {% for block in section %}
+            {% for block in section.blocks %}
                 {% case block.type %}
                     {% when 'img' %}
                         <div class="swiper-slide">
