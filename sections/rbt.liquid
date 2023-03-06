@@ -10,7 +10,7 @@
                     {% case block.type %}
                         {% when 'rtb' %}
                             <div class="swiper-slide custom-slide">
-                                <img loading="lazy" width="24" height="24" src="{{ block.settings.color-fill-text }}" alt="">
+                                <img loading="lazy" width="24" height="24" src="{{ block.settings.icon-link.src | img_tag }}" alt="">
                                 <a style="color: {{ block.settings.color-fill-text }}" href="{%- if block.settings.rbt-url -%}{{ block.settings.rbt-url }}{% else %} # {% endif %}"> 
                                     {{ block.settings.rbt-text | escape }}
                                 </a>
@@ -42,6 +42,11 @@
                         "type": "color",
                         "id":"color-fill-text",
                         "label": "Color fill text"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "icon-link",
+                        "label": "Icon link"
                     },
                     {
                         "type":"text",
