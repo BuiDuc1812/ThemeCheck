@@ -23,19 +23,10 @@
 .custom-slide a{
     text-decoration: none;
 }
-
-.custom-slide:nth-child(2){
+.custom-slide{
     position: relative;
 }
-.custom-slide:nth-child(2)::before{
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 1px;
-    background-color: white;
-    left:0 ;
-}
-.custom-slide:nth-child(2)::after{
+.custom-slide::after{
     position: absolute;
     content: "";
     height: 100%;
