@@ -1,6 +1,6 @@
 {
-    "name":"banner",
-    "type":"custom",
+    "name":"bannerhomepage",
+    "type":"banner",
     "sections":{
         "rbt":{
             "type":"rbt",
