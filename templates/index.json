@@ -1,59 +1,20 @@
 {
   "sections": {
-    "59dad6b7-96d1-4577-908e-6ace44baf6a8": {
-      "type": "slideshow",
-      "blocks": {
-        "template--17926477447487__59dad6b7-96d1-4577-908e-6ace44baf6a8-1678075199cc67b8a8-0": {
-          "type": "slide",
-          "settings": {
-            "heading": "Image slide",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "template--17926477447487__59dad6b7-96d1-4577-908e-6ace44baf6a8-1678075199cc67b8a8-1": {
-          "type": "slide",
-          "settings": {
-            "heading": "Image slide",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "template--17926477447487__59dad6b7-96d1-4577-908e-6ace44baf6a8-1678075199cc67b8a8-0",
-        "template--17926477447487__59dad6b7-96d1-4577-908e-6ace44baf6a8-1678075199cc67b8a8-1"
-      ],
+    "f75bd20f-bc3f-469c-bd87-56431557798f": {
+      "type": "rbt",
       "settings": {
-        "layout": "full_bleed",
-        "slide_height": "medium",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
+        "color-fill-bg": "",
+        "color-fill-text": "",
+        "rbt-slide1": "Easy Returns",
+        "rbt-slide1-url": "",
+        "rbt-slide2": "Spend $79+ and your order ships free",
+        "rbt-slide2-url": "",
+        "rbt-slide3": "Book a Fitting",
+        "rbt-slide3-url": ""
       }
     }
   },
   "order": [
-    "59dad6b7-96d1-4577-908e-6ace44baf6a8"
+    "f75bd20f-bc3f-469c-bd87-56431557798f"
   ]
 }
