@@ -4,20 +4,16 @@
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'img' %}
-          <div class="swiper-slide">
-            <script>
-              console.log({{ section.blocks.settings.img_height | json }})
-            </script>
-            <img
-            
-            {% if section.blocks.settings.img_height %}
-              
+          <div style="width:100%" class="swiper-slide">
+            {% if  block.settings.img_height == "adapt" and block.settings.img-banner != blank %}
+            {{ block.settings.img-banner | image_url: width: 3840 | image_tag:
+              loading: 'lazy',
+              height: '100vh',
+              width: '100%',
+              class: 'img-banner',
+              widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+            }}
             {% endif %}
-              width=""
-              height=""
-              loading="lazy"
-              src="{{ block.settings.img-banner.src |img_url: 'medium' }}"
-              alt="">
           </div>
         {% endcase %}
       {% endfor %}
@@ -58,7 +54,7 @@
               {
                 "value": "medium",
                 "label": "medium font"
-                
+
               }
             ]
           }
