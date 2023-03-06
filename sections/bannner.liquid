@@ -1,0 +1,34 @@
+<section class="banner-homeqage">
+<div class="swiper swiper-banner">
+    <div class="swiper-wrapper">
+        {% for block in section %}
+            {% case block.type %}
+                {% when "imgBanner" %}
+                    <div class="swiper-slide">
+                        <img loading="lazy" src="{{ block.settings.img-banner.src |img_url: 'medium' }}" alt="">
+                    </div>         
+            {% endcase %}
+        {% endfor %}
+    </div>
+</div>
+</section>
+
+{% schema %}
+    {
+        "name": "Banner img",
+        "class": "banner-homepage",
+        "blocks": [
+            {
+                "type": "img",
+                "name": "Img bg",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "img-banner",
+                        "label": "Img banner"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}
