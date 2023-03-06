@@ -1,27 +1,26 @@
-// var init = false;
-// var swiper = '';
+var flag = false;
+var swiperRtb = '';
 
-// function enableSwiper() {
-//   if (window.innerWidth < 990) {
-//     if (!init) {
-//       init = true;
-//       swiper = new Swiper(".swiper-rbt", {
-//         // spaceBetween: 30,
-//             autoplay: {
-//                 delay: 0,
-//                 disableOnInteraction:false,
-//                 pauseOnMouseEnter:true
-//             },
-//             loop :true
-//         });
-//     }
-//   } else if (init) {
-//     swiper.destroy();
-//     init = false;
-//   }
-// }
-// enableSwiper();
-// window.addEventListener('resize', enableSwiper)
+function enableSwiper() {
+  if (window.innerWidth < 990) {
+    if (!flag) {
+        flag = true;
+        swiperRtb = new Swiper(".swiper-rbt", {
+            loop: true,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true
+            }
+        });
+    }
+  } else if (flag) {
+    swiperRtb.destroy();
+    flag = false;
+  }
+}
+enableSwiper();
+window.addEventListener('resize', enableSwiper)
 
 
   
