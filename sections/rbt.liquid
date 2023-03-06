@@ -2,15 +2,22 @@
     <div class="swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                {% render 'arrowcounter' %}
+                <a href="#">
+
+                    {% render 'arrowcounter' %}
+                </a>
             </div>
             <div class="swiper-slide">
-                {% render 'icon-truck' %}
+                <a href="#">
 
+                    {% render 'icon-truck' %}
+                </a>
             </div>
             <div class="swiper-slide">
-                {% render 'icon-celanderbank' %}
+                <a href="#">
 
+                    {% render 'icon-celanderbank' %}
+                </a>
             </div>
         </div>
     </div>
@@ -21,7 +28,49 @@
         "name":"rbt",
         "class":"rbt",
         "settings": [
-            
+            {
+                "type": "color",
+                "id": "color-fill-bg",
+                "label": "Color fill background"
+            },
+            {
+                "type": "color",
+                "id":"color-fill-text",
+                "label": "Color fill text"
+            },
+            {
+                "type":"text",
+                "id":"rbt-slide1",
+                "default": "Easy Returns",
+                "label":"Rbt text 1"
+            },
+            {
+                "type":"url",
+                "id":"rbt-slide1-url",
+                "label":"Rbt url 1"
+            },
+            {
+                "type":"text",
+                "id":"rbt-slide2",
+                "default": "Spend $79+ and your order ships free",
+                "label":"Rbt text 2"
+            },
+            {
+                "type":"url",
+                "id":"rbt-slide2-url",
+                "label":"Rbt url 2"
+            },
+            {
+                "type":"text",
+                "id":"rbt-slide3",
+                "default": "Book a Fitting",
+                "label":"Rbt text 3"
+            },
+            {
+                "type":"url",
+                "id":"rbt-slide3-url",
+                "label":"Rbt url 3"
+            }
         ]
     }
 {% endschema %}
