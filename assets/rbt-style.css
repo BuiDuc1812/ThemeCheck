@@ -2,16 +2,17 @@
     overflow: hidden;
     width: 100%;
 }
-
 .wrapper-rbt{
     padding: 12.5px 0;
     justify-content: center;
+    transition-duration: 2s !important;
 }
 
 .custom-slide{
+    transition: all 3s ease;
     padding: 0 80px;
 }
-/*
+
 @media screen and (max-width:990px) {
     .custom-slide{
         padding: 0;
@@ -19,7 +20,13 @@
     .wrapper-rbt{
         justify-content:unset;
     }
-} */
+    .custom-slide::after{
+        display: none;
+    }
+    .swiper-slide{
+        width: unset;
+    }
+}
 .custom-slide a{
     text-decoration: none;
 }
@@ -33,6 +40,7 @@
     width: 1px;
     background-color: white;
     right: 0;
+
 }
 .custom-slide:last-child::after{
     display: none;
