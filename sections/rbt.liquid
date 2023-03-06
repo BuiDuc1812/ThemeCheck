@@ -1,70 +1,74 @@
 <link rel="stylesheet" href="{{ 'rbt-style.css' | asset_url }}">
 <script src="{{ 'swiper-banner.js' | asset_url }}" defer="defer"></script>
-<section 
-    style="background-color: {{ section.settings.color-fill-bg }};"
-    class="rbt"
->
-        <div class="swiper swiper-rbt container">
-            <div class="swiper-wrapper wrapper-rbt">
-                {% for block in section.blocks %}
-                    {% case block.type %}
-                        {% when 'rtb' %}
-                            <div class="swiper-slide custom-slide">
-                                <img loading="lazy" width="24" height="24" src="{{ block.settings.icon-link.src |img_url: 'medium' }}" alt="">
-                                <a style="color: {{ block.settings.color-fill-text }}" href="{%- if block.settings.rbt-url -%}{{ block.settings.rbt-url }}{% else %} # {% endif %}"> 
-                                    {{ block.settings.rbt-text | escape }}
-                                </a>
-                            </div>    
-                    {% endcase %}
-                {% endfor %}
-            </div>
-        </div>
+<section style="background-color: {{ section.settings.color-fill-bg }};" class="rbt">
+  <div class="swiper swiper-rbt container">
+    <div class="swiper-wrapper wrapper-rbt">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'rtb' %}
+          <div class="swiper-slide custom-slide">
+            <img
+              loading="lazy"
+              width="24"
+              height="24"
+              src="{{ block.settings.icon-link.src |img_url: 'medium' }}"
+              alt="">
+            <a style="color: {{ block.settings.color-fill-text }}" href="{%- if block.settings.rbt-url -%}{{ block.settings.rbt-url }}{% else %} # {% endif %}">
+              {{ block.settings.rbt-text | escape }}
+            </a>
+          </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
 </section>
 
 {% schema %}
-    {
-        "name":"rbt",
-        "class":"rbt",
+  {
+    "name": "rbt",
+    "class": "rbt",
+    "settings": [
+      {
+        "type": "color",
+        "id": "color-fill-bg",
+        "label": "Color fill background"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "rtb",
+        "name": "RTB link",
         "settings": [
-            {
-                "type": "color",
-                "id": "color-fill-bg",
-                "label": "Color fill background"
-            }
-        ],
-        "blocks": [
-            {
-                "type":"rtb",
-                "name":"RTB link",
-                "settings": [
-                    {
-                        "type": "color",
-                        "id":"color-fill-text",
-                        "label": "Color fill text"
-                    },
-                    {
-                        "type": "image_picker",
-                        "id": "icon-link",
-                        "label": "Icon link"
-                    },
-                    {
-                        "type":"text",
-                        "id":"rbt-text",
-                        "default": "Easy Returns",
-                        "label":"Rbt text"
-                    },
-                    {
-                        "type":"url",
-                        "id":"rbt-url",
-                        "label":"Rbt url"
-                    }
-                ]
-            }
-        ],
-        "presets": [
-            {
-                "name": "RTB"
-            }
+          {
+            "type": "color",
+            "id": "color-fill-text",
+            "label": "Color fill text"
+          }, {
+            "type": "image_picker",
+            "id": "icon-link",
+            "label": "Icon link"
+          }, {
+            "type": "text",
+            "id": "rbt-text",
+            "default": "Easy Returns",
+            "label": "Rbt text"
+          }, {
+            "type": "url",
+            "id": "rbt-url",
+            "label": "Rbt url"
+          }
         ]
-    }
+      }
+    ],
+    "presets": [
+      {
+        "name": "RTB",
+        "blocks": [
+          {
+            "type": "rtb"
+          }
+        ]
+      }
+    ]
+  }
 {% endschema %}
