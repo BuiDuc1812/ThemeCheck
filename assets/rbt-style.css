@@ -5,11 +5,9 @@
 .wrapper-rbt{
     padding: 12.5px 0;
     justify-content: center;
-    transition-duration: 2s !important;
 }
 
 .custom-slide{
-    transition: all 3s ease;
     padding: 0 80px;
 }
 
