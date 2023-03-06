@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="{{ 'rbt-style.css' | asset_url }}">
 {% comment %} <script src="{{ 'swiper-banner.js' | asset_url }}" defer="defer"></script> {% endcomment %}
 <section 
-    style="background-color: {{ section.settings.color-fill-bg }};color: {{ section.settings.color-fill-text }};"
+    style="background-color: {{ section.settings.color-fill-bg }};"
     class="rbt"
 >
         <div class="swiper swiper-rbt container">
@@ -10,9 +10,9 @@
                     {% case block.type %}
                         {% when 'rtb' %}
                             <div class="swiper-slide custom-slide">
-                                <img loading="lazy" width="24" height="24" src="" alt="">
-                                <a href="{%- if section.settings.rbt-slide1-url -%}{{ section.settings.rbt-slide1-url }}{% else %} # {% endif %}"> 
-                                    {{ section.settings.rbt-slide1 | escape }}
+                                <img loading="lazy" width="24" height="24" src="{{ block.settings.color-fill-text }}" alt="">
+                                <a style="color: {{ block.settings.color-fill-text }}" href="{%- if block.settings.rbt-url -%}{{ block.settings.rbt-url }}{% else %} # {% endif %}"> 
+                                    {{ block.settings.rbt-text | escape }}
                                 </a>
                             </div>    
                     {% endcase %}
@@ -26,16 +26,18 @@
     {
         "name":"rbt",
         "class":"rbt",
+        "settings": [
+            {
+                "type": "color",
+                "id": "color-fill-bg",
+                "label": "Color fill background"
+            }
+        ],
         "blocks": [
             {
                 "type":"rtb",
                 "name":"RTB link",
                 "settings": [
-                    {
-                    "type": "color",
-                    "id": "color-fill-bg",
-                    "label": "Color fill background"
-                    },
                     {
                         "type": "color",
                         "id":"color-fill-text",
@@ -43,14 +45,14 @@
                     },
                     {
                         "type":"text",
-                        "id":"rbt-slide1",
+                        "id":"rbt-text",
                         "default": "Easy Returns",
-                        "label":"Rbt text 1"
+                        "label":"Rbt text"
                     },
                     {
                         "type":"url",
-                        "id":"rbt-slide1-url",
-                        "label":"Rbt url 1"
+                        "id":"rbt-url",
+                        "label":"Rbt url"
                     }
                 ]
             }
