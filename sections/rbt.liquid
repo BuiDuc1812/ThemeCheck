@@ -9,8 +9,11 @@
                 {% for block in section.blocks %}
                     {% case block.type %}
                         {% when 'rtb' %}
+                            <script>
+                                
+                            </script>
                             <div class="swiper-slide custom-slide">
-                                <img loading="lazy" width="24" height="24" src="{{ block.settings.icon-link.src | img_tag }}" alt="">
+                                <img loading="lazy" width="24" height="24" src="{{ block.settings.icon-link.src |img_url: 'medium' }}" alt="">
                                 <a style="color: {{ block.settings.color-fill-text }}" href="{%- if block.settings.rbt-url -%}{{ block.settings.rbt-url }}{% else %} # {% endif %}"> 
                                     {{ block.settings.rbt-text | escape }}
                                 </a>
