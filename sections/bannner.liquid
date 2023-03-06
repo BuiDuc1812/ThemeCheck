@@ -5,7 +5,14 @@
         {% case block.type %}
           {% when 'img' %}
           <div class="swiper-slide">
+            <script>
+              console.log({{ section.blocks.settings.img_height | json }})
+            </script>
             <img
+            
+            {% if section.blocks.settings.img_height %}
+              
+            {% endif %}
               width=""
               height=""
               loading="lazy"
@@ -37,13 +44,20 @@
             "label": "Choose your height",
             "options": [
               {
-                "value": "adapt"
-              }, {
-                "value": "small"
-              }, {
-                "value": "large"
-              }, {
-                "value": "medium"
+                "value": "adapt",
+                "label": "adapt font"
+              },
+              {
+                "value": "small",
+                "label": "small font"
+              }, 
+              {
+                "value": "large",
+                "label": "large font"
+              }, 
+              {
+                "value": "medium",
+                "label": "medium font"
               }
             ]
           }
