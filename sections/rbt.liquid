@@ -2,20 +2,20 @@
     <div class="swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <a href="#">
-
+                <a href="{{ section.settings.rbt-slide1-url }}">
+                    {{ section.settings.rbt-slide1 | escape }}
                     {% render 'arrowcounter' %}
                 </a>
             </div>
             <div class="swiper-slide">
-                <a href="#">
-
+                <a href="{{ section.settings.rbt-slide2-url }}">
+                    {{ section.settings.rbt-slide2 | escape }}
                     {% render 'icon-truck' %}
                 </a>
             </div>
             <div class="swiper-slide">
-                <a href="#">
-
+                <a href="{{ section.settings.rbt-slide3-url }}">
+                    {{ section.settings.rbt-slide3 | escape }}
                     {% render 'icon-celanderbank' %}
                 </a>
             </div>
