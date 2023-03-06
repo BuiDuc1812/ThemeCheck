@@ -3,8 +3,8 @@
     "f75bd20f-bc3f-469c-bd87-56431557798f": {
       "type": "rbt",
       "settings": {
-        "color-fill-bg": "",
-        "color-fill-text": "",
+        "color-fill-bg": "#334fb4",
+        "color-fill-text": "#ffffff",
         "rbt-slide1": "Easy Returns",
         "rbt-slide1-url": "",
         "rbt-slide2": "Spend $79+ and your order ships free",
