@@ -3,7 +3,7 @@
         <div class="swiper-wrapper">
             {% for block in section %}
                 {% case block.type %}
-                    {% when "img" %}
+                    {% when 'img' %}
                         <div class="swiper-slide">
                             <img width="100%" height="90vh" loading="lazy" src="{{ block.settings.img-banner.src |img_url: 'medium' }}" alt="">
                         </div>         
