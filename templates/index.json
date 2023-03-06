@@ -1,22 +1,20 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "c6efed51-3687-40c0-a604-836fd174b514": {
+      "type": "rbt",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Hero-banner-1.webp",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "color-fill-bg": "",
+        "color-fill-text": "",
+        "rbt-slide1": "Easy Returns",
+        "rbt-slide1-url": "",
+        "rbt-slide2": "Spend $79+ and your order ships free",
+        "rbt-slide2-url": "",
+        "rbt-slide3": "Book a Fitting",
+        "rbt-slide3-url": ""
       }
     }
   },
   "order": [
-    "image_banner"
+    "c6efed51-3687-40c0-a604-836fd174b514"
   ]
 }
