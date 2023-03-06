@@ -47,7 +47,7 @@
           "type": "img",
           "settings": {
             "img-banner": "shopify:\/\/shop_images\/Hero-banner-1.webp",
-            "img_height": "medium"
+            "img_height": "adapt"
           }
         }
       },
