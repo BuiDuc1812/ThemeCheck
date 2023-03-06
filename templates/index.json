@@ -39,9 +39,27 @@
       "settings": {
         "color-fill-bg": "#334fb4"
       }
+    },
+    "9459aa69-7527-4dcd-b55d-6b79d152006b": {
+      "type": "bannner",
+      "blocks": {
+        "template--17926477447487__9459aa69-7527-4dcd-b55d-6b79d152006b-16781128722493b4c6-0": {
+          "type": "img",
+          "settings": {
+            "img-banner": "shopify:\/\/shop_images\/Hero-banner-1.webp",
+            "img_height": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "template--17926477447487__9459aa69-7527-4dcd-b55d-6b79d152006b-16781128722493b4c6-0"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "f75bd20f-bc3f-469c-bd87-56431557798f"
+    "f75bd20f-bc3f-469c-bd87-56431557798f",
+    "9459aa69-7527-4dcd-b55d-6b79d152006b"
   ]
 }
