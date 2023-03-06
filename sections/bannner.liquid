@@ -5,7 +5,7 @@
             {% case block.type %}
                 {% when "imgBanner" %}
                     <div class="swiper-slide">
-                        <img loading="lazy" src="{{ block.settings.img-banner.src |img_url: 'medium' }}" alt="">
+                        <img width="100%" height="90vh" loading="lazy" src="{{ block.settings.img-banner.src |img_url: 'medium' }}" alt="">
                     </div>         
             {% endcase %}
         {% endfor %}
