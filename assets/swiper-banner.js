@@ -1,23 +1,6 @@
-var init = false;
-var swiper = '';
+var swiper = new Swiper(".swiper-rbt", {
+    autoplay: {
+        delay: 2000,
+    },
+});
 
-function enableSwiper() {
-  if (window.innerWidth < 990) {
-    if (!init) {
-      init = true;
-      swiper = new Swiper(".swiper-slider", {
-        autoplay: {
-          delay: 2000,
-        },
-      });
-    }
-  } else if (init) {
-    swiper.destroy();
-    init = false;
-  }
-}
-enableSwiper();
-window.addEventListener('resize', enableSwiper)
-
-
-  

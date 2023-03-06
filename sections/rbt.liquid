@@ -1,34 +1,32 @@
 <link rel="stylesheet" href="{{ 'rbt-style.css' | asset_url }}">
-<script src="{{ 'swiper-banner.js' | asset_url }}" defer="defer"> </script>
+{% comment %} <script src="{{ 'swiper-banner.js' | asset_url }}" defer="defer"></script> {% endcomment %}
 <section 
 style="background-color: {{ section.settings.color-fill-bg }};
         color: {{ section.settings.color-fill-text }};"
 class="rbt"
 >
-    <div class="container custom-height-rbt">
-        <div class="swiper swiper-slider">
-            <div class="swiper-wrapper content-rbt">
+        <div class="swiper swiper-rbt container">
+            <div class="swiper-wrapper wrapper-rbt">
                 <div class="swiper-slide custom-slide">
                     {% render 'arrowcounter' %}
-                    <a href="{{ section.settings.rbt-slide1-url }}">
+                    <a href="{%- if section.settings.rbt-slide1-url -%}{{ section.settings.rbt-slide1-url }}{% else %} # {% endif %}"> 
                         {{ section.settings.rbt-slide1 | escape }}
                     </a>
                 </div>
                 <div class="swiper-slide custom-slide">
                     {% render 'icon-truck' %}
-                    <a href="{{ section.settings.rbt-slide2-url }}">
+                    <a href="{%- if section.settings.rbt-slide2-url -%}{{ section.settings.rbt-slide2-url }}{% else %} # {% endif %}">
                         {{ section.settings.rbt-slide2 | escape }}
                     </a>
                 </div>
                 <div class="swiper-slide custom-slide">
                     {% render 'icon-celanderbank' %}
-                    <a href="{{ section.settings.rbt-slide3-url }}">
+                    <a href="{%- if section.settings.rbt-slide3-url -%}{{ section.settings.rbt-slide3-url }}{% else %} # {% endif %}">
                         {{ section.settings.rbt-slide3 | escape }}
                     </a>
                 </div>
             </div>
         </div>
-    </div>
 </section>
 
 {% schema %}
