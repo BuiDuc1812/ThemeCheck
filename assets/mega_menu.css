@@ -284,3 +284,6 @@
 .new-cols{
   margin-right: 32px;
 }
+.swiper-drawer{
+  background-color: var(--color-navy);
+}

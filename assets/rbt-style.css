@@ -29,10 +29,13 @@
 @media screen and (max-width:990px) {
     .custom-slide{
         padding: 0;
-        width: 30%;
+        width: 50%;
     }
     .custom-slide::after{
         display: none;
+    }
+    .wrapper-rbt{
+        padding: 7.5px 0;
     }
 }
 

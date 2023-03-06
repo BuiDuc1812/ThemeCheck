@@ -8,7 +8,7 @@ function enableSwiper() {
         swiperRtb = new Swiper(".swiper-rbt", {
             centeredSlides: true,
             loop: true,
-            slidesPerView: 'auto',
+            slidesPerView: 1,
             speed: 3000,
             autoplay: {
                 delay: 0,
