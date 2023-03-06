@@ -211,10 +211,24 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "949e0e60-6aaf-466d-8e21-c571589512d4": {
+      "type": "rbt",
+      "settings": {
+        "color-fill-bg": "#fa0000",
+        "color-fill-text": "",
+        "rbt-slide1": "Easy Returns",
+        "rbt-slide1-url": "",
+        "rbt-slide2": "Spend $79+ and your order ships free",
+        "rbt-slide2-url": "",
+        "rbt-slide3": "Book a Fitting",
+        "rbt-slide3-url": ""
+      }
     }
   },
   "order": [
     "topmenu",
-    "header"
+    "header",
+    "949e0e60-6aaf-466d-8e21-c571589512d4"
   ]
 }
