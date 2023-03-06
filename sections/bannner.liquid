@@ -1,3 +1,4 @@
+<script src="{{ 'swiper-banner.js' | asset_url }}" defer="defer"></script>
 <section class="banner-homeqage">
   <div class="swiper swiper-banner">
     <div class="swiper-wrapper">
@@ -9,6 +10,7 @@
             {{ block.settings.img-banner | image_url: width: 3840 | image_tag:
               loading: 'lazy',
               height: '100%',
+              width: '100%',
               class: 'img-banner',
               widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
             }}
@@ -17,18 +19,10 @@
         {% endcase %}
       {% endfor %}
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"> </div>
+    <div class="swiper-button-prev"> </div>
   </div>
 </section>
-<script>
-  var swiper = new Swiper(".mySwiper", {
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-</script>
 {% schema %}
   {   
     "name": "Banner Image",

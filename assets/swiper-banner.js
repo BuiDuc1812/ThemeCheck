@@ -26,4 +26,12 @@ enableSwiper();
 window.addEventListener('resize', enableSwiper)
 
 
-  
+var swiper = new Swiper(".swiper-banner", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 6000,
+  }
+});
