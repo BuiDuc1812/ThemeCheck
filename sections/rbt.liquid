@@ -4,25 +4,25 @@
 style="background-color: {{ section.settings.color-fill-bg }};"
 class="rbt"
 >
-    <div class="container">
+    <div class="container custom-height-rbt">
         <div class="swiper swiper-slider">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper content-rbt">
                 <div class="swiper-slide">
+                    {% render 'arrowcounter' %}
                     <a href="{{ section.settings.rbt-slide1-url }}">
                         {{ section.settings.rbt-slide1 | escape }}
-                        {% render 'arrowcounter' %}
                     </a>
                 </div>
                 <div class="swiper-slide">
+                    {% render 'icon-truck' %}
                     <a href="{{ section.settings.rbt-slide2-url }}">
                         {{ section.settings.rbt-slide2 | escape }}
-                        {% render 'icon-truck' %}
                     </a>
                 </div>
                 <div class="swiper-slide">
+                    {% render 'icon-celanderbank' %}
                     <a href="{{ section.settings.rbt-slide3-url }}">
                         {{ section.settings.rbt-slide3 | escape }}
-                        {% render 'icon-celanderbank' %}
                     </a>
                 </div>
             </div>
