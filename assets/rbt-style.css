@@ -34,3 +34,6 @@
     background-color: white;
     right: 0;
 }
+.custom-slide:last-child::after{
+    display: none;
+}
