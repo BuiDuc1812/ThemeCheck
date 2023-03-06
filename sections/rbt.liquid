@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="{{ rbt-style.css | asset_url }}">
 {{ swiper-banner | | asset_url | script_tag }}
-<section class="rbt container">
+<section 
+style="background-color: {{section.settings.color-fill-bg}};"
+class="rbt container">
     <div class="swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
