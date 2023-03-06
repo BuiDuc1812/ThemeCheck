@@ -2,15 +2,42 @@
   "sections": {
     "f75bd20f-bc3f-469c-bd87-56431557798f": {
       "type": "rbt",
+      "blocks": {
+        "3141899c-49da-49ff-9a6d-8a6d11c2cdbe": {
+          "type": "rtb",
+          "settings": {
+            "color-fill-text": "",
+            "icon-link": "shopify:\/\/shop_images\/ArrowCounterClockwise.png",
+            "rbt-text": "Easy Returns",
+            "rbt-url": ""
+          }
+        },
+        "ea9089d8-f055-4819-85a3-d4cc5813101b": {
+          "type": "rtb",
+          "settings": {
+            "color-fill-text": "",
+            "icon-link": "shopify:\/\/shop_images\/Truck.png",
+            "rbt-text": "Easy Returns",
+            "rbt-url": ""
+          }
+        },
+        "438caae1-df88-41d4-a1e2-11cd63aca393": {
+          "type": "rtb",
+          "settings": {
+            "color-fill-text": "",
+            "icon-link": "shopify:\/\/shop_images\/CalendarBlank.png",
+            "rbt-text": "Easy Returns",
+            "rbt-url": ""
+          }
+        }
+      },
+      "block_order": [
+        "3141899c-49da-49ff-9a6d-8a6d11c2cdbe",
+        "ea9089d8-f055-4819-85a3-d4cc5813101b",
+        "438caae1-df88-41d4-a1e2-11cd63aca393"
+      ],
       "settings": {
-        "color-fill-bg": "#334fb4",
-        "color-fill-text": "#ffffff",
-        "rbt-slide1": "Easy Returns",
-        "rbt-slide1-url": "",
-        "rbt-slide2": "Spend $79+ and your order ships free",
-        "rbt-slide2-url": "",
-        "rbt-slide3": "Book a Fitting",
-        "rbt-slide3-url": ""
+        "color-fill-bg": "#334fb4"
       }
     }
   },
