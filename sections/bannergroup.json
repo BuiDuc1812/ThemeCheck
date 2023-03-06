@@ -1,6 +1,6 @@
 {
     "name":"bannerhomepage",
-    "type":"banner",
+    "type":"aside",
     "sections":{
         "rbt":{
             "type":"rbt",
