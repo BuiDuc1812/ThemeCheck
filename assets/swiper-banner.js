@@ -9,7 +9,7 @@ function enableSwiper() {
             loop: true,
             spaceBetween: 25,
             slidesPerView: 'auto',
-            speed: 3000,
+            speed: 7000,
             loopPreventsSlide: false,
             autoplay: {
                 delay: 0,
