@@ -6,10 +6,11 @@ function enableSwiper() {
     if (!flag) {
         flag = true;
         swiperRtb = new Swiper(".swiper-rbt", {
-            centeredSlides: true,
             loop: true,
-            slidesPerView: 2,
+            spaceBetween: 80,
+            slidesPerView: 'auto',
             speed: 3000,
+            loopPreventsSlide: false,
             autoplay: {
                 delay: 0,
                 disableOnInteraction: false,

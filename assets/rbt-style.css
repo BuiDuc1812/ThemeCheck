@@ -7,13 +7,11 @@
     transition-timing-function: linear;
 }
 .custom-slide{
+    position: relative;
     padding: 0 80px;
 }
 .custom-slide a{
     text-decoration: none;
-}
-.custom-slide{
-    position: relative;
 }
 .custom-slide::after{
     position: absolute;
@@ -28,7 +26,8 @@
 }
 @media screen and (max-width:990px) {
     .custom-slide{
-        padding: 0;
+        padding: 0 0;
+        width: fit-content;
     }
     .custom-slide::after{
         display: none;
