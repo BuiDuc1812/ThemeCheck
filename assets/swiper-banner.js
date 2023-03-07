@@ -39,3 +39,19 @@ function bannerSwiper(){
 }
 bannerSwiper();
 
+// function addSwiper(){
+//   var rtb = document.querySelector('.rbt');
+//   var element = rtb.querySelectorAll('.custom-slide')
+//   console.log(element.length)
+//   if(element.length>3){
+//     var swiper = new Swiper(".swiper-rbt", {
+//       loop:true,
+//       slidesPerView: 1,
+//       autoplay: {
+//         delay: 0,
+//       },
+//       speed: 3000
+//     });
+//   }
+// }
+// addSwiper()
