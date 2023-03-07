@@ -28,7 +28,7 @@
 @media screen and (max-width:990px) {
     .custom-slide{
         padding: 0 0;
-        width:auto;
+        width: auto;
     }
     .custom-slide::after{
         display: none;
