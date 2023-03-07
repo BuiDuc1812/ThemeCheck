@@ -41,3 +41,15 @@ function bannerSwiper(){
   });
 }
 bannerSwiper();
+
+
+function styleRTB(){
+  var rtb = document.querySelector('.rbt');
+  var rtbElement = rtb.querySelectorAll('.custom-slide');
+  var totalWidth ;
+  rtbElement.forEach(item => {
+    totalWidth += item.offsetWidth;
+  });
+  console.log(totalWidth)
+}
+styleRTB()
