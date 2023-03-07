@@ -55,6 +55,7 @@ function styleRTB(){
           centeredSlides: true,
           loop: true,
           slidesPerView: 3,
+          
           speed: 3000,
           autoplay: {
               delay: 0,
