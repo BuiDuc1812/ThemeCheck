@@ -48,8 +48,20 @@ function styleRTB(){
   var rtbElement = rtb.querySelectorAll('.custom-slide');
   var totalWidth ;
   rtbElement.forEach(item => {
-    totalWidth += item.offsetWidth;
+    totalWidth = item.offsetWidth
   });
-  console.log(totalWidth)
+  if(totalWidth > window.innerWidth){
+     var test = new Swiper(".swiper-rbt", {
+          centeredSlides: true,
+          loop: true,
+          slidesPerView: 3,
+          speed: 3000,
+          autoplay: {
+              delay: 0,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true
+          }
+      });
+   }
 }
 styleRTB()
