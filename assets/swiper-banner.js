@@ -25,9 +25,6 @@ function enableSwiper() {
 enableSwiper();
 window.addEventListener('resize', enableSwiper)
 
-
-
-
 function bannerSwiper(){
     var swiper = new Swiper(".swiper-banner", {
     loop:true,
@@ -42,36 +39,3 @@ function bannerSwiper(){
 }
 bannerSwiper();
 
-
-
-function styleRTB(){
-  var flag = false;
-  var swiperRtb = '';
-  var rtb = document.querySelector('.rbt');
-  var rtbElement = rtb.querySelectorAll('.custom-slide');
-  var totalWidth ;
-  rtbElement.forEach(item => {
-    totalWidth = item.offsetWidth
-  });
-   if (totalWidth > window.innerWidth) {
-    if (!flag) {
-        flag = true;
-        swiperRtb = new Swiper(".swiper-rbt", {
-            centeredSlides: true,
-            loop: true,
-            slidesPerView: 3,
-            speed: 3000,
-            autoplay: {
-                delay: 0,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true
-            }
-        });
-    }
-  } else if (flag) {
-    swiperRtb.destroy();
-    flag = false;
-  }
-}
-styleRTB()
-window.addEventListener('resize', styleRTB)
