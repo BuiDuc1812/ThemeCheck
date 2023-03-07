@@ -7,7 +7,7 @@ function enableSwiper() {
         flag = true;
         swiperRtb = new Swiper(".swiper-rbt", {
             loop: true,
-            spaceBetween: 30,
+            spaceBetween: 25,
             slidesPerView: 'auto',
             speed: 3000,
             loopPreventsSlide: false,

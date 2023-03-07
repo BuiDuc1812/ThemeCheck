@@ -9,6 +9,7 @@
 .custom-slide{
     position: relative;
     padding: 0 80px;
+    gap: 9px;
 }
 .custom-slide a{
     text-decoration: none;
