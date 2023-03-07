@@ -26,28 +26,12 @@
             "rbt-text": "Book a Fitting",
             "rbt-url": ""
           }
-        },
-        "2c8bef04-b077-439a-a678-5f6283682674": {
-          "type": "rtb",
-          "settings": {
-            "rbt-text": "add new text",
-            "rbt-url": ""
-          }
-        },
-        "b25169c0-0bf3-4443-b44c-2267e6290866": {
-          "type": "rtb",
-          "settings": {
-            "rbt-text": "add new text",
-            "rbt-url": ""
-          }
         }
       },
       "block_order": [
         "3141899c-49da-49ff-9a6d-8a6d11c2cdbe",
         "ea9089d8-f055-4819-85a3-d4cc5813101b",
-        "438caae1-df88-41d4-a1e2-11cd63aca393",
-        "2c8bef04-b077-439a-a678-5f6283682674",
-        "b25169c0-0bf3-4443-b44c-2267e6290866"
+        "438caae1-df88-41d4-a1e2-11cd63aca393"
       ],
       "settings": {
         "color-fill-bg": "#334fb4",
