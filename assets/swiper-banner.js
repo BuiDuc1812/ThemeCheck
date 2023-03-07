@@ -43,26 +43,26 @@ function bannerSwiper(){
 bannerSwiper();
 
 
-function styleRTB(){
-  var rtb = document.querySelector('.rbt');
-  var rtbElement = rtb.querySelectorAll('.custom-slide');
-  var totalWidth ;
-  rtbElement.forEach(item => {
-    totalWidth = item.offsetWidth
-  });
-  if(totalWidth > window.innerWidth){
-     var test = new Swiper(".swiper-rbt", {
-          centeredSlides: true,
-          loop: true,
-          slidesPerView: 3,
-          
-          speed: 3000,
-          autoplay: {
-              delay: 0,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true
-          }
-      });
-   }
-}
-styleRTB()
+// function styleRTB(){
+//   var rtb = document.querySelector('.rbt');
+//   var rtbElement = rtb.querySelectorAll('.custom-slide');
+//   var totalWidth ;
+//   rtbElement.forEach(item => {
+//     totalWidth = item.offsetWidth
+//   });
+//   if(totalWidth > window.innerWidth){
+//      var test = new Swiper(".swiper-rbt", {
+//           centeredSlides: true,
+//           loop: true,
+//           slidesPerView: 3,
+
+//           speed: 3000,
+//           autoplay: {
+//               delay: 0,
+//               disableOnInteraction: false,
+//               pauseOnMouseEnter: true
+//           }
+//       });
+//    }
+// }
+// styleRTB()
