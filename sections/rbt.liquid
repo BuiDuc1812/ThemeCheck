@@ -13,7 +13,7 @@
               height="24"
               src="{{ block.settings.icon-link.src |img_url: 'medium' }}"
               alt="">
-            <a style="color: {{ block.settings.color-fill-text }}" href="{%- if block.settings.rbt-url -%}{{ block.settings.rbt-url }}{% else %} # {% endif %}">
+            <a style="color: {{ section.settings.color-fill-text }}" href="{%- if block.settings.rbt-url -%}{{ block.settings.rbt-url }}{% else %} # {% endif %}">
               {{ block.settings.rbt-text | escape }}
             </a>
           </div>
