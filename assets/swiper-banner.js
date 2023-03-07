@@ -26,12 +26,16 @@ enableSwiper();
 window.addEventListener('resize', enableSwiper)
 
 
-var swiper = new Swiper(".swiper-banner", {
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  // autoplay: {
-  //   delay: 6000,
-  // }
-});
+function bannerSwiper(){
+    var swiper = new Swiper(".swiper-banner", {
+    loop:true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+      delay: 6000,
+    }
+  });
+}
+bannerSwiper();
