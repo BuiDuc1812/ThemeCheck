@@ -5,20 +5,18 @@
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'img' %}
-          <div style="width:100%" class="swiper-slide">
+          <div class="swiper-slide">
             {% if block.settings.img-banner-desk != blank %}
             {{ block.settings.img-banner-desk | image_url: width: 3840 | image_tag:
               loading: 'lazy',
-              class: 'img-banner-desk',
-              widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+              class: 'img-banner-desk'  
             }}
             {% endif %}
             
             {% if block.settings.img-banner-mobile != blank %}
             {{ block.settings.img-banner-mobile | image_url: width: 3840 | image_tag:
               loading: 'lazy',
-              class: 'img-banner-mobile',
-              widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+              class: 'img-banner-mobile'
             }}
             {% endif %}
           </div>

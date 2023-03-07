@@ -44,11 +44,10 @@
         justify-content: center;
     }
 }
-.img-banner-desk{
+.img-banner-desk,.img-banner-mobile{
     object-fit: cover;
     vertical-align: middle;
     max-width: 100%;
-    /* width: 100%; */
     object-position: center;
     height: 100%;
 
@@ -58,7 +57,18 @@
     display: none;
 }
 @media screen and (min-width:750px){
+    .img-banner-desk{
+        display: block;
+    }
     .img-banner-mobile{
         display: none;
+    }
+}
+@media screen and (max-width:750px){
+    .img-banner-desk{
+        display: none;
+    }
+    .img-banner-mobile{
+        display: block;
     }
 }
