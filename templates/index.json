@@ -6,7 +6,6 @@
         "3141899c-49da-49ff-9a6d-8a6d11c2cdbe": {
           "type": "rtb",
           "settings": {
-            "color-fill-text": "",
             "icon-link": "shopify:\/\/shop_images\/ArrowCounterClockwise.png",
             "rbt-text": "Easy Returns",
             "rbt-url": ""
@@ -15,7 +14,6 @@
         "ea9089d8-f055-4819-85a3-d4cc5813101b": {
           "type": "rtb",
           "settings": {
-            "color-fill-text": "",
             "icon-link": "shopify:\/\/shop_images\/Truck.png",
             "rbt-text": "Spend $79+ and your order ships free",
             "rbt-url": ""
@@ -24,7 +22,6 @@
         "438caae1-df88-41d4-a1e2-11cd63aca393": {
           "type": "rtb",
           "settings": {
-            "color-fill-text": "",
             "icon-link": "shopify:\/\/shop_images\/CalendarBlank.png",
             "rbt-text": "Book a Fitting",
             "rbt-url": ""
@@ -37,7 +34,8 @@
         "438caae1-df88-41d4-a1e2-11cd63aca393"
       ],
       "settings": {
-        "color-fill-bg": "#334fb4"
+        "color-fill-bg": "#334fb4",
+        "color-fill-text": "#ffffff"
       }
     },
     "9459aa69-7527-4dcd-b55d-6b79d152006b": {
@@ -47,21 +45,24 @@
           "type": "img",
           "settings": {
             "img-banner-desk": "shopify:\/\/shop_images\/Hero-banner-1.webp",
-            "img-banner-mobile": "shopify:\/\/shop_images\/Hero-banner-1-mobile.webp"
+            "img-banner-mobile": "shopify:\/\/shop_images\/Hero-banner-1-mobile.webp",
+            "link-banner": ""
           }
         },
         "7bf36fcc-596e-41a4-ab96-e1c75620d075": {
           "type": "img",
           "settings": {
             "img-banner-desk": "shopify:\/\/shop_images\/Hero-banner-1.webp",
-            "img-banner-mobile": "shopify:\/\/shop_images\/Hero-banner-1-mobile.webp"
+            "img-banner-mobile": "shopify:\/\/shop_images\/Hero-banner-1-mobile.webp",
+            "link-banner": ""
           }
         },
         "2673a00f-2068-4b82-8713-d7ae75d248d3": {
           "type": "img",
           "settings": {
             "img-banner-desk": "shopify:\/\/shop_images\/Hero-banner-1.webp",
-            "img-banner-mobile": "shopify:\/\/shop_images\/Hero-banner-1-mobile.webp"
+            "img-banner-mobile": "shopify:\/\/shop_images\/Hero-banner-1-mobile.webp",
+            "link-banner": ""
           }
         }
       },
