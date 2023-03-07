@@ -46,22 +46,18 @@
         "template--17926477447487__9459aa69-7527-4dcd-b55d-6b79d152006b-16781128722493b4c6-0": {
           "type": "img",
           "settings": {
-            "img-banner": "shopify:\/\/shop_images\/Hero-banner-1.webp",
-            "img_height": "adapt"
+            "img-banner-desk": "shopify:\/\/shop_images\/Hero-banner-1.webp",
+            "img-banner-mobile": "shopify:\/\/shop_images\/Hero-banner-1-mobile.webp"
           }
         },
         "7bf36fcc-596e-41a4-ab96-e1c75620d075": {
           "type": "img",
           "settings": {
-            "img-banner": "shopify:\/\/shop_images\/Hero-banner-1.webp",
-            "img_height": "adapt"
           }
         },
         "2673a00f-2068-4b82-8713-d7ae75d248d3": {
           "type": "img",
           "settings": {
-            "img-banner": "shopify:\/\/shop_images\/Hero-banner-1.webp",
-            "img_height": "adapt"
           }
         }
       },
