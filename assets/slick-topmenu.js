@@ -6,6 +6,7 @@ function enableSwiper() {
     if (!init) {
       init = true;
       swiper = new Swiper(".swiper-topmenu", {
+        loop:true,
         autoplay: {
           delay: 2000,
         },
