@@ -44,7 +44,7 @@
         justify-content: center;
     }
 }
-.img-banner{
+.img-banner-desk{
     object-fit: cover;
     vertical-align: middle;
     max-width: 100%;
@@ -56,9 +56,4 @@
 .swiper-button-next::after,
 .swiper-button-prev::after{
     display: none;
-}
-@media screen and (max-width:750px){
-    .img-banner{
-        height: 70vh;
-    }
 }

@@ -26,6 +26,8 @@ enableSwiper();
 window.addEventListener('resize', enableSwiper)
 
 
+
+
 function bannerSwiper(){
     var swiper = new Swiper(".swiper-banner", {
     loop:true,
