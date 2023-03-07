@@ -28,6 +28,7 @@
 @media screen and (max-width:990px) {
     .custom-slide{
         padding: 0 0;
+        min-width: 100%;
         width: fit-content;
     }
     .custom-slide::after{
