@@ -6,19 +6,34 @@
         {% case block.type %}
           {% when 'img' %}
           <div class="swiper-slide">
-            {% if block.settings.img-banner-desk != blank %}
-            {{ block.settings.img-banner-desk | image_url: width: 3840 | image_tag:
-              loading: 'lazy',
-              class: 'img-banner-desk'  
-            }}
-            {% endif %}
-            
-            {% if block.settings.img-banner-mobile != blank %}
-            {{ block.settings.img-banner-mobile | image_url: width: 3840 | image_tag:
-              loading: 'lazy',
-              class: 'img-banner-mobile'
-            }}
-            {% endif %}
+            <a class="banner-link-desk" href="
+              {% if block.settings.link-banner != blank %}
+              {{ block.settings.link-banner }}
+              {% else %}
+              #
+              {% endif %}">
+              {% if block.settings.img-banner-desk != blank %}
+                {{ block.settings.img-banner-desk | image_url: width: 3840 | image_tag:
+                  loading: 'lazy',
+                  class: 'img-banner-desk' , 
+                  alt: ""
+                }}
+              {% endif %}
+            </a>
+            <a class="banner-link-mobile" href="
+            {% if block.settings.link-banner != blank %}
+              {{ block.settings.link-banner }}
+              {% else %}
+              #
+              {% endif %}">
+               {% if block.settings.img-banner-mobile != blank %}
+                {{ block.settings.img-banner-mobile | image_url: width: 3840 | image_tag:
+                  loading: 'lazy',
+                  class: 'img-banner-mobile'
+                }}
+              {% endif %}
+            </a>
+           
           </div>
         {% endcase %}
       {% endfor %}
@@ -45,6 +60,11 @@
             "type": "image_picker",
             "id": "img-banner-mobile",
             "label": "Img banner mobile"
+          },
+          {
+            "type": "url",
+            "id": "link-banner",
+            "label": "Banner link"
           }
         ]
       }

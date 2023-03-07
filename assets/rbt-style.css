@@ -70,10 +70,10 @@
     display: none;
 }
 @media screen and (min-width:750px){
-    .img-banner-desk{
+    .banner-link-desk{
         display: block;
     }
-    .img-banner-mobile{
+    .banner-link-mobile{
         display: none;
     }
     .swiper-button-next{
@@ -84,10 +84,10 @@
     }
 }
 @media screen and (max-width:750px){
-    .img-banner-desk{
+    .banner-link-desk{
         display: none;
     }
-    .img-banner-mobile{
+    .banner-link-mobile{
         display: block;
     }
     .swiper-button-next{
