@@ -26,12 +26,44 @@
             "rbt-text": "Book a Fitting",
             "rbt-url": ""
           }
+        },
+        "34aa6a39-41f4-40db-b664-458459543132": {
+          "type": "rtb",
+          "settings": {
+            "rbt-text": "add new text",
+            "rbt-url": ""
+          }
+        },
+        "57d848a2-4ef2-4f5a-83ed-5d6d2eccf7d8": {
+          "type": "rtb",
+          "settings": {
+            "rbt-text": "add new text",
+            "rbt-url": ""
+          }
+        },
+        "a5fbdc40-4a78-444d-8774-a412aded4172": {
+          "type": "rtb",
+          "settings": {
+            "rbt-text": "add new text",
+            "rbt-url": ""
+          }
+        },
+        "92d79bdd-b4fe-4a18-965a-029c46f6ed7b": {
+          "type": "rtb",
+          "settings": {
+            "rbt-text": "add new text",
+            "rbt-url": ""
+          }
         }
       },
       "block_order": [
         "3141899c-49da-49ff-9a6d-8a6d11c2cdbe",
         "ea9089d8-f055-4819-85a3-d4cc5813101b",
-        "438caae1-df88-41d4-a1e2-11cd63aca393"
+        "438caae1-df88-41d4-a1e2-11cd63aca393",
+        "34aa6a39-41f4-40db-b664-458459543132",
+        "57d848a2-4ef2-4f5a-83ed-5d6d2eccf7d8",
+        "a5fbdc40-4a78-444d-8774-a412aded4172",
+        "92d79bdd-b4fe-4a18-965a-029c46f6ed7b"
       ],
       "settings": {
         "color-fill-bg": "#334fb4",
