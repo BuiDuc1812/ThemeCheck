@@ -14,7 +14,7 @@ function getRecentlyViewedProducts() {
                     <img loading="lazy" src="${item.productImg}" alt="">
                 </div>
                 <div class="viewed-info">
-
+                    <p>${item.productTitle}</p> 
                 </div>
             </div>
         </div>

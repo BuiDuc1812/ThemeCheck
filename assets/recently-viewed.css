@@ -5,3 +5,10 @@
     text-align: center;
     margin: 0;
 }
+.viewed-item{
+    display: block;
+    color: black;
+}
+.viewed-item p{
+    color: black;
+}

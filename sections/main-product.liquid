@@ -569,11 +569,14 @@
     }
   </script>
   <script>
+    console.log({{ product.tags }})
     function setRecentlyViewedProducts() {
       let jsonResp, jsonRespArr, jsonRespArrStr;
       const productData = {
         productTitle: '{{ product.title }}',
         productImg: '{{ product.featured_media | image_url: width: 533 }}',
+        productCollection:'{{ product.collections }}',
+        productTag: '{{ product.tags }}'
         imgWidth:'{{ product.featured_media.width }}',
         imgHeight:'{{ product.featured_media.height }}',
         productPrice: '{{ product.price | money_with_currency }}',
