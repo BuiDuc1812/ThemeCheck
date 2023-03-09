@@ -1,4 +1,4 @@
-{% comment %} <section 
+<section 
 class="recently-viewed container"  
 style="padding:{{ section.settings.padding-recently }}px 0"
 >
@@ -7,50 +7,19 @@ style="padding:{{ section.settings.padding-recently }}px 0"
         <div class="swiper-wrapper">
             <div class="swiper-slide viewed-product">
                 <div class="img-product-viewed">
-                    {{ product.images | image_url: width: 3840 | image_tag:
+                    {{ images | image_url: width: 3840 | image_tag:
                     loading: 'lazy',
                     class: 'img-banner-desk' , 
                     alt: ""
                     }}
                 </div>
+                <div class="infor-product">
+                    <span class="current-price">{{price}}</span>
+                    {% if onSale %}
+                      <span class="old-price">{{ compare_price }}</span>          
+                    {% endif %}
+                </div>
             </div>
         </div>
     </div>
-</section> {% endcomment %}
-
-
-
-<div class="product-item__container">
-{% raw %}
-{{#unless productAvailable}}
-  <span class="badge soldout">
-    <span class="badge-label soldout">Sold out</span>
-  </span>
-{{/unless}}
-{{#if onSale}}
-  {{#unless soldOut}}
-    <span class="badge onsale">
-      <span class="badge-label onsale">On sale</span>
-    </span>
-  {{/unless}}
-{{/if}}
-  {{#if image }}
-    <a href="{{ url }}" class="product-image__link">
-      <img loading="lazy" width="24" height="24" src="{{image}}" alt="{{title}}">
-    </a>
-  {{/if}}
-  <div class="product-meta__container">
-    <p class="product-title">
-      <a href="{{ url }}">{{ title }}</a>
-    </p>
-    <p class="product-price">
-      <span class="current-price">{{price}}</span>
-      {{#if onSale}}
-        <span class="old-price">{{compare_price}}</span>
-      {{/if}}
-    </p>
-    <div class="product-review-stars star-rating" data-sku="{{firstSKU}}" title="0">
-    </div>
-  </div>
-</div>
-{% endraw %}
+</section>

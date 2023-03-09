@@ -1,10 +1,8 @@
 var productJson = JSON.parse(
     document.querySelector("[data-product-json]").innerHTML
 );
-  console.dir(productJson);
-  console.log("-----------------------------------");
 var storedProducts = JSON.parse(localStorage.getItem("storedProducts"));
-
+console.log(storedProducts)
 function addProductEntry() {
 
     if (storedProducts === null) storedProducts = [];
