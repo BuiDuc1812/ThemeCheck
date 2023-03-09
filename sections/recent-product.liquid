@@ -3,13 +3,11 @@
 <section 
 class="container recently-viewed"
 style="padding: {{ section.settings.padding-recently-viewed }}px 80px;"
-paginate>
+paginate="{{ section.settings.paginate-recently }}">
   <h3 class="heading-recently">{{ section.settings.heading | escape }}</h3>
-  <div class="swiper swiper-recently-viewed">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide viewed-item"></div>
-    </div>
-  </div>
+    <span>
+        
+    </span>
 </section>
 {% schema %}
   {

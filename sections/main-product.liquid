@@ -581,7 +581,6 @@
         productImageAltText: '{{ product.featured_media.alt | escape }}'
       };
       const productList = [];
-      const numberOfProducts = 4;
       productList.push(productData);
       const currProductPageTitle = productData.productTitle;
       const productDataString = JSON.stringify(productList);
@@ -594,22 +593,14 @@
         const oldProductData = localStorage.getItem('recentlyViewedProduct');
         const countProductData = (oldProductData.match(/productTitle/g) || []).length;
         const sameProduct = oldProductData.includes(currProductPageTitle);
-        if (countProductData < numberOfProducts && sameProduct == false) {
+        if (sameProduct == false) {
           jsonResp = JSON.parse(oldProductData);
           jsonRespArr = jsonResp.concat(productList);
           jsonRespArrStr = JSON.stringify(jsonRespArr);
           localStorage.setItem('recentlyViewedProduct', jsonRespArrStr);
-        } else if (countProductData >= numberOfProducts && sameProduct == false) {
-          jsonResp = JSON.parse(oldProductData);
-          jsonResp.shift();
-          jsonRespArr = jsonResp.concat(productList);
-          jsonRespArr = JSON.stringify(jsonRespArr);
-          localStorage.setItem('recentlyViewedProduct', jsonRespArr);
-        }
+        } 
       }
-          console.log(productData)
-          console.log(productList)
-        }
+    }
 setRecentlyViewedProducts();
   </script>
 </section>
