@@ -1,25 +1,30 @@
+<link rel="stylesheet" href="{{ 'recently-viewed.css' | asset_url }}">
+<script src="{{ 'recently-viewed.js' | asset_url }}" defer="defer"></script>
 <section 
 class="recently-viewed container"  
-style="padding:{{ section.settings.padding-recently }}px 0"
+style="padding:{{ section.settings.padding-recently }}px 80px"
 >
     <div class="heading-recently">{{ section.settings.heading-view }}</div>
     <div class="swiper swiper-slider">
         <div class="swiper-wrapper">
             <div class="swiper-slide viewed-product">
                 <div class="img-product-viewed">
-                    {{ images | image_url: width: 3840 | image_tag:
+                    {{ product.images | image_url: width: 3840 | image_tag:
                     loading: 'lazy',
                     class: 'img-banner-desk' , 
                     alt: ""
                     }}
                 </div>
                 <div class="infor-product">
-                    <span class="current-price">{{price}}</span>
+                    <p class="product-title">
+                        <a href="{{ url }}">{{ product.title }}</a>
+                    </p>
+                    <span class="current-price">{{ product.price }}</span>
                     {% if onSale %}
-                      <span class="old-price">{{ compare_price }}</span>          
+                      <span class="old-price">{{ product.compare_price }}</span>          
                     {% endif %}
                 </div>
             </div>
         </div>
     </div>
-</section>
+</section> 

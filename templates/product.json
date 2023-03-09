@@ -204,12 +204,18 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "recent-products": {
+      "type": "recent-products",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "image-with-text",
     "multicolumn",
-    "related-products"
+    "related-products",
+    "recent-products"
   ]
 }

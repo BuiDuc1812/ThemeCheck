@@ -1,89 +1,61 @@
-var productJson = JSON.parse(
-    document.querySelector("[data-product-json]").innerHTML
-);
-var storedProducts = JSON.parse(localStorage.getItem("storedProducts"));
-console.log(storedProducts)
-function addProductEntry() {
-
-    if (storedProducts === null) storedProducts = [];
-    var currentProductID = productJson.id;
-    var currentProductHandle = productJson.handle;
-    var product = {
-      handle: currentProductHandle,
-      id: currentProductID
-    };
-    if (JSON.parse(localStorage.getItem("product")) != currentProductHandle) {
-      localStorage.setItem("product", JSON.stringify(product));
-    }
-    var productExists = false
-    for (var i = storedProducts.length; i--;) {
-      var curProduct = storedProducts[i];
-      if (curProduct.handle === product.handle) {
-        productExists = true;
-        break;
-      }
-    }
-    if (!productExists) {
-      storedProducts.push(product);
-    }
-    if (localStorage.getItem(storedProducts)) {
-      localStorage.getItem("storedProducts", JSON.stringify(storedProducts));
-    } else {
-      localStorage.setItem("storedProducts", JSON.stringify(storedProducts));
-    }
-  }
-
-
-  var savedProductsArr = JSON.parse(localStorage.getItem("storedProducts"));
-  var savedProductsArrReverse = savedProductsArr.reverse();
-  var index = 0;
-  if (savedProductsArr === null) {
-    var elem = document.querySelector('#shopify-section-recently-viewed');
-    elem.parentNode.removeChild(elem);
-  } else {
-    savedProductsArrReverse.some(function (product, index) {
-      getStoredProducts(product);
-      index++;
-      return index === 4;
-    });
-  }
-  var source = document.getElementById("RecentProductItemScript").innerHTML;
-
-  function getStoredProducts(product) {
-    var productAjaxURL = "/products/" + product.handle + ".js";
-    $.ajax({
-      type: 'GET',
-      dataType: 'json',
-      url: productAjaxURL,
-      success: function (data) {
-        console.dir(data);
-        var template = Handlebars.compile(source);
-        var soldOut = false;
-        var onSale = false;
-        if (data.available === false) {
-          var soldOut = true;
-        };
-        if (data.compare_at_price > data.price) {
-          var onSale = true;
-        };
-        var context = {
-          title: data.title,
-          url: data.url,
-          image: slate.Image.getSizedImageUrl(data.featured_image, '450x450'),
-          compare_price: slate.Currency.formatMoney(data.compare_at_price, theme.moneyFormat),
-          price: slate.Currency.formatMoney(data.price, theme.moneyFormat),
-          firstSKU: data.variants[0].sku,
-          productAvailable: data.available,
-          soldOut: soldOut,
-          onSale: onSale
-        };
-        var html = template(context);
-        $(html).appendTo("#recentlyViewedGrid");
-        productStars();
-      },
-      error: function (data, error) {
-        console.dir(data);
-      }
-    });
-  }
-  addProductEntry();
+var productJson = JSON.parse(document.querySelector("[data-product-json]").innerHTML);
+function setRecentlyViewedPdp() {
+    const pdpData = {
+      productTitle : productJson.title,
+      productImg : productJson.featured_image,
+      productPrice : productJson.price,
+      productUrl : productJson.url
+   };
+   console.log(pdpData)
+    // Init Empty Array to push data
+     const productArr = [];
+    // Create a couple of variables 
+     let jsonResp,
+         jasonRespArr, 
+         jsonRespArrStr; 
+  // Set the number how many products you want to capture 
+     const numberOfProduct = 4;
+  // Now push the pdpData into Array so that we can use it 
+     productArr.push(pdpData);
+  // Get the product title from pdpData 
+     const currPdpTitle = pdpData.productTitle;
+  // Now Convert current page data into Strings which we already pushed in Array 
+     const pdpDataString = JSON.stringify(productArr);
+  // Set the variable for localStorage 
+     const localData = localStorage.getItem('recently_viewed');
+     // Second Block
+// first we need to check data if data is not there then store right // away 
+if (localData == null) {
+    localStorage.setItem('recently_viewed', pdpDataString);
+}
+// If data is there then we need to check couple of other conditions 
+else if ( localData == null ) {
+// Create Variable for oldData or Previous page 
+   const oldPdpData = localStorage.getItem('recently_viewedPDP');
+// Count the amount of data stored in strings so that we can remove // old products from the stack 
+   const countPdpData = (oldPdpData.match(/productTitle/g) || []).length;
+// we also need to check if user is not visiting page again 
+   const reVisitPdp =  oldPdpData.includes(currPdpTitle);
+// Get old data, merged it with new data and store merged data
+ if (countPdpData < numberOfProduct && reVisitPdp == false) {
+      jsonResp = JSON.parse(oldPdpData);
+      jsonRespArr = jsonResp.concat(productArr);
+      jsonRespArrStr = JSON.stringify(jsonRespArr);
+      localStorage.setItem('recently_viewedPDP', jsonRespArrStr);
+ }
+// If User visited more the 4 pages delete first page data 
+else if (countPdpData >= numberOfProduct && reVisitPdp == false) {
+      jsonResp = JSON.parse(oldPdpData);
+      jsonResp.shift();
+      jsonRespArr = jsonResp.concat(productArr);
+      jsonRespArr =  JSON.stringify(jsonRespArr);
+      localStorage.setItem('recently_viewedPDP', jsonRespArr);
+ }
+}
+}
+// Now we write all our function and it's time to execute it 
+setRecentlyViewedPdp();
+// Set Variable for Local Storage Data 
+const localViewed = localStorage.recently_viewedPDP;
+// console.log to verify the data 
+console.log(localViewed);   

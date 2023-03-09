@@ -1,14 +1,9 @@
-<link rel="stylesheet" href="{{ 'recently-viewed.css' | asset_url }}">
-<script src="{{ 'recently-viewed.js' | asset_url }}" defer="defer"></script>
-{% unless product == empty %}
+{% if product != empty %}
     <script type="application/json" data-product-json>
         {{ product | json }}
     </script>
-{% endunless %}
-<script id="RecentProductItemScript" type="text/x-handlebars-template">
-  {% render 'recently-viewed' %}
-</script>
-
+  {% comment %} {% render 'recently-viewed' %} {% endcomment %}
+{% endif %}
 {% schema %}
     {
         "name": "recently",
