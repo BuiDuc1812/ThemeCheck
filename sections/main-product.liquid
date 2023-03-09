@@ -568,6 +568,50 @@
       ]
     }
   </script>
+  <script>
+    function setRecentlyViewedProducts() {
+      let jsonResp, jsonRespArr, jsonRespArrStr;
+      const productData = {
+        productTitle: '{{ product.title }}',
+        productImg: '{{ product.featured_media | image_url: width: 533 }}',
+        imgWidth:'{{ product.featured_media.width }}',
+        imgHeight:'{{ product.featured_media.height }}',
+        productPrice: '{{ product.price | money_with_currency }}',
+        productUrl: '{{ product.url }}',
+        productImageAltText: '{{ product.featured_media.alt | escape }}'
+      };
+      const productList = [];
+      const numberOfProducts = 4;
+      productList.push(productData);
+      const currProductPageTitle = productData.productTitle;
+      const productDataString = JSON.stringify(productList);
+      const localData = localStorage.getItem('recentlyViewedProduct');
+
+      if (localData === null) {
+        localStorage.setItem('recentlyViewedProduct', productDataString);
+      } 
+      else if (localData) {
+        const oldProductData = localStorage.getItem('recentlyViewedProduct');
+        const countProductData = (oldProductData.match(/productTitle/g) || []).length;
+        const sameProduct = oldProductData.includes(currProductPageTitle);
+        if (countProductData < numberOfProducts && sameProduct == false) {
+          jsonResp = JSON.parse(oldProductData);
+          jsonRespArr = jsonResp.concat(productList);
+          jsonRespArrStr = JSON.stringify(jsonRespArr);
+          localStorage.setItem('recentlyViewedProduct', jsonRespArrStr);
+        } else if (countProductData >= numberOfProducts && sameProduct == false) {
+          jsonResp = JSON.parse(oldProductData);
+          jsonResp.shift();
+          jsonRespArr = jsonResp.concat(productList);
+          jsonRespArr = JSON.stringify(jsonRespArr);
+          localStorage.setItem('recentlyViewedProduct', jsonRespArr);
+        }
+      }
+          console.log(productData)
+          console.log(productList)
+        }
+setRecentlyViewedProducts();
+  </script>
 </section>
 
 {% schema %}
