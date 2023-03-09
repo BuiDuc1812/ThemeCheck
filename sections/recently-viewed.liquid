@@ -1,0 +1,40 @@
+<section class="recently-viewed">
+    <div class="swiper swiper-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+    {
+        "name": "recently",
+        "class": "recently-viewed",
+        "settings": [
+            {
+                "type": "text",
+                "id":"heading-view",
+                "default":"add new heading",
+                "label":"Heading View"
+            },
+            {
+                "type": "number",
+                "id": "padding-recently",
+                "label":"Padding view"
+            },
+            {
+                "type": "number",
+                "id": "paginate-view",
+                "label": "paginate view"
+            }
+        ],
+        "presets": [
+            {
+                "name": "Recently Viewed"
+            }
+        ]
+    }
+{% endschema %}
