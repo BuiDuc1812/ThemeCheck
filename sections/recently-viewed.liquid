@@ -1,19 +1,13 @@
 <link rel="stylesheet" href="{{ 'recently-viewed.css' | asset_url }}">
 <script src="{{ 'recently-viewed.js' | asset_url }}" defer="defer"></script>
-<section 
-class="recently-viewed container"  
-style="padding:{{ section.settings.padding-recently }} 0"
->
-    <div class="heading-recently">{{ section.settings.heading-view }}</div>
-    <div class="swiper swiper-slider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-
-            </div>
-        </div>
-    </div>
-</section>
-
+{% unless product == empty %}
+    <script type="application/json" data-product-json>
+        {{ product | json }}
+    </script>
+{% endunless %}
+<script id="RecentProductItemScript" type="text/x-handlebars-template">
+  {% render 'recently-viewed' %}
+</script>
 
 {% schema %}
     {
