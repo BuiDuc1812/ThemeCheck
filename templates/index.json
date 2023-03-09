@@ -73,10 +73,17 @@
       ],
       "settings": {
       }
+    },
+    "4a83791a-a904-4a66-80c3-e0ac2350d01f": {
+      "type": "recently-viewed",
+      "settings": {
+        "heading-view": "Recently viewed"
+      }
     }
   },
   "order": [
     "f75bd20f-bc3f-469c-bd87-56431557798f",
-    "9459aa69-7527-4dcd-b55d-6b79d152006b"
+    "9459aa69-7527-4dcd-b55d-6b79d152006b",
+    "4a83791a-a904-4a66-80c3-e0ac2350d01f"
   ]
 }
