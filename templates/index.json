@@ -77,7 +77,9 @@
     "4a83791a-a904-4a66-80c3-e0ac2350d01f": {
       "type": "recently-viewed",
       "settings": {
-        "heading-view": "Recently viewed"
+        "heading-view": "Recently viewed",
+        "padding-recently": 80,
+        "paginate-view": 4
       }
     }
   },
