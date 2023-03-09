@@ -1,5 +1,10 @@
-<section class="recently-viewed">
-    <h3>{{ section.settings.heading-view }}</h3>
+<link rel="stylesheet" href="{{ 'recently-viewed.css' | asset_url }}">
+<script src="{{ 'recently-viewed.js' | asset_url }}" defer="defer"></script>
+<section 
+class="recently-viewed container"  
+style="padding:{{ section.settings.padding-recently }} 0"
+>
+    <div class="heading-recently">{{ section.settings.heading-view }}</div>
     <div class="swiper swiper-slider">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
