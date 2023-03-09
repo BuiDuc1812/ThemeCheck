@@ -74,18 +74,16 @@
       "settings": {
       }
     },
-    "4a83791a-a904-4a66-80c3-e0ac2350d01f": {
-      "type": "recently-viewed",
+    "2591ddaf-271e-4363-be70-b3966a1dc395": {
+      "type": "recent-product",
       "settings": {
-        "heading-view": "Recently viewed",
-        "padding-recently": 80,
-        "paginate-view": 4
+        "heading": "Recently Viewed"
       }
     }
   },
   "order": [
     "f75bd20f-bc3f-469c-bd87-56431557798f",
     "9459aa69-7527-4dcd-b55d-6b79d152006b",
-    "4a83791a-a904-4a66-80c3-e0ac2350d01f"
+    "2591ddaf-271e-4363-be70-b3966a1dc395"
   ]
 }
