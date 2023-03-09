@@ -7,22 +7,20 @@ function getRecentlyViewedProducts() {
   const recentlyViewedHtml = [];
   productData.map(item => {
     recentlyViewedHtml.unshift(`
-    <div class="swiper swiper-recently-viewed">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide viewed-item">
-                <div class="viewed-img">
-                    <img loading="lazy" src="${item.productImg}" alt="">
-                </div>
-                <div class="viewed-info">
-                    <p>${item.productTitle}</p> 
-                </div>
+        <div class="swiper-slide viewed-item">
+            <div class="viewed-img">
+                <img loading="lazy" src="${item.productImg}" alt="">
+                <span class="tag-product">${item.productTag}</span>
+            </div>
+            <div class="viewed-info">
+                <p>${item.productTitle}</p> 
+                <span class="product-price">${item.productPrice}</span>
             </div>
         </div>
-    </div>
     `);
   });
   const newProductData = `${recentlyViewedHtml.join("")}`;
-  const fullContent = document.getElementsByClassName("recently-viewed");
+  const fullContent = document.getElementsByClassName("product-viewed");
   fullContent[0].innerHTML = newProductData;
 }
 document.addEventListener("DOMContentLoaded", function (event) {

@@ -1,3 +1,6 @@
+.swiper-recently-viewed{
+    overflow: hidden;
+}
 .heading-recently{
     line-height: 36px;
     font-size: 30px;
@@ -5,10 +8,37 @@
     text-align: center;
     margin: 0;
 }
+.product-viewed{
+    justify-content: center;
+    gap: 16px;
+}
 .viewed-item{
     display: block;
+    color: white;
+    max-width: 308px;
+}
+.viewed-item span{
+    text-transform: uppercase;
+}
+.viewed-item p, .product-price{
     color: black;
 }
-.viewed-item p{
-    color: black;
+.viewed-img{
+    width: 100%;
+    position: relative;
+}
+.viewed-img img{
+    width: 100%;
+}
+.tag-product{
+    margin: 10px 0 8px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FF8057;
+    padding: 2px 8px 0 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    border-radius: 3px;
 }
