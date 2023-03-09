@@ -1,10 +1,10 @@
+<link rel="stylesheet" href="{{ 'recently-viewed.css' | asset_url }}">
+<script src="{{ 'recent-product.js' | asset_url }}" defer="defer"> </script>
 <section class="container recently-viewed" paginate>
-    <h3 class="heading-recently"></h3>
+  <h3 class="heading-recently">{{ section.settings.heading | escape }}</h3>
   <div class="swiper swiper-recently-viewed">
     <div class="swiper-wrapper">
-      <div class="swiper-slide viewed-item">
-
-      </div>
+      <div class="swiper-slide viewed-item"></div>
     </div>
   </div>
 </section>
@@ -23,7 +23,7 @@
         "label": "Paginate recently"
       }, {
         "type": "range",
-        "id":"padding-recently-viewed",
+        "id": "padding-recently-viewed",
         "default": 80,
         "min": 0,
         "max": 100,
