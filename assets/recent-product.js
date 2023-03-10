@@ -1,8 +1,7 @@
-var countPaginateViewed = document.querySelector('.recently-viewed')
-var unnitPerView = countPaginateViewed.getAttribute('paginate')
-
-const localViewed = localStorage.recentlyViewedProduct;
 function getRecentlyViewedProducts() {
+  var countPaginateViewed = document.querySelector('.recently-viewed')
+  var unnitPerView = countPaginateViewed.getAttribute('paginate')
+  const localViewed = localStorage.recentlyViewedProduct;
   const productData = JSON.parse(localStorage.getItem('recentlyViewedProduct'));
   const recentlyViewedHtml = [];
   productData.map(item => {
@@ -13,16 +12,32 @@ function getRecentlyViewedProducts() {
                 <span class="tag-product">${item.productTag}</span>
             </div>
             <div class="viewed-info">
-                <p>${item.productTitle}</p> 
+                <b>${item.productTitle}</b> 
+                <p>${item.productVendor}</p> 
                 <span class="product-price">${item.productPrice}</span>
             </div>
         </div>
     `);
   });
+
   const newProductData = `${recentlyViewedHtml.join("")}`;
-  const fullContent = document.getElementsByClassName("product-viewed");
+  const fullContent = document.getElementsByClassName('product-viewed');
   fullContent[0].innerHTML = newProductData;
+
+  if(productData.length > 4){
+    var swiperProduct = new Swiper('.swiper-recently-viewed', {
+        slidesPerView:4,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        }
+    });
+  }
 }
-document.addEventListener("DOMContentLoaded", function (event) {
+document.addEventListener('DOMContentLoaded', function (event) {
     getRecentlyViewedProducts();
 });
+
