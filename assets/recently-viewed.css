@@ -11,7 +11,7 @@
 .viewed-item{
     display: block;
     color: white;
-
+    overflow: hidden;
 }
 .viewed-item span{
     text-transform: uppercase;
@@ -43,11 +43,15 @@
 .viewed-img img{
     width: 100%;
     height: 100%;
+    transition: all 0.3s ease;
+}
+.viewed-img img:hover{
+    transform: scale(1.05);
 }
 .tag-product{
     margin: 10px 0 8px 10px;
     position: absolute;
-    top: 0;
+    color: white;
     left: 0;
     background-color: #FF8057;
     padding: 2px 8px 0 8px;
@@ -79,7 +83,7 @@
 }
 .tag-sale{
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     right: 0;
     left: 0;
     color: black;
@@ -88,6 +92,9 @@
     font-weight: 600;
     font-size: 14px;
     padding: 6px 8px;
+}
+.tag-search{
+    display: none;
 }
 @media screen and (max-width:990px) {
     .recently-viewed{
@@ -101,6 +108,9 @@
     }
     .tag-product{
         font-size: 12px;
+    }
+    .viewed-item p{
+        font-size: 14px;
     }
 }
 @media screen and (max-width:750px) {
@@ -119,5 +129,15 @@
     }
     .tag-sale{
         font-size: 12px;
+    }
+    .tag-search{
+        position: absolute;
+        display: block !important;
+        background-color: white;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        right: 8px;
+        bottom: 36px;
     }
 }
