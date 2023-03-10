@@ -27,7 +27,6 @@ function getRecentlyViewedProducts() {
                 <p>${item.productVendor}</p> 
                 <div>
                   <span class="product-price">${item.productPrice}</span>
-                  if
                   <span class="product-price-compare">RRP ${item.productPriceCompare}</span>
                 </div>
             </div>
