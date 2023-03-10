@@ -1,6 +1,9 @@
 function getRecentlyViewedProducts() {
-  var countPaginateViewed = document.querySelector('.recently-viewed')
-  var unnitPerView = countPaginateViewed.getAttribute('paginate')
+  var countPaginateViewed = document.querySelector('.recently-viewed');
+  var buttonArrowNext = countPaginateViewed.querySelector('.style-swiper-next');
+  var buttonArrowPrev = countPaginateViewed.querySelector('.style-swiper-prev');
+  var buttonArrowPrev = countPaginateViewed.querySelector('.swiper-pagination');
+  var unnitPerView = countPaginateViewed.getAttribute('paginate');
   const localViewed = localStorage.recentlyViewedProduct;
   const productData = JSON.parse(localStorage.getItem('recentlyViewedProduct'));
   const recentlyViewedHtml = [];
@@ -23,7 +26,15 @@ function getRecentlyViewedProducts() {
   const newProductData = `${recentlyViewedHtml.join("")}`;
   const fullContent = document.getElementsByClassName('product-viewed');
   fullContent[0].innerHTML = newProductData;
-  if(productData.length > 4){
+  if(productData.length == 0){
+    countPaginateViewed.style.display="none";
+  }
+  else if(productData.length <= 4){
+    buttonArrowNext.style.display="none";
+    buttonArrowPrev.style.display="none";
+    unnitPerView.style.display="none";
+  }
+  else if(productData.length > 4){
     var swiperProduct = new Swiper('.swiper-recently-viewed', {
         slidesPerView:4,
         spaceBetween: 16,
