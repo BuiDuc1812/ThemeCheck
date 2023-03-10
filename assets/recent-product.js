@@ -27,6 +27,7 @@ function getRecentlyViewedProducts() {
   if(productData.length > 4){
     var swiperProduct = new Swiper('.swiper-recently-viewed', {
         slidesPerView:4,
+        spaceBetween: 16,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
