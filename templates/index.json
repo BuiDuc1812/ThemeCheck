@@ -78,6 +78,7 @@
       "type": "recent-product",
       "settings": {
         "heading": "Recently Viewed",
+        "paginate-recently": 4,
         "padding-recently-viewed": 80
       }
     }
