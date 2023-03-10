@@ -92,7 +92,7 @@
 }
 .tag-sale{
     position: absolute;
-    bottom: -5px;
+    bottom: -20px;
     right: 0;
     left: 0;
     color: black;
@@ -104,7 +104,7 @@
 }
 .tag-sale-off{
     position: absolute;
-    bottom: -5px;
+    bottom: -20px;
     right: 0;
     left: 0;
     color: white;
@@ -116,6 +116,9 @@
 }
 .tag-search{
     display: none;
+}
+.viewed-info{
+    margin-top: 25px;
 }
 @media screen and (max-width:990px) {
     .recently-viewed{
