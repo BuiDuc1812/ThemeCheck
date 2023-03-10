@@ -20,7 +20,6 @@ function getRecentlyViewedProducts() {
             <div class="viewed-img">
                 <img loading="lazy" src="${item.productImg}" alt="">
                 <span class="tag-product">${item.productTag}</span>
-                <span class="collection-product">${item.productCollection}</span>
             </div>
             <div class="viewed-info">
                 <a href="${item.productUrl}">${item.productTitle}</a> 
@@ -45,8 +44,6 @@ function getRecentlyViewedProducts() {
     headingViewed.style.display='block';
   }
   else {
-    buttonArrowNext.style.display='block';
-    buttonArrowPrev.style.display='block';
     viewedProduct.style.gap='0';
     var swiperProduct = new Swiper('.swiper-recently-viewed', {
       breakpoints: {
