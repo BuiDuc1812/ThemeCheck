@@ -44,9 +44,9 @@
     width: 100%;
     transition: all 0.3s ease;
 }
-.viewed-img img:hover{
+/* .viewed-img img:hover{
     transform: scale(1.05);
-}
+} */
 .tag-product{
     margin: 10px 0 8px 10px;
     position: absolute;
@@ -92,7 +92,7 @@
 }
 .tag-sale{
     position: absolute;
-    bottom: -20px;
+    bottom: -31px;
     right: 0;
     left: 0;
     color: black;
@@ -104,7 +104,7 @@
 }
 .tag-sale-off{
     position: absolute;
-    bottom: -20px;
+    bottom: -31px;
     right: 0;
     left: 0;
     color: white;
