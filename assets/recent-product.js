@@ -41,6 +41,8 @@ function getRecentlyViewedProducts() {
     headingViewed.style.display='block';
   }
   else {
+    buttonArrowNext.style.display='block';
+    buttonArrowPrev.style.display='block';
     viewedProduct.style.gap='0';
     var swiperProduct = new Swiper('.swiper-recently-viewed', {
       breakpoints: {
