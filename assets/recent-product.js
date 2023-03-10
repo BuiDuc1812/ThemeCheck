@@ -22,8 +22,8 @@ function getRecentlyViewedProducts() {
                 <span class="tag-product">${item.productTag}</span>
                 ${ item.productPriceCompare ? 
                   `<span class="tag-price">Save 25%</span>
-                  <span class="tag-sale">10% off everyday</span>`
-                  :`<span class="tag-sale-off">20% off sandals</span>`}  
+                  <span class="tag-sale">10% off everyday</span>`:
+                  `<span class="tag-sale-off">20% off sandals</span>`}  
                 <div class="tag-search"></div>
             </a>
             <div class="viewed-info">
@@ -32,8 +32,8 @@ function getRecentlyViewedProducts() {
                 <div>
                   ${ item.productPriceCompare ? 
                     `<span class="product-price">${item.productPrice}</span>
-                    <span class="product-price-compare">RRP ${item.productPriceCompare}</span>`
-                    :`<span class="product-price">${item.productPrice}</span>`}  
+                    <span class="product-price-compare">RRP ${item.productPriceCompare}</span>`:
+                    `<span class="product-price">${item.productPrice}</span>`}  
                 </div>
             </div>
         </div>
