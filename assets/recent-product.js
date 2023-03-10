@@ -10,10 +10,10 @@ function getRecentlyViewedProducts() {
   const localViewed = localStorage.recentlyViewedProduct;
   const productData = JSON.parse(localStorage.getItem('recentlyViewedProduct'));
 
-  if(productData == null){
-    countPaginateViewed.style.display="none";
+  if (productData == null) {
+    countPaginateViewed.style.display = 'none';
   }
-  else if(productData != null){
+  else if (productData != null) {
     productData.map(item => {
     recentlyViewedHtml.unshift(`
         <div class="swiper-slide viewed-item">
@@ -49,8 +49,7 @@ function getRecentlyViewedProducts() {
     buttonPaginate.style.display='none';
     viewedProduct.style.display='grid';
     headingViewed.style.display='block';
-  }
-  else {
+  } else {
     viewedProduct.style.gap='0';
     var swiperProduct = new Swiper('.swiper-recently-viewed', {
       breakpoints: {
