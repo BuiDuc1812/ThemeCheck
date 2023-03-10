@@ -151,7 +151,7 @@
     .viewed-info{
         padding: 15px;
     }
-    .tag-sale{
+    .tag-sale,.tag-sale-off{
         font-size: 12px;
     }
     .tag-search{
