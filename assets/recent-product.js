@@ -20,11 +20,15 @@ function getRecentlyViewedProducts() {
             <div class="viewed-img">
                 <img loading="lazy" src="${item.productImg}" alt="">
                 <span class="tag-product">${item.productTag}</span>
+                <span class="collection-product">${item.productCollection}</span>
             </div>
             <div class="viewed-info">
-                <b>${item.productTitle}</b> 
+                <a href="${item.productUrl}">${item.productTitle}</a> 
                 <p>${item.productVendor}</p> 
-                <span class="product-price">${item.productPrice}</span>
+                <div>
+                  <span class="product-price">${item.productPrice}</span>
+                  <span class="product-price-compare">${item.productPriceCompare}</span>
+                </div>
             </div>
         </div>
       `);

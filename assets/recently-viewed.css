@@ -17,8 +17,13 @@
     text-transform: uppercase;
    
 }
-.viewed-item b,.viewed-item p, .product-price{
+.viewed-item a,.viewed-item p, .product-price{
     color: black;
+}
+.viewed-item a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
 }
 .viewed-img{
     width: 100%;
@@ -27,6 +32,9 @@
 .viewed-img img{
     width: 100%;
     height: 100%;
+}
+.viewed-info{
+    padding: 15px;
 }
 .tag-product{
     margin: 10px 0 8px 10px;
@@ -39,6 +47,9 @@
     line-height: 20px;
     font-weight: 700;
     border-radius: 3px;
+}
+.collection-product{
+    background-color: #E3413B;
 }
 .style-swiper-next,.style-swiper-prev{
     top: 0;
