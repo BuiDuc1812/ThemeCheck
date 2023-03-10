@@ -23,7 +23,6 @@ function getRecentlyViewedProducts() {
   const newProductData = `${recentlyViewedHtml.join("")}`;
   const fullContent = document.getElementsByClassName('product-viewed');
   fullContent[0].innerHTML = newProductData;
-
   if(productData.length > 4){
     var swiperProduct = new Swiper('.swiper-recently-viewed', {
         slidesPerView:4,
