@@ -4,10 +4,12 @@
 class="container recently-viewed"
 style="padding: {{ section.settings.padding-recently-viewed }}px 80px;"
 paginate="{{ section.settings.paginate-recently }}">
-  <h3 class="heading-recently">{{ section.settings.heading | escape }}</h3>
   <div class="swiper swiper-recently-viewed">
-        <div class="swiper-button-next style-swiper-next"> </div>
-        <div class="swiper-button-prev style-swiper-prev"> </div>
+        <div class="button-arrow">
+          <div class="swiper-button-next style-swiper-next"> </div>
+          <h3 class="heading-recently">{{ section.settings.heading | escape }}</h3>
+          <div class="swiper-button-prev style-swiper-prev"> </div>
+        </div>
         <div class="swiper-wrapper product-viewed">
         </div>     
         <div class="swiper-pagination"> </div>
