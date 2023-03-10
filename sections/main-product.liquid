@@ -575,7 +575,6 @@
         productTitle: '{{ product.title }}',
         productImg: '{{ product.featured_media | image_url: width: 308, height: 308 }}',
         productPriceCompare:'{{ product.compare_at_price }}',
-        productCollection:'{{ product.collections }}'
         productVendor:'{{ product.vendor }}',
         productTag: '{{ product.tags }}',
         productPrice: '{{ product.price | money_with_currency }}',
@@ -603,7 +602,7 @@
         } 
       }
     }
-    setRecentlyViewedProducts();
+  setRecentlyViewedProducts();
   </script>
 </section>
 
