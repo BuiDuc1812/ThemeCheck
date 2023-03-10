@@ -4,10 +4,15 @@ function getRecentlyViewedProducts() {
   var buttonArrowPrev = countPaginateViewed.querySelector('.style-swiper-prev');
   var buttonPaginate = countPaginateViewed.querySelector('.swiper-pagination');
   var unnitPerView = countPaginateViewed.getAttribute('paginate');
+  const recentlyViewedHtml = [];
   const localViewed = localStorage.recentlyViewedProduct;
   const productData = JSON.parse(localStorage.getItem('recentlyViewedProduct'));
-  const recentlyViewedHtml = [];
-  productData.map(item => {
+
+  if(productData == null){
+    countPaginateViewed.style.display="none";
+  }
+  else if(productData != null){
+    productData.map(item => {
     recentlyViewedHtml.unshift(`
         <div class="swiper-slide viewed-item">
             <div class="viewed-img">
@@ -20,22 +25,18 @@ function getRecentlyViewedProducts() {
                 <span class="product-price">${item.productPrice}</span>
             </div>
         </div>
-    `);
-  });
-
+      `);
+    });
+  }
   const newProductData = `${recentlyViewedHtml.join("")}`;
   const fullContent = document.getElementsByClassName('product-viewed');
   fullContent[0].innerHTML = newProductData;
-  if(productData == null){
-    console.log(countPaginateViewed);0
-    countPaginateViewed.style.display="none";
-  }
-  else if(productData.length <= 4){
+  if(productData.length <= 4){
     buttonArrowNext.style.display="none";
     buttonArrowPrev.style.display="none";
     buttonPaginate.style.display="none";
   }
-  else if(productData.length > 4){
+  else {
     var swiperProduct = new Swiper('.swiper-recently-viewed', {
         slidesPerView:4,
         spaceBetween: 16,
