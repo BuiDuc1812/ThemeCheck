@@ -134,6 +134,7 @@
     }
 }
 .product-viewed{
+    display: grid;
     grid-template-columns: repeat(4, auto);
     gap: 16px;
 }
