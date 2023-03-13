@@ -2,11 +2,16 @@ var booLean = false;
 var swiperRecent = '';
 var countPaginateViewed = document.querySelector('.recently-viewed');
 if(countPaginateViewed){
+  var viewedProduct = countPaginateViewed.querySelector('.product-viewed');
+  var buttonNext = countPaginateViewed.querySelector('.swiper-button-next');
+  var buttonPrev = countPaginateViewed.querySelector('.swiper-button-prev');
   document.addEventListener('DOMContentLoaded', getRecentlyViewedProducts);
 }
 
 function enableSwiperRecent() {
   if (window.innerWidth < 990) {
+    buttonNext.style.display = 'block';
+    buttonPrev.style.display = 'block';
     if (!booLean) {
       booLean = true;
       swiperRecent = new Swiper(".swiper-recently-viewed", {
@@ -30,13 +35,14 @@ function enableSwiperRecent() {
       });
     }
   } else if (booLean) {
+    buttonNext.style.display = 'none';
+    buttonPrev.style.display = 'none';
     swiperRecent.destroy();
     booLean = false;
   }
 }
 
 function getRecentlyViewedProducts() {
-  var viewedProduct = countPaginateViewed.querySelector('.product-viewed');
   var unitPerView = countPaginateViewed.getAttribute('paginate');
   const recentlyViewedHtml = [];
   const productData = JSON.parse(localStorage.getItem('recentlyViewedProduct'));
