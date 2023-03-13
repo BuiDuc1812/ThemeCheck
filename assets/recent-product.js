@@ -57,14 +57,13 @@ function getRecentlyViewedProducts() {
     countPaginateViewed.style.display = 'none';
   } else if (productData != null) {
     productData.map(item => {
-    console.log(item.productPriceCompare)
     recentlyViewedHtml.unshift(`
         <div class="swiper-slide viewed-item">
             <a href="${item.productUrl}" class="viewed-img">
                 <img loading="lazy" src="${item.productImg}" alt="${item.productImageAltText}">
                 <span class="tag-product">${item.productTag}</span>
                 ${ item.productPriceCompare ? 
-                  `<span class="tag-price">Save</span>
+                  `<span class="tag-price">Save ${Math.floor((item.productPrice/item.productPriceCompare)*100)}%</span>
                   <span class="tag-sale">10% off everyday</span>`:
                   `<span class="tag-sale-off">20% off sandals</span>`}  
             </a>
@@ -73,9 +72,9 @@ function getRecentlyViewedProducts() {
                 <p>${item.productVendor}</p> 
                 <div>
                   ${ item.productPriceCompare ? 
-                    `<span class="product-price">${item.productPrice}</span>
-                    <span class="product-price-compare">RRP ${item.productPriceCompare}</span>`:
-                    `<span style="color:black" class="product-price">${item.productPrice}</span>`}  
+                    `<span class="product-price">$${item.productPrice}</span>
+                    <span class="product-price-compare">RRP $${item.productPriceCompare}</span>`:
+                    `<span style="color:black" class="product-price">$${item.productPrice}</span>`}  
                 </div>
             </div>
         </div>

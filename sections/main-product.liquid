@@ -574,10 +574,10 @@
       const productData = {
         productTitle: '{{ product.title }}',
         productImg: '{{ product.featured_media | image_url: width: 308, height: 308 }}',
-        productPriceCompare:'{{ product.compare_at_price }}',
+        productPriceCompare:'{{ product.compare_at_price | money }}',
         productVendor:'{{ product.vendor }}',
         productTag: '{{ product.tags }}',
-        productPrice: '{{ product.price | money_with_currency }}',
+        productPrice: '{{ product.price | money }}',
         productUrl: '{{ product.url }}',
         productImageAltText: '{{ product.featured_media.alt | escape }}'
       };
