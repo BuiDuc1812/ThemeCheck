@@ -3,15 +3,14 @@ var swiperRecent = '';
 var countPaginateViewed = document.querySelector('.recently-viewed');
 if(countPaginateViewed){
   var viewedProduct = countPaginateViewed.querySelector('.product-viewed');
+  var swiperBtn = countPaginateViewed.querySelector('.swiper-button');
   var buttonNext = countPaginateViewed.querySelector('.swiper-button-next');
   var buttonPrev = countPaginateViewed.querySelector('.swiper-button-prev');
-  buttonNext.style.display = 'none';
-  buttonPrev.style.display = 'none';
   document.addEventListener('DOMContentLoaded', getRecentlyViewedProducts);
 }
-
 function enableSwiperRecent() {
   if (window.innerWidth < 990) {
+    swiperBtn.style.justifyContent = 'space-between'
     buttonNext.style.display = 'block';
     buttonPrev.style.display = 'block';
     if (!booLean) {
@@ -39,6 +38,7 @@ function enableSwiperRecent() {
   } else if (booLean) {
     buttonNext.style.display = 'none';
     buttonPrev.style.display = 'none';
+    swiperBtn.style.justifyContent = 'center';
     swiperRecent.destroy();
     booLean = false;
   }
@@ -80,8 +80,12 @@ function getRecentlyViewedProducts() {
   const fullContent = document.getElementsByClassName('product-viewed');
   fullContent[0].innerHTML = newProductData;
   if (productData.length <= 4) {
+    buttonNext.style.display = 'none';
+    buttonPrev.style.display = 'none';
+    swiperBtn.style.justifyContent = 'center';
     window.addEventListener('resize', enableSwiperRecent);
   } else {
+    swiperBtn.style.justifyContent = 'space-between'
     viewedProduct.style.gap='0';
     buttonNext.style.display = 'block';
     buttonPrev.style.display = 'block';
