@@ -25,7 +25,7 @@ function enableSwiperRecent() {
             slidesPerView: 3,
             spaceBetween: 16
           },
-          320: {
+          340: {
             slidesPerView: 2  ,
             spaceBetween: 8
           }
@@ -85,6 +85,7 @@ function getRecentlyViewedProducts() {
   const fullContent = document.getElementsByClassName('product-viewed');
   fullContent[0].innerHTML = newProductData;
   if (productData.length <= 4) {
+    viewedProduct.style.display = 'grid';
     buttonNext.style.display = 'none';
     buttonPrev.style.display = 'none';
     swiperBtn.style.justifyContent = 'center';
@@ -104,7 +105,7 @@ function getRecentlyViewedProducts() {
           slidesPerView: 3,
           spaceBetween: 16
         },
-        320: {
+        340: {
           slidesPerView: 2,
           spaceBetween: 8
         }
