@@ -56,7 +56,7 @@ function getRecentlyViewedProducts() {
     recentlyViewedHtml.unshift(`
         <div class="swiper-slide viewed-item">
             <a href="${item.productUrl}" class="viewed-img">
-                <img loading="lazy" src="${item.productImg}" alt="${item.productImageAltText}">
+                <img onerror="this.onerror=null; this.src='https://static.thenounproject.com/png/504708-200.png';" loading="lazy" src="${item.productImg}" alt="${item.productImageAltText}">
                 <span class="tag-product">${item.productTag}</span>
                 ${ item.productPriceCompare ? 
                   `<span class="tag-price">Save ${Math.floor((item.productPrice/item.productPriceCompare)*100)}%</span>
