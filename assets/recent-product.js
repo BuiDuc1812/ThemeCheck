@@ -5,6 +5,8 @@ if(countPaginateViewed){
   var viewedProduct = countPaginateViewed.querySelector('.product-viewed');
   var buttonNext = countPaginateViewed.querySelector('.swiper-button-next');
   var buttonPrev = countPaginateViewed.querySelector('.swiper-button-prev');
+  buttonNext.style.display = 'none';
+  buttonPrev.style.display = 'none';
   document.addEventListener('DOMContentLoaded', getRecentlyViewedProducts);
 }
 
@@ -81,6 +83,8 @@ function getRecentlyViewedProducts() {
     window.addEventListener('resize', enableSwiperRecent);
   } else {
     viewedProduct.style.gap='0';
+    buttonNext.style.display = 'block';
+    buttonPrev.style.display = 'block';
     var swiperProduct = new Swiper('.swiper-recently-viewed', {
       breakpoints: {
         990: {
