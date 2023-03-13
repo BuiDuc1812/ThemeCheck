@@ -574,6 +574,7 @@
       const productData = {
         productTitle: '{{ product.title }}',
         productImg: '{{ product.featured_media | image_url: width: 308, height: 308 }}',
+        productImageDefault: '{{ 'image' | placeholder_svg_tag }}',
         productPriceCompare:'{{ product.compare_at_price | money }}',
         productVendor:'{{ product.vendor }}',
         productTag: '{{ product.tags }}',

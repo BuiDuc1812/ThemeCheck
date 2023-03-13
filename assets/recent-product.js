@@ -5,8 +5,15 @@ if (countPaginateViewed) {
   var viewedProduct = countPaginateViewed.querySelector('.product-viewed');
   var swiperBtn = countPaginateViewed.querySelector('.swiper-button');
   var btnItem = document.querySelectorAll('.btn-item');
+  // function test(parm1, parm2, parm3, style){
+  //   parm1.classList.${style}('active-justify');
+  //   parm1.classList.style('active-justify');
+  //   parm1.classList.style('active-justify');
+
+  // }
   document.addEventListener('DOMContentLoaded', getRecentlyViewedProducts);
 }
+
 
 function enableSwiperRecent() {
   if (window.innerWidth < 990) {
@@ -53,10 +60,13 @@ function getRecentlyViewedProducts() {
     countPaginateViewed.style.display = 'none';
   } else if ( productData != null ) {
     productData.map( item => {
+      console.log(item.productImageDefault)
     recentlyViewedHtml.unshift(`
         <div class="swiper-slide viewed-item">
             <a href="${item.productUrl}" class="viewed-img">
-                <img onerror="this.onerror=null; this.src='https://static.thenounproject.com/png/504708-200.png';" loading="lazy" src="${item.productImg}" alt="${item.productImageAltText}">
+                ${item.productImg == null ?
+                  item.productImageDefault : 
+                  `<img loading="lazy" src="${item.productImg}" alt="${item.productImageAltText}">`}
                 <span class="tag-product">${item.productTag}</span>
                 ${ item.productPriceCompare ? 
                   `<span class="tag-price">Save ${Math.floor((item.productPrice/item.productPriceCompare)*100)}%</span>
