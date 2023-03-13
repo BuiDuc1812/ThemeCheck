@@ -5,14 +5,14 @@ class="container recently-viewed"
 style="padding: {{ section.settings.padding-recently-viewed }}px 80px;"
 paginate="{{ section.settings.paginate-recently }}">
     <div class="swiper-button">
-      <div class="swiper-button-prev style-swiper-prev"></div>
+      <div class="swiper-button-prev style-swiper-prev btn-item"></div>
       <h3 class="heading-recently">{{ section.settings.heading | escape }}</h3>
-      <div class="swiper-button-next style-swiper-next"></div>
+      <div class="swiper-button-next style-swiper-next btn-item"></div>
     </div>
     <div class="swiper swiper-recently-viewed">
         <div class="swiper-wrapper product-viewed"></div>
     </div>
-    <div class="swiper-pagination"></div>
+    <div class="swiper-pagination btn-item"></div>
 </section>
 {% schema %}
   {

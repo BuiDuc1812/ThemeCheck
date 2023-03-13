@@ -221,10 +221,15 @@
     }
 }
 
-
+.btn-item{
+    display: block;
+}
 
 /* class js */
 
-.active{
-    
+.active-display {
+    display: none;
+}
+.activeJustify {
+    justify-content: center;
 }
