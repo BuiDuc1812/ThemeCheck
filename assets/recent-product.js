@@ -1,7 +1,7 @@
 var booLean = false;
 var swiperRecent = '';
 var countPaginateViewed = document.querySelector('.recently-viewed');
-if(countPaginateViewed){
+if (countPaginateViewed) {
   var viewedProduct = countPaginateViewed.querySelector('.product-viewed');
   var swiperBtn = countPaginateViewed.querySelector('.swiper-button');
   var buttonNext = countPaginateViewed.querySelector('.swiper-button-next');
@@ -9,7 +9,6 @@ if(countPaginateViewed){
   var buttonPagination = countPaginateViewed.querySelector('.swiper-pagination');
   document.addEventListener('DOMContentLoaded', getRecentlyViewedProducts);
 }
-
 
 function enableSwiperRecent() {
   if (window.innerWidth < 990) {
@@ -64,7 +63,7 @@ function getRecentlyViewedProducts() {
                 <img loading="lazy" src="${item.productImg}" alt="${item.productImageAltText}">
                 <span class="tag-product">${item.productTag}</span>
                 ${ item.productPriceCompare ? 
-                  `<span class="tag-price">Save 25%</span>
+                  `<span class="tag-price">Save ${item.productPrice}/${item.productPriceCompare}</span>
                   <span class="tag-sale">10% off everyday</span>`:
                   `<span class="tag-sale-off">20% off sandals</span>`}  
             </a>
@@ -75,7 +74,7 @@ function getRecentlyViewedProducts() {
                   ${ item.productPriceCompare ? 
                     `<span class="product-price">${item.productPrice}</span>
                     <span class="product-price-compare">RRP ${item.productPriceCompare}</span>`:
-                    `<span class="product-price">${item.productPrice}</span>`}  
+                    `<span style="color:black" class="product-price">${item.productPrice}</span>`}  
                 </div>
             </div>
         </div>

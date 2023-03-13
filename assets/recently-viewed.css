@@ -1,51 +1,62 @@
-.swiper-recently-viewed{
+.swiper-recently-viewed {
     overflow: hidden;
 }
-.heading-recently{
+
+.heading-recently {
     line-height: 36px;
     font-size: 30px;
     font-weight: 600;
     margin: 0;
 }
-.viewed-item{
+
+.viewed-item {
     display: block;
     color: white;
     overflow: hidden;
 }
-.viewed-item span{
+
+.viewed-item span {
     text-transform: uppercase;
    
 }
-.viewed-item a,.viewed-item p{
+
+.viewed-item a,
+.viewed-item p {
     color: black;
 }
-.product-price-compare{
+
+.product-price-compare {
     font-size: 14px;
     font-weight: 600;
     color: #9D9EA0;
     text-decoration: line-through;
 }
-.product-price{
+
+.product-price {
     font-size: 14px;
     font-weight: 600;
     color: red;
 }
-.viewed-item a{
+
+.viewed-item a {
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;
 }
-.viewed-img{
+
+.viewed-img {
     display: block;
     width: 100%;
     position: relative;
 }
-.viewed-img img{
+
+.viewed-img img {
     width: 100%;
     transition: all 0.3s ease;
 }
-.tag-product{
+
+.tag-product {
     margin: 10px 0 8px 10px;
     position: absolute;
     color: white;
@@ -56,8 +67,9 @@
     line-height: 20px;
     font-weight: 700;
     border-radius: 3px;
-}
-.tag-price{
+} 
+
+.tag-price {
     position: absolute;
     background-color: #E3413B;
     margin: 40px 0 8px 10px;
@@ -69,20 +81,24 @@
     font-weight: 700;
     border-radius: 3px;
 }
-.swiper-button{
+
+.swiper-button {
     display: flex;
     align-items: center;
     margin-bottom: 32px;
 }
-.style-swiper-next,.style-swiper-prev{
+
+.style-swiper-next,.style-swiper-prev {
     margin: 0;
     position: unset;
 }
-.swiper-pagination{
+
+.swiper-pagination {
     position: unset;
 }
-.tag-sale{
-    margin-top: -11px;
+
+.tag-sale {
+    margin-top: -5px;
     display: block;
     color: black;
     background-color: #F7CC46;
@@ -92,8 +108,9 @@
     padding: 6px 0;
     line-height: 20px;
 }
-.tag-sale-off{
-    margin-top: -11px;
+
+.tag-sale-off {
+    margin-top: -5px;
     display: block;
     color: white;
     background-color: #00D6CF;
@@ -103,71 +120,103 @@
     padding: 6px 0;
     line-height: 20px;
 }
-.tag-search{
+
+.tag-search {
     display: none;
 }
-.viewed-info{
+
+.viewed-info {
     margin-top: 12px;
 }
-.viewed-info p{
+
+.viewed-info p {
     text-transform: capitalize;
     line-height: 24px;
     font-size: 18px;
     padding-bottom: 8px;
 }
-.product-price,.product-price-compare{
+
+.product-price,
+.product-price-compare {
     font-size: 16px;
     line-height: 24px;
 }
-.product-viewed{
+
+.product-viewed {
     grid-template-columns: repeat(4, auto);
     gap: 16px;
 }
-@media screen and (max-width:990px) {
-    .recently-viewed{
+
+@media screen and ( max-width:990px ) {
+    .viewed-item a {
+        font-size: 16px;
+    }
+
+    .recently-viewed {
         padding:30px 0 !important;
     }
-    .swiper-button{
+
+    .swiper-button {
         margin-bottom: 12px;
     }
+
+    .tag-sale,
+    .tag-sale-off {
+        margin-top: -7px;
+    }
+
     .style-swiper-next,.style-swiper-prev{
         height: 13.5px;
     }
-    .heading-recently{
+
+    .style-swiper-next {
+        margin-right: 12px;
+    }
+
+    .style-swiper-prev {
+        margin-left: 12px;
+    }
+
+    .heading-recently {
         font-size: 20px;
         line-height: 32px;
         letter-spacing: 0em;
         text-align: center;
     }
-    .tag-product{
+
+    .tag-product {
         font-size: 12px;
     }
-    .viewed-item p{
+
+    .viewed-item p {
         font-size: 14px;
     }
-    .product-viewed{
+
+    .product-viewed {
         gap: 0px;
     }
-}
-@media screen and (max-width:750px) {
-    .viewed-item a{
-        font-size: 16px;
-    }
-    .viewed-info{
+
+    .viewed-info {
         margin-top: 0;
         padding: 15px;
     }
-    .tag-sale,.tag-sale-off{
-        font-size: 12px;
-    }
+
     .viewed-info p{
         padding-bottom: 0;
+    }
+}
+
+@media screen and ( max-width:750px ) {
+    .tag-sale,
+    .tag-sale-off {
+        font-size: 12px;
+    }
+
+    .viewed-info p {
         line-height: 20px;
     }
-    .product-price-compare{
+    
+    .product-price-compare {
         font-size: 14px;
-    }
-    .tag-sale-off,.tag-sale{
-        margin-top: -7px;
     }
 }
