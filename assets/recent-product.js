@@ -46,6 +46,7 @@ function enableSwiperRecent() {
     swiperBtn.style.justifyContent = 'center';
     swiperRecent.destroy();
     booLean = false;
+    viewedProduct.style.display = 'grid';
   }
 }
 
