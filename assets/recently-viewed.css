@@ -33,9 +33,11 @@
 .viewed-item a{
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 24px;
 }
 .viewed-img{
+    display: block;
     width: 100%;
     position: relative;
 }
@@ -43,9 +45,6 @@
     width: 100%;
     transition: all 0.3s ease;
 }
-/* .viewed-img img:hover{
-    transform: scale(1.05);
-} */
 .tag-product{
     margin: 10px 0 8px 10px;
     position: absolute;
@@ -83,34 +82,42 @@
     position: unset;
 }
 .tag-sale{
-    position: absolute;
-    bottom: -31px;
-    right: 0;
-    left: 0;
+    margin-top: -11px;
+    display: block;
     color: black;
     background-color: #F7CC46;
     text-align: center;
     font-weight: 600;
     font-size: 14px;
-    padding: 6px 8px;
+    padding: 6px 0;
+    line-height: 20px;
 }
 .tag-sale-off{
-    position: absolute;
-    bottom: -31px;
-    right: 0;
-    left: 0;
+    margin-top: -11px;
+    display: block;
     color: white;
     background-color: #00D6CF;
     text-align: center;
     font-weight: 600;
     font-size: 14px;
-    padding: 6px 8px;
+    padding: 6px 0;
+    line-height: 20px;
 }
 .tag-search{
     display: none;
 }
 .viewed-info{
-    margin-top: 25px;
+    margin-top: 12px;
+}
+.viewed-info p{
+    text-transform: capitalize;
+    line-height: 24px;
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+.product-price,.product-price-compare{
+    font-size: 16px;
+    line-height: 24px;
 }
 .product-viewed{
     grid-template-columns: repeat(4, auto);
@@ -143,10 +150,24 @@
     }
 }
 @media screen and (max-width:750px) {
+    .viewed-item a{
+        font-size: 16px;
+    }
     .viewed-info{
+        margin-top: 0;
         padding: 15px;
     }
     .tag-sale,.tag-sale-off{
         font-size: 12px;
+    }
+    .viewed-info p{
+        padding-bottom: 0;
+        line-height: 20px;
+    }
+    .product-price-compare{
+        font-size: 14px;
+    }
+    .tag-sale-off,.tag-sale{
+        margin-top: -7px;
     }
 }
