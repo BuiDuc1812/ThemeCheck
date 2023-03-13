@@ -6,14 +6,18 @@ if(countPaginateViewed){
   var swiperBtn = countPaginateViewed.querySelector('.swiper-button');
   var buttonNext = countPaginateViewed.querySelector('.swiper-button-next');
   var buttonPrev = countPaginateViewed.querySelector('.swiper-button-prev');
+  var buttonPagination = countPaginateViewed.querySelector('.swiper-pagination');
   document.addEventListener('DOMContentLoaded', getRecentlyViewedProducts);
 }
+
+
 function enableSwiperRecent() {
   if (window.innerWidth < 990) {
-    swiperBtn.style.justifyContent = 'space-between'
-    buttonNext.style.display = 'block';
-    buttonPrev.style.display = 'block';
     if (!booLean) {
+      swiperBtn.style.justifyContent = 'space-between'
+      buttonNext.style.display = 'block';
+      buttonPrev.style.display = 'block';
+      buttonPagination.style.display = 'block';
       booLean = true;
       swiperRecent = new Swiper(".swiper-recently-viewed", {
         breakpoints: {
@@ -22,7 +26,7 @@ function enableSwiperRecent() {
             spaceBetween: 16
           },
           320: {
-            slidesPerView: 2,
+            slidesPerView: 2  ,
             spaceBetween: 8
           }
         },
@@ -38,6 +42,7 @@ function enableSwiperRecent() {
   } else if (booLean) {
     buttonNext.style.display = 'none';
     buttonPrev.style.display = 'none';
+    buttonPagination.style.display = 'none';
     swiperBtn.style.justifyContent = 'center';
     swiperRecent.destroy();
     booLean = false;

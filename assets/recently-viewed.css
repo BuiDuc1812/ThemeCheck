@@ -123,6 +123,9 @@
     .swiper-button{
         margin-bottom: 12px;
     }
+    .style-swiper-next,.style-swiper-prev{
+        height: 13.5px;
+    }
     .heading-recently{
         font-size: 20px;
         line-height: 32px;
@@ -139,15 +142,7 @@
         gap: 0px;
     }
 }
-/* @media screen and (min-width:990px) {
-    .swiper-button{
-        justify-content: center;
-    }
-} */
 @media screen and (max-width:750px) {
-    .style-swiper-next,.style-swiper-prev{
-        height: 13.5px;
-    }
     .viewed-info{
         padding: 15px;
     }
