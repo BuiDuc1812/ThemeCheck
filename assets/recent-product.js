@@ -35,6 +35,7 @@ function enableSwiperRecent() {
         },
         pagination: {
           el: '.swiper-pagination',
+          clickable: true
         }
       });
     }
@@ -116,6 +117,7 @@ function getRecentlyViewedProducts() {
       },
       pagination: {
         el: '.swiper-pagination',
+        clickable: true
       }
     });
   }
