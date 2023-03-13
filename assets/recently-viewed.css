@@ -85,6 +85,7 @@
 .swiper-button {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 32px;
 }
 
@@ -143,6 +144,7 @@
 }
 
 .product-viewed {
+    display: flex;
     grid-template-columns: repeat(4, auto);
     gap: 16px;
 }
@@ -221,15 +223,18 @@
     }
 }
 
-.btn-item{
+.btn-item {
     display: block;
 }
-
-/* class js */
 
 .active-display {
     display: none;
 }
-.activeJustify {
+
+.active-justify {
     justify-content: center;
+}
+
+.active-grid {
+    display: grid;
 }

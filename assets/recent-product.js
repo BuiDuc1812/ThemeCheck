@@ -4,19 +4,16 @@ var countPaginateViewed = document.querySelector('.recently-viewed');
 if (countPaginateViewed) {
   var viewedProduct = countPaginateViewed.querySelector('.product-viewed');
   var swiperBtn = countPaginateViewed.querySelector('.swiper-button');
-  var buttonNext = countPaginateViewed.querySelector('.swiper-button-next');
-  var buttonPrev = countPaginateViewed.querySelector('.swiper-button-prev');
-  var buttonPagination = countPaginateViewed.querySelector('.swiper-pagination');
+  var btnItem = document.querySelectorAll('.btn-item');
   document.addEventListener('DOMContentLoaded', getRecentlyViewedProducts);
 }
 
 function enableSwiperRecent() {
   if (window.innerWidth < 990) {
     if (!booLean) {
-      swiperBtn.style.justifyContent = 'space-between'
-      buttonNext.style.display = 'block';
-      buttonPrev.style.display = 'block';
-      buttonPagination.style.display = 'block';
+      swiperBtn.classList.remove('active-justify');
+      btnItem.forEach(item=>item.classList.remove('active-display'));
+      viewedProduct.classList.remove('active-grid');
       booLean = true;
       swiperRecent = new Swiper(".swiper-recently-viewed", {
         breakpoints: {
@@ -40,13 +37,11 @@ function enableSwiperRecent() {
       });
     }
   } else if (booLean) {
-    buttonNext.style.display = 'none';
-    buttonPrev.style.display = 'none';
-    buttonPagination.style.display = 'none';
-    swiperBtn.style.justifyContent = 'center';
+    btnItem.forEach(item=>item.classList.add('active-display'));
+    swiperBtn.classList.add('active-justify');
     swiperRecent.destroy();
     booLean = false;
-    viewedProduct.style.display = 'grid';
+    viewedProduct.classList.add('active-grid');
   }
 }
 
@@ -54,10 +49,10 @@ function getRecentlyViewedProducts() {
   var unitPerView = countPaginateViewed.getAttribute('paginate');
   const recentlyViewedHtml = [];
   const productData = JSON.parse(localStorage.getItem('recentlyViewedProduct'));
-  if (productData == null) {
+  if ( productData == null ) {
     countPaginateViewed.style.display = 'none';
-  } else if (productData != null) {
-    productData.map(item => {
+  } else if ( productData != null ) {
+    productData.map( item => {
     recentlyViewedHtml.unshift(`
         <div class="swiper-slide viewed-item">
             <a href="${item.productUrl}" class="viewed-img">
@@ -85,17 +80,16 @@ function getRecentlyViewedProducts() {
   const newProductData = `${recentlyViewedHtml.join('')}`;
   const fullContent = document.getElementsByClassName('product-viewed');
   fullContent[0].innerHTML = newProductData;
-  if (productData.length <= 4) {
-    viewedProduct.style.display = 'grid';
-    buttonNext.style.display = 'none';
-    buttonPrev.style.display = 'none';
-    swiperBtn.style.justifyContent = 'center';
+  if ( productData.length <= 4 ) {
+    viewedProduct.classList.add('active-grid');
+    btnItem.forEach(item=>item.classList.add('active-display'));
+    swiperBtn.classList.add('active-justify');
     window.addEventListener('resize', enableSwiperRecent);
   } else {
-    swiperBtn.style.justifyContent = 'space-between'
+    viewedProduct.classList.remove('active-grid');
+    swiperBtn.classList.remove('active-justify');
     viewedProduct.style.gap='0';
-    buttonNext.style.display = 'block';
-    buttonPrev.style.display = 'block';
+    btnItem.forEach(item=>item.classList.remove('active-display'));
     var swiperProduct = new Swiper('.swiper-recently-viewed', {
       breakpoints: {
         990: {
