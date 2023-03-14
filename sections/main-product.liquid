@@ -573,10 +573,10 @@
       let jsonResp, jsonRespArr, jsonRespArrStr;
       const productData = {
         productTitle: '{{ product.title }}',
-        productImg: '{{ product.featured_media | image_url: width: 308, height: 308 }}',
+        productImg: '{{ product.featured_media | img_url: 'master' }}',
         productImageDefault: '{{ 'image' | placeholder_svg_tag }}',
         productPriceCompare:'{{ product.compare_at_price | money }}',
-        productVendor:'{{ product.vendor }}',
+        productVendor:'{{ product.vendor }}', 
         productTag: '{{ product.tags }}',
         productPrice: '{{ product.price | money }}',
         productUrl: '{{ product.url }}',

@@ -5,12 +5,6 @@ if (countPaginateViewed) {
   var viewedProduct = countPaginateViewed.querySelector('.product-viewed');
   var swiperBtn = countPaginateViewed.querySelector('.swiper-button');
   var btnItem = document.querySelectorAll('.btn-item');
-  // function test(parm1, parm2, parm3, style){
-  //   parm1.classList.${style}('active-justify');
-  //   parm1.classList.style('active-justify');
-  //   parm1.classList.style('active-justify');
-
-  // }
   document.addEventListener('DOMContentLoaded', getRecentlyViewedProducts);
 }
 
@@ -60,18 +54,15 @@ function getRecentlyViewedProducts() {
     countPaginateViewed.style.display = 'none';
   } else if ( productData != null ) {
     productData.map( item => {
-      console.log(item.productImageDefault)
     recentlyViewedHtml.unshift(`
         <div class="swiper-slide viewed-item">
             <a href="${item.productUrl}" class="viewed-img">
-                ${item.productImg == null ?
-                  item.productImageDefault : 
-                  `<img loading="lazy" src="${item.productImg}" alt="${item.productImageAltText}">`}
+                <img loading="lazy" src="${item.productImg}" alt="${item.productImageAltText}">
                 <span class="tag-product">${item.productTag}</span>
                 ${ item.productPriceCompare ? 
-                  `<span class="tag-price">Save ${Math.floor((item.productPrice/item.productPriceCompare)*100)}%</span>
-                  <span class="tag-sale">10% off everyday</span>`:
-                  `<span class="tag-sale-off">20% off sandals</span>`}  
+                `<span class="tag-price">Save ${Math.floor((item.productPrice/item.productPriceCompare)*100)}%</span>
+                <span class="tag-sale">10% off everyday</span>`:
+                `<span class="tag-sale-off">20% off sandals</span>`}  
             </a>
             <div class="viewed-info">
                 <a href="${item.productUrl}">${item.productTitle}</a> 
