@@ -73,19 +73,10 @@
       ],
       "settings": {
       }
-    },
-    "af6e7ee1-cf17-44d1-9213-ea4cbb080d0e": {
-      "type": "recent-product",
-      "settings": {
-        "heading": "Recently Viewed",
-        "paginate-recently": 4,
-        "padding-recently-viewed": 80
-      }
     }
   },
   "order": [
     "f75bd20f-bc3f-469c-bd87-56431557798f",
-    "9459aa69-7527-4dcd-b55d-6b79d152006b",
-    "af6e7ee1-cf17-44d1-9213-ea4cbb080d0e"
+    "9459aa69-7527-4dcd-b55d-6b79d152006b"
   ]
 }
